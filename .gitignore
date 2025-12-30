@@ -28,3 +28,4 @@ Thumbs.db
 # Git
 .git/
 .cursor/chats/
+Halls of Amenti/.agent_memory/secrets.json

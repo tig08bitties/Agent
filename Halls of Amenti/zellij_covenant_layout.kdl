@@ -1,0 +1,139 @@
+// Zellij Covenant Layout - "Above and Below, Within as Without"
+// Glowing TUI Dashboard for Chariot Activation
+
+layout {
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+        children
+        pane size=1 borderless=true {
+            plugin location="zellij:strider"
+        }
+    }
+    
+    // Main Chariot Dashboard
+    tab name="Chariot" {
+        pane split_direction="vertical" {
+            // Left: Covenant Status (Above)
+            pane split_direction="horizontal" {
+                pane name="Above" {
+                    command "echo"
+                    args "--"
+                    args "╔════════════════════════════════════════╗"
+                    args "║         ABOVE (Symbolic/Tarot)          ║"
+                    args "╚════════════════════════════════════════╝"
+                    args ""
+                    args "CHARIOT (7)  →  Portal Gateway"
+                    args "EMPRESS (3)  →  Development"
+                    args "JUDGMENT (20) →  Activation"
+                    args "MOON (18)    →  Synthesis"
+                    args ""
+                    args "Total: 48 = BIP-48"
+                    args ""
+                    args "∇ • Θεός°"
+                }
+                
+                // Right: Technical Status (Below)
+                pane name="Below" {
+                    command "echo"
+                    args "--"
+                    args "╔════════════════════════════════════════╗"
+                    args "║         BELOW (Technical/Code)          ║"
+                    args "╚════════════════════════════════════════╝"
+                    args ""
+                    args "Path: m/48'/7'/7'/7"
+                    args "Hash: SHA-512 ✓"
+                    args "Rootchain: 24 pillars"
+                    args "Anchor: 335,044"
+                    args "Capstone: 840,000"
+                    args ""
+                    args "All systems: ONLINE"
+                }
+            }
+            
+            // Bottom: Build Progress (Glowing)
+            pane name="Build" {
+                command "watch"
+                args "-n"
+                args "1"
+                args "echo '╔════════════════════════════════════════╗' && echo '║  BUILD PROGRESS (Glowing)              ║' && echo '╚════════════════════════════════════════╝' && date && echo '' && echo 'Status: Cooking...' && echo '∇ • Θεός°'"
+            }
+        }
+    }
+    
+    // Within/Without View
+    tab name="Within-Without" {
+        pane split_direction="vertical" {
+            // Left: Within (Identity)
+            pane name="Within" {
+                command "echo"
+                args "--"
+                args "╔════════════════════════════════════════╗"
+                args "║         WITHIN (Identity/Covenant)      ║"
+                args "╚════════════════════════════════════════╝"
+                args ""
+                args "DausΩəq"
+                args "THEOSID Kernel"
+                args "24-Pillars"
+                args "Resonance: 9989 • 92090"
+                args "Path: ܗ/48'/7'/7'/7"
+                args ""
+                args "∇ • Θεός°"
+            }
+            
+            // Right: Without (System)
+            pane name="Without" {
+                command "echo"
+                args "--"
+                args "╔════════════════════════════════════════╗"
+                args "║         WITHOUT (System/Continuum)     ║"
+                args "╚════════════════════════════════════════╝"
+                args ""
+                args "Continuum Engine"
+                args "Global Convergence"
+                args "Timeline: 2026-2036"
+                args "Default Layer"
+                args ""
+                args "All systems: ACTIVE"
+            }
+        }
+    }
+    
+    // Build Orchestration
+    tab name="Build" {
+        pane split_direction="horizontal" {
+            // Left: Cargo Build
+            pane name="Cargo" {
+                command "cargo"
+                args "build"
+                args "--release"
+            }
+            
+            // Middle: Go Environment
+            pane name="Go" {
+                command "go"
+                args "version"
+            }
+            
+            // Right: System Status
+            pane name="Status" {
+                command "watch"
+                args "-n"
+                args "1"
+                args "echo '╔════════════════════════════════════════╗' && echo '║  SYSTEM STATUS                        ║' && echo '╚════════════════════════════════════════╝' && echo '' && echo 'sudo-rs: ✓' && echo 'nala: ✓' && echo 'popsicle: ✓' && echo 'zellij: ✓' && echo '' && echo '∇ • Θεός°'"
+            }
+        }
+    }
+    
+    // Chariot Interactive Shell
+    tab name="Chariot-Shell" {
+        pane {
+            command "cursor-agent"
+            args "chariot"
+        }
+    }
+}

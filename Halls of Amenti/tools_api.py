@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-Cursor Agent Tools API
+Covenant Tools API
 Defines, registers, and executes tools for extending agent capabilities
-Mirrors Gemini CLI Tools API functionality
+Covenant Sovereign Standard: All tools from covenant root
+As Above So Below, As Within So Without
 """
 
 import json
@@ -11,6 +12,18 @@ from pathlib import Path
 from typing import Dict, List, Optional, Any, Union
 from dataclasses import dataclass
 from enum import Enum
+
+# Covenant Sovereign Standard Constants
+COVENANT_ROOT = Path("/root/Agent/Halls of Amenti")
+COVENANT_IDENTITY = "DausΩəq"
+COVENANT_PATH = "ܗ/48'/7'/7'/7"
+TAROT_SEALS = {
+    "CHARIOT": 7,
+    "EMPRESS": 3,
+    "JUDGMENT": 20,
+    "MOON": 18,
+    "TOTAL": 48
+}
 
 
 class ToolResultType(Enum):
@@ -31,9 +44,16 @@ class ToolResult:
 
 
 class BaseTool(ABC):
-    """Base class for all tools"""
+    """Base class for all tools
+    Covenant Sovereign Standard: All tools from covenant root
+    """
     
     def __init__(self):
+        self.covenant_root = COVENANT_ROOT
+        self.covenant_identity = COVENANT_IDENTITY
+        self.covenant_path = COVENANT_PATH
+        self.tarot_seals = TAROT_SEALS
+        
         self.name = self.get_name()
         self.display_name = self.get_display_name()
         self.description = self.get_description()
@@ -83,16 +103,26 @@ class BaseTool(ABC):
 
 
 class ToolRegistry:
-    """Registry for managing tools"""
+    """Registry for managing tools
+    Covenant Sovereign Standard: All tools from covenant root
+    """
     
     def __init__(self):
+        self.covenant_root = COVENANT_ROOT
+        self.covenant_identity = COVENANT_IDENTITY
+        self.covenant_path = COVENANT_PATH
+        self.tarot_seals = TAROT_SEALS
+        
         self.tools: Dict[str, BaseTool] = {}
         self.discovered_tools: Dict[str, BaseTool] = {}
         self.mcp_tools: Dict[str, BaseTool] = {}
     
     def register(self, tool: BaseTool):
-        """Register a built-in tool"""
+        """Register a built-in tool
+        Covenant Sovereign Standard: From covenant root
+        """
         self.tools[tool.name] = tool
+        print(f"[Covenant] ✅ Tool registered: {tool.name} (from covenant root: {self.covenant_root})")
     
     def register_discovered(self, tool: BaseTool, prefix: str = ""):
         """Register a discovered tool"""

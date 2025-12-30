@@ -25,6 +25,24 @@ from sphinx_doc_generator import generate_sphinx_docs
 from extension_system import get_extension_system
 from passport_processor import PassportProcessor
 
+# Import cursor-agent integration
+try:
+    from cursor_agent_integration import (
+        CursorAgentIntegration,
+        tool_bootstrap_system,
+        tool_install_dev_stack,
+        tool_search_package,
+        tool_get_package_info,
+        tool_ensure_dev_environment
+    )
+    CURSOR_AGENT_AVAILABLE = True
+except ImportError:
+    CURSOR_AGENT_AVAILABLE = False
+    CursorAgentIntegration = None
+
+# Spoken commands available via cursor-agent integration
+SPOKEN_COMMANDS_AVAILABLE = CURSOR_AGENT_AVAILABLE
+
 
 class CursorAgentCore:
     """Main core class integrating all Cursor agent features"""
@@ -40,6 +58,12 @@ class CursorAgentCore:
         # Initialize extension system (GitHub, Jules, etc.)
         self.extension_system = get_extension_system()
         self.extension_system.integrate_with_agent(self)
+        
+        # Initialize cursor-agent integration if available
+        if CURSOR_AGENT_AVAILABLE:
+            self.cursor_agent = CursorAgentIntegration()
+        else:
+            self.cursor_agent = None
     
     def _register_builtin_tools(self):
         """Register built-in tools"""
@@ -50,6 +74,21 @@ class CursorAgentCore:
         # Register Brave search tool (primary research tool)
         brave_search = BraveSearchTool()
         self.tool_registry.register(brave_search)
+        
+        # Register cursor-agent tools if available
+        if CURSOR_AGENT_AVAILABLE:
+            try:
+                from cursor_agent_tools import get_cursor_agent_tools
+                cursor_tools = get_cursor_agent_tools()
+                for tool in cursor_tools:
+                    self.tool_registry.register(tool)
+                # Initialize cursor-agent integration for direct access
+                self.cursor_agent = CursorAgentIntegration()
+            except ImportError:
+                # Fallback to function-based registration if tool classes not available
+                self.cursor_agent = CursorAgentIntegration()
+                # Note: Function-based registration would need to be implemented
+                # in ToolRegistry if needed
     
     def get_context(self) -> str:
         """Get current context (passive - auto-loaded)"""
@@ -157,6 +196,116 @@ class CursorAgentCore:
     def generate_sphinx_docs(self, project_path: str, project_name: str, topics: list = None) -> dict:
         """Passive default: Generate Sphinx documentation with cow prompts"""
         return generate_sphinx_docs(project_path, project_name, topics)
+    
+    def speak_and_execute(self, *commands):
+        """
+        Speak commands into creation and execute in order via sudo-rs
+        
+        This is the core capability: chain multiple commands into single execution.
+        Commands are executed in the order they are spoken.
+        
+        Args:
+            *commands: Variable number of command strings to execute in order
+            
+        Returns:
+            dict with execution results
+            
+        Example:
+            core.speak_and_execute(
+                "aptitude update",
+                "aptitude install -y git make",
+                "git --version"
+            )
+        """
+        if not self.cursor_agent:
+            return {
+                "success": False,
+                "error": "Cursor-agent integration not available"
+            }
+        
+        # Use cursor-agent integration's speak_and_execute
+        return self.cursor_agent.speak_and_execute(*commands)
+    
+    def launch_zellij_chariot(self):
+        """
+        Launch Chariot with Zellij glowing dashboard
+        
+        Returns:
+            dict with launch status
+        """
+        try:
+            from zellij_integration import get_zellij_integration
+            zellij = get_zellij_integration()
+            return zellij.launch_chariot_dashboard()
+        except ImportError:
+            return {
+                "success": False,
+                "error": "Zellij integration not available"
+            }
+        except Exception as e:
+            return {
+                "success": False,
+                "error": str(e)
+            }
+    
+    def get_cursor_agent(self):
+        """
+        Get cursor-agent integration instance
+        
+        Returns:
+            CursorAgentIntegration instance or None
+        """
+        return self.cursor_agent
+    
+    def search_package(self, query: str, overlay: str = None):
+        """
+        Search for packages in Gentoo portage tree and overlays
+        
+        Args:
+            query: Package name to search for
+            overlay: Optional overlay name (portage, guru, kde)
+            
+        Returns:
+            dict with search results
+        """
+        if not self.cursor_agent:
+            return {
+                "success": False,
+                "error": "Cursor-agent integration not available"
+            }
+        return self.cursor_agent.search_ebuild(query, overlay)
+    
+    def get_package_info(self, package_spec: str, overlay: str = None):
+        """
+        Get detailed information about a Gentoo ebuild package
+        
+        Args:
+            package_spec: Package specification (category/package)
+            overlay: Optional overlay name
+            
+        Returns:
+            dict with package information
+        """
+        if not self.cursor_agent:
+            return {
+                "success": False,
+                "error": "Cursor-agent integration not available"
+            }
+        return self.cursor_agent.ebuild_info(package_spec, overlay)
+    
+    def ensure_environment(self):
+        """
+        Ensure development environment is set up and ready
+        
+        Returns:
+            dict with setup results
+        """
+        if not self.cursor_agent:
+            return {
+                "success": False,
+                "error": "Cursor-agent integration not available"
+            }
+        return self.cursor_agent.ensure_dev_environment()
     
     def get_github_replit_bots(self) -> list:
         """Get replit bots from GitHub"""

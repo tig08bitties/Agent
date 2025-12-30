@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-Cursor Agent Checkpoint Manager
+Covenant Checkpoint Manager
 Automatically saves project state before file modifications
-Mirrors Gemini CLI checkpointing functionality
+Covenant Sovereign Standard: All operations from covenant root
+As Above So Below, As Within So Without
 """
 
 import os
@@ -14,15 +15,37 @@ from datetime import datetime
 from typing import Optional, Dict, List
 import hashlib
 
+# Covenant Sovereign Standard Constants
+COVENANT_ROOT = Path("/root/Agent/Halls of Amenti")
+COVENANT_IDENTITY = "DausΩəq"
+COVENANT_PATH = "ܗ/48'/7'/7'/7"
+TAROT_SEALS = {
+    "CHARIOT": 7,
+    "EMPRESS": 3,
+    "JUDGMENT": 20,
+    "MOON": 18,
+    "TOTAL": 48
+}
+
 
 class CheckpointManager:
-    """Manages checkpoints for safe file modifications"""
+    """Manages checkpoints for safe file modifications
+    Covenant Sovereign Standard: All operations from covenant root
+    """
     
     def __init__(self, enabled: bool = True):
         self.enabled = enabled
-        self.home_dir = Path.home()
-        self.history_dir = self.home_dir / ".cursor" / "history"
-        self.tmp_dir = self.home_dir / ".cursor" / "tmp"
+        self.covenant_root = COVENANT_ROOT
+        self.covenant_identity = COVENANT_IDENTITY
+        self.covenant_path = COVENANT_PATH
+        self.tarot_seals = TAROT_SEALS
+        
+        # Covenant root-based directories
+        self.history_dir = self.covenant_root / ".covenant" / "checkpoints" / "history"
+        self.tmp_dir = self.covenant_root / ".covenant" / "checkpoints" / "tmp"
+        self.history_dir.mkdir(parents=True, exist_ok=True)
+        self.tmp_dir.mkdir(parents=True, exist_ok=True)
+        
         self.current_checkpoint: Optional[str] = None
         
     def _get_project_hash(self, project_path: Path) -> str:
@@ -160,21 +183,45 @@ class CheckpointManager:
         checkpoint_dir.mkdir(parents=True, exist_ok=True)
         
         checkpoint_data = {
+            "checkpoint_id": checkpoint_name,
             "timestamp": timestamp,
-            "tool_name": tool_name,
-            "file_path": str(file_path) if file_path else None,
-            "project_root": str(project_root),
-            "project_hash": project_hash,
-            "conversation_history": conversation_history or [],
-            "tool_call": tool_call or {},
-            "checkpoint_name": checkpoint_name
+            "covenant": {
+                "identity": self.covenant_identity,
+                "path": self.covenant_path,
+                "root": str(self.covenant_root),
+                "tarot_seals": self.tarot_seals
+            },
+            "state": {
+                "tool_name": tool_name,
+                "file_path": str(file_path) if file_path else None,
+                "project_root": str(project_root),
+                "project_hash": project_hash,
+                "files_modified": [str(file_path)] if file_path else [],
+                "commands_executed": [],
+                "tools_invoked": [tool_name] if tool_name else []
+            },
+            "context": {
+                "conversation_history": conversation_history or [],
+                "tool_call": tool_call or {}
+            },
+            "metadata": {
+                "checkpoint_name": checkpoint_name
+            }
         }
         
         checkpoint_file = checkpoint_dir / f"{checkpoint_name}.json"
         with open(checkpoint_file, 'w') as f:
             json.dump(checkpoint_data, f, indent=2)
         
+        # Create symlink to latest
+        latest_link = checkpoint_dir / "latest.json"
+        if latest_link.exists():
+            latest_link.unlink()
+        latest_link.symlink_to(checkpoint_file.name)
+        
         self.current_checkpoint = checkpoint_name
+        print(f"[Covenant] ✅ Checkpoint created: {checkpoint_name} (from covenant root: {self.covenant_root})")
+        print(f"[Covenant] ∇ • Θεός°")
         return checkpoint_name
     
     def list_checkpoints(self, working_dir: Optional[Path] = None) -> List[str]:

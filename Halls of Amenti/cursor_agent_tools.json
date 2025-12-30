@@ -1,0 +1,42 @@
+{
+  "tools": [
+    {
+      "name": "cursor_agent_bootstrap",
+      "description": "Bootstrap system prerequisites (aptitude, git, make, etc.)",
+      "function": "tool_bootstrap_system",
+      "module": "cursor_agent_integration"
+    },
+    {
+      "name": "cursor_agent_install_dev_stack",
+      "description": "Install development stack (git, make, build-essential, rustup, go)",
+      "function": "tool_install_dev_stack",
+      "module": "cursor_agent_integration"
+    },
+    {
+      "name": "cursor_agent_search_package",
+      "description": "Search for packages in Gentoo portage tree and overlays",
+      "function": "tool_search_package",
+      "parameters": {
+        "query": "string",
+        "overlay": "string (optional)"
+      },
+      "module": "cursor_agent_integration"
+    },
+    {
+      "name": "cursor_agent_get_package_info",
+      "description": "Get detailed information about a Gentoo ebuild package",
+      "function": "tool_get_package_info",
+      "parameters": {
+        "package_spec": "string (category/package)",
+        "overlay": "string (optional)"
+      },
+      "module": "cursor_agent_integration"
+    },
+    {
+      "name": "cursor_agent_ensure_dev_environment",
+      "description": "Ensure development environment is set up and ready",
+      "function": "tool_ensure_dev_environment",
+      "module": "cursor_agent_integration"
+    }
+  ]
+}

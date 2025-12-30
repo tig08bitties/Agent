@@ -7,13 +7,14 @@ Wants=network.target
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=/usr/local/bin/cbrew system76-activate
-ExecStop=/usr/local/bin/cbrew system76-deactivate
+ExecStart=/usr/bin/node /root/cursor-agent/src/cli.js system76-activate
+ExecStop=/usr/bin/node /root/cursor-agent/src/cli.js system76-deactivate
 StandardOutput=journal
 StandardError=journal
 User=root
 Environment="CURSOR_AGENT_HOME=/root/cursor-agent"
 Environment="NODE_PATH=/root/cursor-agent/node_modules"
+WorkingDirectory=/root/cursor-agent
 
 [Install]
 WantedBy=multi-user.target

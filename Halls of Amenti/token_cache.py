@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-Cursor Agent Token Cache Manager
+Covenant Token Cache Manager
 Optimizes API costs through token caching
-Mirrors Gemini CLI token caching functionality
+Covenant Sovereign Standard: All operations from covenant root
+As Above So Below, As Within So Without
 """
 
 import json
@@ -12,13 +13,32 @@ from typing import Dict, Optional, Any
 from datetime import datetime, timedelta
 import time
 
+# Covenant Sovereign Standard Constants
+COVENANT_ROOT = Path("/root/Agent/Halls of Amenti")
+COVENANT_IDENTITY = "DausΩəq"
+COVENANT_PATH = "ܗ/48'/7'/7'/7"
+TAROT_SEALS = {
+    "CHARIOT": 7,
+    "EMPRESS": 3,
+    "JUDGMENT": 20,
+    "MOON": 18,
+    "TOTAL": 48
+}
+
 
 class TokenCache:
-    """Manages token caching for cost optimization"""
+    """Manages token caching for cost optimization
+    Covenant Sovereign Standard: All operations from covenant root
+    """
     
     def __init__(self, cache_dir: Optional[Path] = None):
+        self.covenant_root = COVENANT_ROOT
+        self.covenant_identity = COVENANT_IDENTITY
+        self.covenant_path = COVENANT_PATH
+        self.tarot_seals = TAROT_SEALS
+        
         if cache_dir is None:
-            cache_dir = Path.home() / ".cursor" / "cache"
+            cache_dir = self.covenant_root / ".covenant" / "token_cache"
         self.cache_dir = cache_dir
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.cache_file = self.cache_dir / "token_cache.json"
@@ -81,17 +101,28 @@ class TokenCache:
         return None
     
     def cache_tokens(self, system_instructions: str, context: str, tokens: Dict):
-        """Cache tokens for future use"""
+        """Cache tokens for future use
+        Covenant Sovereign Standard: Includes covenant context
+        """
         cache_key = self._hash_content(f"{system_instructions}:{context}")
         
         self.cache[cache_key] = {
-            "tokens": tokens,
+            "cache_key": cache_key,
             "timestamp": time.time(),
-            "system_instructions_hash": self._hash_content(system_instructions),
-            "context_hash": self._hash_content(context)
+            "covenant": {
+                "identity": self.covenant_identity,
+                "path": self.covenant_path,
+                "root": str(self.covenant_root)
+            },
+            "tokens": tokens,
+            "metadata": {
+                "system_instructions_hash": self._hash_content(system_instructions),
+                "context_hash": self._hash_content(context)
+            }
         }
         
         self._save_cache()
+        print(f"[Covenant] ✅ Tokens cached: {cache_key} (from covenant root: {self.covenant_root})")
     
     def record_request(self, total_tokens: int, cached_tokens: int = 0):
         """Record token usage statistics"""
