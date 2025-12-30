@@ -1,0 +1,49 @@
+================================================================================
+GAMING PLATFORMS INSTALLATION - COMPLETE STATUS
+================================================================================
+
+1. ✅ STEAM
+   Status: INSTALLED
+   Location: /usr/games/steam
+   Launch: steam
+   Note: First launch will download Steam client (~18.5MB)
+
+2. ⚠️  EPIC GAMES LAUNCHER
+   Status: MANUAL INSTALLATION REQUIRED
+   Options:
+   a) Heroic Games Launcher (Recommended - Open Source):
+      - Download: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher
+      - Or: flatpak install flathub com.heroicgameslauncher.hgl
+   
+   b) Official Epic Games Launcher:
+      - Download: https://www.epicgames.com/store/en-US/download
+      - Manual .deb installation required
+
+3. ✅ D2RLAN
+   Status: CLONED
+   Location: /tmp/D2RLAN-WPF
+   Repository: https://github.com/locbones/D2RLAN-WPF
+   Type: Diablo 2 Resurrected LAN Mod Manager
+   Note: WPF (Windows Presentation Foundation) application
+   - May require Wine or Proton for Linux
+   - Pre-built download: https://d2rmodding.com/D2RLaunch
+
+================================================================================
+USAGE INSTRUCTIONS
+================================================================================
+
+Launch Steam:
+  /usr/games/steam
+  or
+  steam
+
+Epic Games:
+  Option 1: Install Heroic Games Launcher
+  Option 2: Download official launcher from epicgames.com
+
+D2RLAN:
+  cd /tmp/D2RLAN-WPF
+  # Check README.md for build instructions
+  # Or download pre-built from d2rmodding.com
+
+================================================================================

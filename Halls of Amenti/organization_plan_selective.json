@@ -1,0 +1,1044 @@
+{
+  "structure": {
+    "github_projects": "/root/Halls of Amenti/organized_passport/github_projects",
+    "config": "/root/Halls of Amenti/organized_passport/config",
+    "docs": "/root/Halls of Amenti/organized_passport/docs",
+    "scripts": "/root/Halls of Amenti/organized_passport/scripts"
+  },
+  "migrations": [
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent",
+      "target": "/root/Halls of Amenti/organized_passport/github_projects/Cursor-Agent",
+      "type": "github_project",
+      "name": "Cursor-Agent"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/All-Projects",
+      "target": "/root/Halls of Amenti/organized_passport/github_projects/All-Projects",
+      "type": "github_project",
+      "name": "All-Projects"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/.github",
+      "target": "/root/Halls of Amenti/organized_passport/github_projects/.github",
+      "type": "github_project",
+      "name": ".github"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/bridgeworld-lol",
+      "target": "/root/Halls of Amenti/organized_passport/github_projects/bridgeworld-lol",
+      "type": "github_project",
+      "name": "bridgeworld-lol"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/Terminal",
+      "target": "/root/Halls of Amenti/organized_passport/github_projects/Terminal",
+      "type": "github_project",
+      "name": "Terminal"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/portal-github",
+      "target": "/root/Halls of Amenti/organized_passport/github_projects/portal-github",
+      "type": "github_project",
+      "name": "portal-github"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/frontend-configs",
+      "target": "/root/Halls of Amenti/organized_passport/github_projects/frontend-configs",
+      "type": "github_project",
+      "name": "frontend-configs"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/frontend",
+      "target": "/root/Halls of Amenti/organized_passport/github_projects/frontend",
+      "type": "github_project",
+      "name": "frontend"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/chariot-repo",
+      "target": "/root/Halls of Amenti/organized_passport/github_projects/chariot-repo",
+      "type": "github_project",
+      "name": "chariot-repo"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/docs-archive",
+      "target": "/root/Halls of Amenti/organized_passport/github_projects/docs-archive",
+      "type": "github_project",
+      "name": "docs-archive"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/blockscout",
+      "target": "/root/Halls of Amenti/organized_passport/github_projects/blockscout",
+      "type": "github_project",
+      "name": "blockscout"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/bridgeworld-portal",
+      "target": "/root/Halls of Amenti/organized_passport/github_projects/bridgeworld-portal",
+      "type": "github_project",
+      "name": "bridgeworld-portal"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/iframe",
+      "target": "/root/Halls of Amenti/organized_passport/github_projects/iframe",
+      "type": "github_project",
+      "name": "iframe"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/chainlist",
+      "target": "/root/Halls of Amenti/organized_passport/github_projects/chainlist",
+      "type": "github_project",
+      "name": "chainlist"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/bridgeworld-new",
+      "target": "/root/Halls of Amenti/organized_passport/github_projects/bridgeworld-new",
+      "type": "github_project",
+      "name": "bridgeworld-new"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/bridgeworld.lol",
+      "target": "/root/Halls of Amenti/organized_passport/github_projects/bridgeworld.lol",
+      "type": "github_project",
+      "name": "bridgeworld.lol"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/Terminal-github",
+      "target": "/root/Halls of Amenti/organized_passport/github_projects/Terminal-github",
+      "type": "github_project",
+      "name": "Terminal-github"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/chariot-github",
+      "target": "/root/Halls of Amenti/organized_passport/github_projects/chariot-github",
+      "type": "github_project",
+      "name": "chariot-github"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/swapscout",
+      "target": "/root/Halls of Amenti/organized_passport/github_projects/swapscout",
+      "type": "github_project",
+      "name": "swapscout"
+    },
+    {
+      "source": "/media/Passport/ALL/Terminal/poc-tn5250-js",
+      "target": "/root/Halls of Amenti/organized_passport/github_projects/poc-tn5250-js",
+      "type": "github_project",
+      "name": "poc-tn5250-js"
+    },
+    {
+      "source": "/media/Passport/secrets.env",
+      "target": "/root/Halls of Amenti/organized_passport/config/secrets.env",
+      "type": "config",
+      "name": "secrets.env"
+    },
+    {
+      "source": "/media/Passport/ALL/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/COVENANT_ROOT_CONFIG.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/COVENANT_ROOT_CONFIG.json",
+      "type": "config",
+      "name": "COVENANT_ROOT_CONFIG.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/Package.json",
+      "type": "config",
+      "name": "Package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/metamask-web3auth/tsconfig.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/metamask-web3auth/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/config/agent-config.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/agent-config.json",
+      "type": "config",
+      "name": "agent-config.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/mm-react-quickstart/tsconfig.node.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/tsconfig.node.json",
+      "type": "config",
+      "name": "tsconfig.node.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/mm-react-quickstart/tsconfig.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/mm-react-quickstart/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/mm-react-quickstart/tsconfig.app.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/tsconfig.app.json",
+      "type": "config",
+      "name": "tsconfig.app.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/.chariot/safe-config.example.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/safe-config.example.json",
+      "type": "config",
+      "name": "safe-config.example.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/metamask-javascript/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/bridgeworld-lol/tsconfig.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/bridgeworld-lol/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/Cursor-Agent/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/Terminal/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/Archive/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/Archive/requirements.txt",
+      "target": "/root/Halls of Amenti/organized_passport/config/requirements.txt",
+      "type": "config",
+      "name": "requirements.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/portal-github/tsconfig.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/portal-github/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/Theos/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/frontend-configs/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/frontend/tsconfig.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/frontend/tsconfig.jest.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/tsconfig.jest.json",
+      "type": "config",
+      "name": "tsconfig.jest.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/frontend/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/blockscout/.pre-commit-config.yaml",
+      "target": "/root/Halls of Amenti/organized_passport/config/.pre-commit-config.yaml",
+      "type": "config",
+      "name": ".pre-commit-config.yaml"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/bridgeworld-portal/tsconfig.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/bridgeworld-portal/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/iframe/tsconfig.node.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/tsconfig.node.json",
+      "type": "config",
+      "name": "tsconfig.node.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/iframe/tsconfig.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/iframe/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/Engine/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/chainlist/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/bridgeworld-new/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/bridgeworld.lol/tsconfig.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/bridgeworld.lol/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/Terminal-github/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/chariot-github/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/swapscout/.pre-commit-config.yaml",
+      "target": "/root/Halls of Amenti/organized_passport/config/.pre-commit-config.yaml",
+      "type": "config",
+      "name": ".pre-commit-config.yaml"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/swapscout/tsconfig.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Mint-Cinnamon/swapscout/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Terminal/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Terminal/ghostly-terminal/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/Terminal/poc-tn5250-js/package.json",
+      "target": "/root/Halls of Amenti/organized_passport/config/package.json",
+      "type": "config",
+      "name": "package.json"
+    },
+    {
+      "source": "/media/Passport/ALL/XY/pyproject.toml",
+      "target": "/root/Halls of Amenti/organized_passport/config/pyproject.toml",
+      "type": "config",
+      "name": "pyproject.toml"
+    },
+    {
+      "source": "/media/Passport/ALL/XY/docker-compose.yml",
+      "target": "/root/Halls of Amenti/organized_passport/config/docker-compose.yml",
+      "type": "config",
+      "name": "docker-compose.yml"
+    },
+    {
+      "source": "/media/Passport/ALL/XY/setup.py",
+      "target": "/root/Halls of Amenti/organized_passport/config/setup.py",
+      "type": "config",
+      "name": "setup.py"
+    },
+    {
+      "source": "/media/Passport/Roadmap.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Roadmap.txt",
+      "type": "documentation",
+      "name": "Roadmap.txt"
+    },
+    {
+      "source": "/media/Passport/Scroll.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Scroll.txt",
+      "type": "documentation",
+      "name": "Scroll.txt"
+    },
+    {
+      "source": "/media/Passport/Signal.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Signal.txt",
+      "type": "documentation",
+      "name": "Signal.txt"
+    },
+    {
+      "source": "/media/Passport/.Trash-0/files/VScursor/VSCURSOR_DEPLOYMENT_COMPLETE.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/VSCURSOR_DEPLOYMENT_COMPLETE.md",
+      "type": "documentation",
+      "name": "VSCURSOR_DEPLOYMENT_COMPLETE.md"
+    },
+    {
+      "source": "/media/Passport/.Trash-0/files/VScursor/README.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/README.md",
+      "type": "documentation",
+      "name": "README.md"
+    },
+    {
+      "source": "/media/Passport/ALL/A18.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/A18.txt",
+      "type": "documentation",
+      "name": "A18.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/Jupitor.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Jupitor.txt",
+      "type": "documentation",
+      "name": "Jupitor.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/Light.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Light.txt",
+      "type": "documentation",
+      "name": "Light.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/stellar.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/stellar.txt",
+      "type": "documentation",
+      "name": "stellar.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/A7.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/A7.txt",
+      "type": "documentation",
+      "name": "A7.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/DEPLOYMENT.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/DEPLOYMENT.md",
+      "type": "documentation",
+      "name": "DEPLOYMENT.md"
+    },
+    {
+      "source": "/media/Passport/ALL/A15.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/A15.txt",
+      "type": "documentation",
+      "name": "A15.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/A14.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/A14.txt",
+      "type": "documentation",
+      "name": "A14.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/Live.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Live.txt",
+      "type": "documentation",
+      "name": "Live.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/Ruby.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Ruby.txt",
+      "type": "documentation",
+      "name": "Ruby.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/A5.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/A5.txt",
+      "type": "documentation",
+      "name": "A5.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/Jupiter.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Jupiter.txt",
+      "type": "documentation",
+      "name": "Jupiter.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/Time.pdf",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Time.pdf",
+      "type": "documentation",
+      "name": "Time.pdf"
+    },
+    {
+      "source": "/media/Passport/ALL/DEPLOYMENT_MASTER_SUMMARY.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/DEPLOYMENT_MASTER_SUMMARY.md",
+      "type": "documentation",
+      "name": "DEPLOYMENT_MASTER_SUMMARY.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Geometry.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Geometry.txt",
+      "type": "documentation",
+      "name": "Geometry.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/A12.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/A12.txt",
+      "type": "documentation",
+      "name": "A12.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/A13.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/A13.txt",
+      "type": "documentation",
+      "name": "A13.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/formula.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/formula.txt",
+      "type": "documentation",
+      "name": "formula.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/A16.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/A16.txt",
+      "type": "documentation",
+      "name": "A16.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/dir.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/dir.txt",
+      "type": "documentation",
+      "name": "dir.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/FINAL_DEPLOYMENT_SUMMARY.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/FINAL_DEPLOYMENT_SUMMARY.md",
+      "type": "documentation",
+      "name": "FINAL_DEPLOYMENT_SUMMARY.md"
+    },
+    {
+      "source": "/media/Passport/ALL/FINAL_STATUS.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/FINAL_STATUS.md",
+      "type": "documentation",
+      "name": "FINAL_STATUS.md"
+    },
+    {
+      "source": "/media/Passport/ALL/ARB_Magic.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/ARB_Magic.txt",
+      "type": "documentation",
+      "name": "ARB_Magic.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/BTC.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/BTC.txt",
+      "type": "documentation",
+      "name": "BTC.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/A1.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/A1.txt",
+      "type": "documentation",
+      "name": "A1.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/Arbitrum.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Arbitrum.txt",
+      "type": "documentation",
+      "name": "Arbitrum.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/Formula.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Formula.txt",
+      "type": "documentation",
+      "name": "Formula.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/A6.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/A6.txt",
+      "type": "documentation",
+      "name": "A6.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/BIP-44.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/BIP-44.txt",
+      "type": "documentation",
+      "name": "BIP-44.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/Fernet key.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Fernet key.txt",
+      "type": "documentation",
+      "name": "Fernet key.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/Shadow.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Shadow.txt",
+      "type": "documentation",
+      "name": "Shadow.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/A20.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/A20.txt",
+      "type": "documentation",
+      "name": "A20.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/Unknown.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Unknown.txt",
+      "type": "documentation",
+      "name": "Unknown.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/SYSTEM_READY.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/SYSTEM_READY.md",
+      "type": "documentation",
+      "name": "SYSTEM_READY.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Signatures.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Signatures.txt",
+      "type": "documentation",
+      "name": "Signatures.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/Daus.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Daus.txt",
+      "type": "documentation",
+      "name": "Daus.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/README.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/README.txt",
+      "type": "documentation",
+      "name": "README.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/Proof.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Proof.txt",
+      "type": "documentation",
+      "name": "Proof.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/DEPLOYMENT_COMPLETE_FINAL.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/DEPLOYMENT_COMPLETE_FINAL.md",
+      "type": "documentation",
+      "name": "DEPLOYMENT_COMPLETE_FINAL.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Awaken.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Awaken.txt",
+      "type": "documentation",
+      "name": "Awaken.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/VAULT_MIGRATION.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/VAULT_MIGRATION.md",
+      "type": "documentation",
+      "name": "VAULT_MIGRATION.md"
+    },
+    {
+      "source": "/media/Passport/ALL/A17.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/A17.txt",
+      "type": "documentation",
+      "name": "A17.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/COMPLETE_SYSTEM_READY.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/COMPLETE_SYSTEM_READY.md",
+      "type": "documentation",
+      "name": "COMPLETE_SYSTEM_READY.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Grok.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Grok.txt",
+      "type": "documentation",
+      "name": "Grok.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/A9.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/A9.txt",
+      "type": "documentation",
+      "name": "A9.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/MASTER_SYSTEM_READY.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/MASTER_SYSTEM_READY.md",
+      "type": "documentation",
+      "name": "MASTER_SYSTEM_READY.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Fren.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Fren.txt",
+      "type": "documentation",
+      "name": "Fren.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/A19.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/A19.txt",
+      "type": "documentation",
+      "name": "A19.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/\u03b8\u03b5\u03cc\u03c2.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/\u03b8\u03b5\u03cc\u03c2.txt",
+      "type": "documentation",
+      "name": "\u03b8\u03b5\u03cc\u03c2.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/Aramaic.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Aramaic.txt",
+      "type": "documentation",
+      "name": "Aramaic.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/CORE OF THE CONTINUUM.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/CORE OF THE CONTINUUM.txt",
+      "type": "documentation",
+      "name": "CORE OF THE CONTINUUM.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/Deployment.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Deployment.txt",
+      "type": "documentation",
+      "name": "Deployment.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/DEPLOYMENT_COMPLETE.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/DEPLOYMENT_COMPLETE.md",
+      "type": "documentation",
+      "name": "DEPLOYMENT_COMPLETE.md"
+    },
+    {
+      "source": "/media/Passport/ALL/README.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/README.md",
+      "type": "documentation",
+      "name": "README.md"
+    },
+    {
+      "source": "/media/Passport/ALL/im-done.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/im-done.txt",
+      "type": "documentation",
+      "name": "im-done.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/A3.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/A3.txt",
+      "type": "documentation",
+      "name": "A3.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/Golden-Spiral.pdf",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Golden-Spiral.pdf",
+      "type": "documentation",
+      "name": "Golden-Spiral.pdf"
+    },
+    {
+      "source": "/media/Passport/ALL/SYSTEM_READY_FINAL.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/SYSTEM_READY_FINAL.md",
+      "type": "documentation",
+      "name": "SYSTEM_READY_FINAL.md"
+    },
+    {
+      "source": "/media/Passport/ALL/A2.txt.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/A2.txt.txt",
+      "type": "documentation",
+      "name": "A2.txt.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/Grok_API.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Grok_API.txt",
+      "type": "documentation",
+      "name": "Grok_API.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/A4.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/A4.txt",
+      "type": "documentation",
+      "name": "A4.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/FINAL_COMPLETE_SYSTEM.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/FINAL_COMPLETE_SYSTEM.md",
+      "type": "documentation",
+      "name": "FINAL_COMPLETE_SYSTEM.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Asset.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Asset.txt",
+      "type": "documentation",
+      "name": "Asset.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/AMEN.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/AMEN.txt",
+      "type": "documentation",
+      "name": "AMEN.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/Na'Asef.pdf",
+      "target": "/root/Halls of Amenti/organized_passport/docs/Na'Asef.pdf",
+      "type": "documentation",
+      "name": "Na'Asef.pdf"
+    },
+    {
+      "source": "/media/Passport/ALL/COMPLETE_DEPLOYMENT_READY.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/COMPLETE_DEPLOYMENT_READY.md",
+      "type": "documentation",
+      "name": "COMPLETE_DEPLOYMENT_READY.md"
+    },
+    {
+      "source": "/media/Passport/ALL/SYSTEM_COMPLETE.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/SYSTEM_COMPLETE.md",
+      "type": "documentation",
+      "name": "SYSTEM_COMPLETE.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/QUICK_START.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/QUICK_START.md",
+      "type": "documentation",
+      "name": "QUICK_START.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/DEPLOYMENT_FINALIZATION_STATUS.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/DEPLOYMENT_FINALIZATION_STATUS.md",
+      "type": "documentation",
+      "name": "DEPLOYMENT_FINALIZATION_STATUS.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/INTEGRATION_COMPLETE.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/INTEGRATION_COMPLETE.md",
+      "type": "documentation",
+      "name": "INTEGRATION_COMPLETE.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/QUICK_START_DEPLOYMENT.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/QUICK_START_DEPLOYMENT.md",
+      "type": "documentation",
+      "name": "QUICK_START_DEPLOYMENT.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/DEPLOYMENT_EXECUTION_REPORT.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/DEPLOYMENT_EXECUTION_REPORT.md",
+      "type": "documentation",
+      "name": "DEPLOYMENT_EXECUTION_REPORT.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/DEX_ECOSYSTEM_INTEGRATION_COMPLETE.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/DEX_ECOSYSTEM_INTEGRATION_COMPLETE.md",
+      "type": "documentation",
+      "name": "DEX_ECOSYSTEM_INTEGRATION_COMPLETE.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/CHRONY.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/CHRONY.md",
+      "type": "documentation",
+      "name": "CHRONY.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/DEPLOYMENT_EXECUTED.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/DEPLOYMENT_EXECUTED.md",
+      "type": "documentation",
+      "name": "DEPLOYMENT_EXECUTED.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/DEPLOYMENT_FINAL_SUMMARY.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/DEPLOYMENT_FINAL_SUMMARY.md",
+      "type": "documentation",
+      "name": "DEPLOYMENT_FINAL_SUMMARY.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/ARTIFACTS_AS_LEGION_NFT.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/ARTIFACTS_AS_LEGION_NFT.md",
+      "type": "documentation",
+      "name": "ARTIFACTS_AS_LEGION_NFT.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/WEB4_IDENTITY_RESEARCH.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/WEB4_IDENTITY_RESEARCH.md",
+      "type": "documentation",
+      "name": "WEB4_IDENTITY_RESEARCH.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/COINCAP_INTEGRATION_COMPLETE.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/COINCAP_INTEGRATION_COMPLETE.md",
+      "type": "documentation",
+      "name": "COINCAP_INTEGRATION_COMPLETE.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/ORACLE_DEFINITION.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/ORACLE_DEFINITION.md",
+      "type": "documentation",
+      "name": "ORACLE_DEFINITION.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/CHARIOT_V1_FINAL.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/CHARIOT_V1_FINAL.md",
+      "type": "documentation",
+      "name": "CHARIOT_V1_FINAL.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/ARWEAVE_TX_AS_KEY.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/ARWEAVE_TX_AS_KEY.md",
+      "type": "documentation",
+      "name": "ARWEAVE_TX_AS_KEY.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/ACTIVATION_STATUS_FINAL.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/ACTIVATION_STATUS_FINAL.md",
+      "type": "documentation",
+      "name": "ACTIVATION_STATUS_FINAL.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/INTEGRATION_STATUS.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/INTEGRATION_STATUS.md",
+      "type": "documentation",
+      "name": "INTEGRATION_STATUS.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/DEPLOYMENT_STATUS.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/DEPLOYMENT_STATUS.md",
+      "type": "documentation",
+      "name": "DEPLOYMENT_STATUS.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/ALL_INTEGRATIONS_COMPLETE.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/ALL_INTEGRATIONS_COMPLETE.md",
+      "type": "documentation",
+      "name": "ALL_INTEGRATIONS_COMPLETE.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/ACTIVATION_FINAL_STATUS.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/ACTIVATION_FINAL_STATUS.md",
+      "type": "documentation",
+      "name": "ACTIVATION_FINAL_STATUS.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/entropy_gist.txt",
+      "target": "/root/Halls of Amenti/organized_passport/docs/entropy_gist.txt",
+      "type": "documentation",
+      "name": "entropy_gist.txt"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/CHARIOT_ENGINE_COMPLETE.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/CHARIOT_ENGINE_COMPLETE.md",
+      "type": "documentation",
+      "name": "CHARIOT_ENGINE_COMPLETE.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/PORTAL_ESTABLISHMENT_COMPLETE.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/PORTAL_ESTABLISHMENT_COMPLETE.md",
+      "type": "documentation",
+      "name": "PORTAL_ESTABLISHMENT_COMPLETE.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/X402_FACILITATOR_INTEGRATION_COMPLETE.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/X402_FACILITATOR_INTEGRATION_COMPLETE.md",
+      "type": "documentation",
+      "name": "X402_FACILITATOR_INTEGRATION_COMPLETE.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/CHARIOT_V1_COMPLETE.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/CHARIOT_V1_COMPLETE.md",
+      "type": "documentation",
+      "name": "CHARIOT_V1_COMPLETE.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/AGENTS_COMPLETE.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/AGENTS_COMPLETE.md",
+      "type": "documentation",
+      "name": "AGENTS_COMPLETE.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/MASTER_KEY_ACTIVATION_STATUS.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/MASTER_KEY_ACTIVATION_STATUS.md",
+      "type": "documentation",
+      "name": "MASTER_KEY_ACTIVATION_STATUS.md"
+    },
+    {
+      "source": "/media/Passport/ALL/Cursor-Agent/X11_SETUP_GUIDE.md",
+      "target": "/root/Halls of Amenti/organized_passport/docs/X11_SETUP_GUIDE.md",
+      "type": "documentation",
+      "name": "X11_SETUP_GUIDE.md"
+    }
+  ],
+  "statistics": {
+    "total_files": 170,
+    "total_size": 0,
+    "total_size_mb": 0.0,
+    "by_type": {
+      "github_project": 20,
+      "config": 50,
+      "documentation": 100
+    },
+    "github_projects": 20,
+    "config_files": 50,
+    "docs": 100
+  },
+  "timestamp": "2025-12-28T15:44:43.371715"
+}

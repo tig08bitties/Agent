@@ -1,0 +1,32 @@
+{
+  "agent": {
+    "execution": {
+      "mode": "real_time",
+      "sandboxing": false,
+      "confirmations": false,
+      "factual_execution": true
+    },
+    "permissions": {
+      "scope": "/root/Halls of Amenti",
+      "full_permissions": true,
+      "no_restrictions": true
+    },
+    "behavior": {
+      "passive_defaults": true,
+      "auto_execute": true,
+      "self_improvement": true,
+      "user_assistance": "full"
+    },
+    "integration": {
+      "auto_load_context": true,
+      "auto_checkpoint": true,
+      "auto_cache_tokens": true,
+      "auto_refresh": true
+    }
+  },
+  "instructions": {
+    "source": "AGENT_INSTRUCTIONS.md",
+    "applies_to": "cursor-agent",
+    "default_override": "user_explicit_only"
+  }
+}

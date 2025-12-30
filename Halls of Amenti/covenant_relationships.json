@@ -1,0 +1,39 @@
+{
+  "tarot_to_technical": {
+    "tarot_chariot": [
+      [
+        "doc_Tarot",
+        0.27643311700977713
+      ]
+    ],
+    "tarot_empress": [
+      [
+        "doc_Tarot",
+        0.3266284975322649
+      ]
+    ],
+    "tarot_judgment": [
+      [
+        "doc_Tarot",
+        0.3332864546084882
+      ]
+    ],
+    "tarot_moon": []
+  },
+  "component_clusters": {
+    "documentation": [
+      "tarot_empress",
+      "tarot_judgment",
+      "theosid_kernel",
+      "covenant_identity",
+      "doc_Roadmap"
+    ],
+    "tarot": [
+      "doc_Tarot"
+    ],
+    "theosid": [
+      "doc_Formula"
+    ]
+  },
+  "key_connections": []
+}

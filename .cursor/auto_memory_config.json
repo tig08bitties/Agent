@@ -1,0 +1,16 @@
+{
+  "auto_load": true,
+  "auto_refresh": true,
+  "checkpointing": {
+    "enabled": true,
+    "auto_create": true
+  },
+  "token_caching": {
+    "enabled": true,
+    "auto_cache": true
+  },
+  "context": {
+    "auto_inject": true,
+    "show_loaded_count": true
+  }
+}

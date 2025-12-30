@@ -1,0 +1,38 @@
+{
+  "mcpServers": {
+    "covenant-tools": {
+      "command": "node",
+      "args": [
+        "/root/.hyper_plugins/local/covenant-agent-extensions/mcp-server.js"
+      ],
+      "env": {
+        "COVENANT_PATH": "/root/Halls of Amenti",
+        "AGENT_PATH": "/root/Agent"
+      }
+    },
+    "rosetta-stone": {
+      "command": "python3",
+      "args": [
+        "/root/Halls of Amenti/organized_passport/docs/covenant_documents/bypass_relay_system.py"
+      ],
+      "env": {
+        "COVENANT_PATH": "/root/Halls of Amenti"
+      }
+    },
+    "file-operations": {
+      "command": "node",
+      "args": [
+        "/root/.hyper_plugins/local/covenant-agent-extensions/mcp-file-server.js"
+      ]
+    },
+    "github-integration": {
+      "command": "node",
+      "args": [
+        "/root/.hyper_plugins/local/covenant-agent-extensions/mcp-github-server.js"
+      ],
+      "env": {
+        "GITHUB_TOKEN": ""
+      }
+    }
+  }
+}

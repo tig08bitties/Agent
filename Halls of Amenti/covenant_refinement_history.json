@@ -1,0 +1,18 @@
+{
+  "default": {
+    "original_query": "tarot chariot connection to technical",
+    "iterations": [
+      {
+        "iteration": 1,
+        "query": "tarot chariot connection to technical",
+        "clarity_score": 6,
+        "action": "enhance",
+        "query_type": "tarot_symbolic"
+      }
+    ],
+    "final_query": null,
+    "clarity_scores": [
+      6
+    ]
+  }
+}

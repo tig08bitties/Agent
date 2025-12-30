@@ -1,0 +1,11 @@
+{
+  "context": {
+    "fileName": [
+      "CURSOR.md"
+    ]
+  },
+  "memory": {
+    "autoRefresh": true,
+    "showLoadedCount": true
+  }
+}

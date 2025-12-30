@@ -1,0 +1,254 @@
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([typeof document === "object" ? document.currentScript : undefined, {
+
+"[project]/node_modules/.pnpm/@web3auth+no-modal@10.9.0_@babel+runtime@7.28.4_@coinbase+wallet-sdk@4.3.0_@sentry+core_c18d9eeb11a9008f1fb4e8eb02e41d1d/node_modules/@web3auth/no-modal/dist/lib.esm/connectors/injected-evm-connector/index.js [app-client] (ecmascript) <locals>": ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s({});
+;
+;
+}),
+"[project]/node_modules/.pnpm/@web3auth+no-modal@10.9.0_@babel+runtime@7.28.4_@coinbase+wallet-sdk@4.3.0_@sentry+core_c18d9eeb11a9008f1fb4e8eb02e41d1d/node_modules/@web3auth/no-modal/dist/lib.esm/connectors/injected-evm-connector/index.js [app-client] (ecmascript) <module evaluation>": ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s({});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$connectors$2f$injected$2d$evm$2d$connector$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@web3auth+no-modal@10.9.0_@babel+runtime@7.28.4_@coinbase+wallet-sdk@4.3.0_@sentry+core_c18d9eeb11a9008f1fb4e8eb02e41d1d/node_modules/@web3auth/no-modal/dist/lib.esm/connectors/injected-evm-connector/index.js [app-client] (ecmascript) <locals>");
+}),
+"[project]/node_modules/.pnpm/@web3auth+no-modal@10.9.0_@babel+runtime@7.28.4_@coinbase+wallet-sdk@4.3.0_@sentry+core_c18d9eeb11a9008f1fb4e8eb02e41d1d/node_modules/@web3auth/no-modal/dist/lib.esm/connectors/injected-evm-connector/injectedEvmConnector.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s({
+    "InjectedEvmConnector": ()=>InjectedEvmConnector,
+    "injectedEvmConnector": ()=>injectedEvmConnector
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$babel$2b$runtime$40$7$2e$28$2e$4$2f$node_modules$2f40$babel$2f$runtime$2f$helpers$2f$esm$2f$defineProperty$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@babel+runtime@7.28.4/node_modules/@babel/runtime/helpers/esm/defineProperty.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$utils$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@web3auth+no-modal@10.9.0_@babel+runtime@7.28.4_@coinbase+wallet-sdk@4.3.0_@sentry+core_c18d9eeb11a9008f1fb4e8eb02e41d1d/node_modules/@web3auth/no-modal/dist/lib.esm/base/utils.js [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$connectors$2f$base$2d$evm$2d$connector$2f$baseEvmConnector$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@web3auth+no-modal@10.9.0_@babel+runtime@7.28.4_@coinbase+wallet-sdk@4.3.0_@sentry+core_c18d9eeb11a9008f1fb4e8eb02e41d1d/node_modules/@web3auth/no-modal/dist/lib.esm/connectors/base-evm-connector/baseEvmConnector.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$chain$2f$IChainInterface$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@web3auth+no-modal@10.9.0_@babel+runtime@7.28.4_@coinbase+wallet-sdk@4.3.0_@sentry+core_c18d9eeb11a9008f1fb4e8eb02e41d1d/node_modules/@web3auth/no-modal/dist/lib.esm/base/chain/IChainInterface.js [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$toruslabs$2b$base$2d$controllers$40$8$2e$10$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$sentry$2b$core$40$9$2e$22$2e$0_bufferutil_ef1d9b5bbfb85dece8035b6ce8ce91c3$2f$node_modules$2f40$toruslabs$2f$base$2d$controllers$2f$dist$2f$lib$2e$esm$2f$Network$2f$INetworkController$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@toruslabs+base-controllers@8.10.0_@babel+runtime@7.28.4_@sentry+core@9.22.0_bufferutil_ef1d9b5bbfb85dece8035b6ce8ce91c3/node_modules/@toruslabs/base-controllers/dist/lib.esm/Network/INetworkController.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$connector$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@web3auth+no-modal@10.9.0_@babel+runtime@7.28.4_@coinbase+wallet-sdk@4.3.0_@sentry+core_c18d9eeb11a9008f1fb4e8eb02e41d1d/node_modules/@web3auth/no-modal/dist/lib.esm/base/connector/constants.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$loglevel$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@web3auth+no-modal@10.9.0_@babel+runtime@7.28.4_@coinbase+wallet-sdk@4.3.0_@sentry+core_c18d9eeb11a9008f1fb4e8eb02e41d1d/node_modules/@web3auth/no-modal/dist/lib.esm/base/loglevel.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$errors$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@web3auth+no-modal@10.9.0_@babel+runtime@7.28.4_@coinbase+wallet-sdk@4.3.0_@sentry+core_c18d9eeb11a9008f1fb4e8eb02e41d1d/node_modules/@web3auth/no-modal/dist/lib.esm/base/errors/index.js [app-client] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+;
+class InjectedEvmConnector extends __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$connectors$2f$base$2d$evm$2d$connector$2f$baseEvmConnector$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["BaseEvmConnector"] {
+    get provider() {
+        if (this.status !== __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$connector$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTOR_STATUS"].NOT_READY && this.injectedProvider) {
+            return this.injectedProvider;
+        }
+        return null;
+    }
+    set provider(_) {
+        throw new Error("Not implemented");
+    }
+    async init(options) {
+        await super.init(options);
+        const chainConfig = this.coreOptions.chains.find((x)=>x.chainId === options.chainId);
+        super.checkInitializationRequirements({
+            chainConfig
+        });
+        this.status = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$connector$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTOR_STATUS"].READY;
+        this.emit(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$connector$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTOR_EVENTS"].READY, this.name);
+        try {
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$loglevel$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["log"].debug("initializing ".concat(this.name, " injected connector"));
+            if (options.autoConnect) {
+                this.rehydrated = true;
+                const provider = await this.connect({
+                    chainId: options.chainId,
+                    getIdentityToken: false
+                });
+                if (!provider) {
+                    this.rehydrated = false;
+                    throw __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$errors$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["WalletLoginError"].connectionError("Failed to rehydrate.");
+                }
+            }
+        } catch (error) {
+            this.emit(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$connector$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTOR_EVENTS"].REHYDRATION_ERROR, error);
+        }
+    }
+    async connect(param) {
+        let { chainId, getIdentityToken } = param;
+        super.checkConnectionRequirements();
+        if (!this.injectedProvider) throw __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$errors$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["WalletLoginError"].connectionError("Injected provider is not available");
+        const chainConfig = this.coreOptions.chains.find((x)=>x.chainId === chainId);
+        if (!chainConfig) throw __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$errors$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["WalletLoginError"].connectionError("Chain config is not available");
+        this.status = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$connector$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTOR_STATUS"].CONNECTING;
+        this.emit(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$connector$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTOR_EVENTS"].CONNECTING, {
+            connector: this.name
+        });
+        try {
+            await this.injectedProvider.request({
+                method: "eth_requestAccounts"
+            });
+            // switch chain if not connected to the right chain
+            if (this.injectedProvider.chainId !== chainConfig.chainId) {
+                try {
+                    await this.switchChain(chainConfig, true);
+                } catch (e) {
+                    await this.addChain(chainConfig, true);
+                    await this.switchChain(chainConfig, true);
+                }
+            }
+            this.status = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$connector$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTOR_STATUS"].CONNECTED;
+            const accountDisconnectHandler = (accounts)=>{
+                if (accounts.length === 0) {
+                    var _this$injectedProvide;
+                    this.disconnect();
+                    if ((_this$injectedProvide = this.injectedProvider) !== null && _this$injectedProvide !== void 0 && _this$injectedProvide.removeListener) this.injectedProvider.removeListener("accountsChanged", accountDisconnectHandler);
+                }
+            };
+            this.injectedProvider.on("accountsChanged", accountDisconnectHandler);
+            let identityTokenInfo;
+            if (getIdentityToken) {
+                identityTokenInfo = await this.getIdentityToken();
+            }
+            this.emit(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$connector$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTOR_EVENTS"].CONNECTED, {
+                connector: this.name,
+                reconnected: this.rehydrated,
+                provider: this.injectedProvider,
+                identityTokenInfo
+            });
+            return this.injectedProvider;
+        } catch (error) {
+            // ready again to be connected
+            this.status = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$connector$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTOR_STATUS"].READY;
+            if (!this.rehydrated) this.emit(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$connector$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTOR_EVENTS"].ERRORED, error);
+            this.rehydrated = false;
+            if (error instanceof __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$errors$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Web3AuthError"]) throw error;
+            throw __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$errors$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["WalletLoginError"].connectionError("Failed to login with ".concat(this.name, " injected wallet"));
+        }
+    }
+    async disconnect() {
+        let options = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {
+            cleanup: false
+        };
+        if (!this.injectedProvider) throw __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$errors$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["WalletLoginError"].connectionError("Injected provider is not available");
+        await super.disconnectSession();
+        if (typeof this.injectedProvider.removeAllListeners !== "undefined") this.injectedProvider.removeAllListeners();
+        try {
+            await this.injectedProvider.request({
+                method: "wallet_revokePermissions",
+                params: [
+                    {
+                        eth_accounts: {}
+                    }
+                ]
+            });
+        } catch (e) {
+        // ignore error
+        }
+        if (options.cleanup) {
+            this.status = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$connector$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTOR_STATUS"].NOT_READY;
+            this.injectedProvider = null;
+        } else {
+            // ready to be connected again
+            this.status = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$connector$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTOR_STATUS"].READY;
+        }
+        await super.disconnect();
+    }
+    async getUserInfo() {
+        if (this.status !== __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$connector$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTOR_STATUS"].CONNECTED) throw __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$errors$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["WalletLoginError"].notConnectedError("Not connected with wallet, Please login/connect first");
+        return {};
+    }
+    async addChain(chainConfig) {
+        let _init = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : false;
+        if (!this.injectedProvider) throw __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$errors$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["WalletLoginError"].connectionError("Injected provider is not available");
+        await this.injectedProvider.request({
+            method: "wallet_addEthereumChain",
+            params: [
+                {
+                    chainId: chainConfig.chainId,
+                    chainName: chainConfig.displayName,
+                    rpcUrls: [
+                        chainConfig.rpcTarget
+                    ],
+                    blockExplorerUrls: [
+                        chainConfig.blockExplorerUrl
+                    ],
+                    nativeCurrency: {
+                        name: chainConfig.tickerName,
+                        symbol: chainConfig.ticker,
+                        decimals: chainConfig.decimals || 18
+                    },
+                    iconUrls: [
+                        chainConfig.logo
+                    ]
+                }
+            ]
+        });
+    }
+    async switchChain(params) {
+        let init = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : false;
+        if (!this.injectedProvider) throw __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$errors$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["WalletLoginError"].connectionError("Injected provider is not available");
+        super.checkSwitchChainRequirements(params, init);
+        await this.injectedProvider.request({
+            method: "wallet_switchEthereumChain",
+            params: [
+                {
+                    chainId: params.chainId
+                }
+            ]
+        });
+    }
+    async enableMFA() {
+        throw new Error("Method Not implemented");
+    }
+    async manageMFA() {
+        throw new Error("Method Not implemented");
+    }
+    constructor(options){
+        super(options);
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$babel$2b$runtime$40$7$2e$28$2e$4$2f$node_modules$2f40$babel$2f$runtime$2f$helpers$2f$esm$2f$defineProperty$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(this, "connectorNamespace", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$chain$2f$IChainInterface$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["CONNECTOR_NAMESPACES"].EIP155);
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$babel$2b$runtime$40$7$2e$28$2e$4$2f$node_modules$2f40$babel$2f$runtime$2f$helpers$2f$esm$2f$defineProperty$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(this, "currentChainNamespace", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$toruslabs$2b$base$2d$controllers$40$8$2e$10$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$sentry$2b$core$40$9$2e$22$2e$0_bufferutil_ef1d9b5bbfb85dece8035b6ce8ce91c3$2f$node_modules$2f40$toruslabs$2f$base$2d$controllers$2f$dist$2f$lib$2e$esm$2f$Network$2f$INetworkController$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHAIN_NAMESPACES"].EIP155);
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$babel$2b$runtime$40$7$2e$28$2e$4$2f$node_modules$2f40$babel$2f$runtime$2f$helpers$2f$esm$2f$defineProperty$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(this, "type", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$connector$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTOR_CATEGORY"].EXTERNAL);
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$babel$2b$runtime$40$7$2e$28$2e$4$2f$node_modules$2f40$babel$2f$runtime$2f$helpers$2f$esm$2f$defineProperty$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(this, "name", void 0);
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$babel$2b$runtime$40$7$2e$28$2e$4$2f$node_modules$2f40$babel$2f$runtime$2f$helpers$2f$esm$2f$defineProperty$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(this, "isInjected", true);
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$babel$2b$runtime$40$7$2e$28$2e$4$2f$node_modules$2f40$babel$2f$runtime$2f$helpers$2f$esm$2f$defineProperty$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(this, "status", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$connector$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTOR_STATUS"].NOT_READY);
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$babel$2b$runtime$40$7$2e$28$2e$4$2f$node_modules$2f40$babel$2f$runtime$2f$helpers$2f$esm$2f$defineProperty$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(this, "injectedProvider", null);
+        this.name = options.name;
+        this.injectedProvider = options.provider;
+        this.icon = options.icon;
+    }
+}
+const injectedEvmConnector = (providerDetail)=>{
+    return (param)=>{
+        let { coreOptions } = param;
+        return new InjectedEvmConnector({
+            name: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$base$2f$utils$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["normalizeWalletName"])(providerDetail.info.name),
+            provider: providerDetail.provider,
+            icon: providerDetail.info.icon,
+            coreOptions
+        });
+    };
+};
+;
+}),
+"[project]/node_modules/.pnpm/@web3auth+no-modal@10.9.0_@babel+runtime@7.28.4_@coinbase+wallet-sdk@4.3.0_@sentry+core_c18d9eeb11a9008f1fb4e8eb02e41d1d/node_modules/@web3auth/no-modal/dist/lib.esm/connectors/injected-evm-connector/index.js [app-client] (ecmascript) <exports>": ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s({
+    "createMipd": ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mipd$40$0$2e$0$2e$7_typescript$40$5$2e$8$2e$3$2f$node_modules$2f$mipd$2f$dist$2f$esm$2f$store$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createStore"],
+    "injectedEvmConnector": ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$connectors$2f$injected$2d$evm$2d$connector$2f$injectedEvmConnector$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["injectedEvmConnector"]
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$connectors$2f$injected$2d$evm$2d$connector$2f$injectedEvmConnector$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@web3auth+no-modal@10.9.0_@babel+runtime@7.28.4_@coinbase+wallet-sdk@4.3.0_@sentry+core_c18d9eeb11a9008f1fb4e8eb02e41d1d/node_modules/@web3auth/no-modal/dist/lib.esm/connectors/injected-evm-connector/injectedEvmConnector.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mipd$40$0$2e$0$2e$7_typescript$40$5$2e$8$2e$3$2f$node_modules$2f$mipd$2f$dist$2f$esm$2f$store$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/mipd@0.0.7_typescript@5.8.3/node_modules/mipd/dist/esm/store.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$connectors$2f$injected$2d$evm$2d$connector$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@web3auth+no-modal@10.9.0_@babel+runtime@7.28.4_@coinbase+wallet-sdk@4.3.0_@sentry+core_c18d9eeb11a9008f1fb4e8eb02e41d1d/node_modules/@web3auth/no-modal/dist/lib.esm/connectors/injected-evm-connector/index.js [app-client] (ecmascript) <locals>");
+}),
+"[project]/node_modules/.pnpm/@web3auth+no-modal@10.9.0_@babel+runtime@7.28.4_@coinbase+wallet-sdk@4.3.0_@sentry+core_c18d9eeb11a9008f1fb4e8eb02e41d1d/node_modules/@web3auth/no-modal/dist/lib.esm/connectors/injected-evm-connector/index.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s({
+    "createMipd": ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$connectors$2f$injected$2d$evm$2d$connector$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$exports$3e$__["createMipd"],
+    "injectedEvmConnector": ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$connectors$2f$injected$2d$evm$2d$connector$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$exports$3e$__["injectedEvmConnector"]
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$connectors$2f$injected$2d$evm$2d$connector$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@web3auth+no-modal@10.9.0_@babel+runtime@7.28.4_@coinbase+wallet-sdk@4.3.0_@sentry+core_c18d9eeb11a9008f1fb4e8eb02e41d1d/node_modules/@web3auth/no-modal/dist/lib.esm/connectors/injected-evm-connector/index.js [app-client] (ecmascript) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$web3auth$2b$no$2d$modal$40$10$2e$9$2e$0_$40$babel$2b$runtime$40$7$2e$28$2e$4_$40$coinbase$2b$wallet$2d$sdk$40$4$2e$3$2e$0_$40$sentry$2b$core_c18d9eeb11a9008f1fb4e8eb02e41d1d$2f$node_modules$2f40$web3auth$2f$no$2d$modal$2f$dist$2f$lib$2e$esm$2f$connectors$2f$injected$2d$evm$2d$connector$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$exports$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@web3auth+no-modal@10.9.0_@babel+runtime@7.28.4_@coinbase+wallet-sdk@4.3.0_@sentry+core_c18d9eeb11a9008f1fb4e8eb02e41d1d/node_modules/@web3auth/no-modal/dist/lib.esm/connectors/injected-evm-connector/index.js [app-client] (ecmascript) <exports>");
+}),
+}]);
+
+//# sourceMappingURL=57364_%40web3auth_no-modal_dist_lib_esm_connectors_injected-evm-connector_9df9af0f._.js.map

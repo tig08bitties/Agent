@@ -1,0 +1,27 @@
+{
+  "name": "covenant-agent-extensions",
+  "version": "1.0.0",
+  "description": "Hyper terminal extensions for Covenant Agent - Sphinx, GitHub, Replit Bots, Cloudagents, and Jules integration",
+  "main": "index.js",
+  "keywords": [
+    "hyper",
+    "hyper-plugin",
+    "covenant-agent",
+    "sphinx",
+    "github",
+    "jules",
+    "replit",
+    "cloudagent"
+  ],
+  "author": "Covenant Agent System",
+  "license": "MIT",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "fs-extra": "^11.1.1",
+    "path": "^0.12.7",
+    "http": "^0.0.1-security"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

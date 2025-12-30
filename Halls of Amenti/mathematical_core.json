@@ -1,0 +1,187 @@
+{
+  "mathematical_truths": {
+    "master_seed_sha512": {
+      "value": "09d4f22c560b902b785ddb0655c51ee68184d2aa8a6c20b693da3c6391bf9965dd8a0e8be5cb5027b0195be5d70ffc7b518c76c03d5e7ea6ce8db832635b2a9a",
+      "valid": true,
+      "source": "Formula.txt",
+      "proven": true
+    },
+    "primary_hash": {
+      "value": "883e529de31c586131a831a9953113a6d75edd87c97369a2fa3a791209952f5a",
+      "valid": true,
+      "source": "Formula.txt",
+      "proven": true
+    },
+    "secondary_hash": {
+      "value": "e374c94009e32a6c3cc8f89ea6102ce6886c3302324aaaf1563ace8f10332ebf",
+      "valid": true,
+      "source": "Formula.txt",
+      "proven": true
+    },
+    "rootchain_numbers": {
+      "value": [
+        82,
+        111,
+        212,
+        295,
+        333,
+        354,
+        369,
+        419,
+        512,
+        605,
+        687,
+        777,
+        888,
+        929,
+        1011,
+        2025,
+        3335,
+        4321,
+        5250,
+        55088,
+        57103
+      ],
+      "count": 21,
+      "valid": true,
+      "source": "Formula.txt",
+      "proven": true
+    },
+    "genesis_anchor": {
+      "value": 335044,
+      "valid": true,
+      "source": "Formula.txt",
+      "proven": true
+    },
+    "capstone": {
+      "value": 840000,
+      "valid": true,
+      "source": "Formula.txt",
+      "proven": true
+    },
+    "union_product": {
+      "value": 83665740401110,
+      "valid": true,
+      "source": "Formula.txt",
+      "proven": true
+    },
+    "temporal_chain": {
+      "dates": [
+        {
+          "date": "1989-09-09",
+          "event": "Origi"
+        },
+        {
+          "date": "2024-04-24",
+          "event": "I"
+        },
+        {
+          "date": "2025-07-12",
+          "event": "Scroll & Sig"
+        },
+        {
+          "date": "2025-11-04",
+          "event": "Cou"
+        },
+        {
+          "date": "2025-12-16",
+          "event": "Ledger Co"
+        }
+      ],
+      "count": 5,
+      "valid": true,
+      "source": "Formula.txt",
+      "proven": true
+    },
+    "derivation_path": {
+      "value": "m/48'/7'/7'/7",
+      "valid": true,
+      "source": "Tarot.txt",
+      "proven": true
+    }
+  },
+  "proven_relationships": {
+    "anchor_to_capstone": {
+      "genesis_anchor": 335044,
+      "capstone": 840000,
+      "difference": 504956,
+      "ratio": 2.5071333914351546,
+      "proven": true
+    },
+    "rootchain_sum": {
+      "numbers": [
+        82,
+        111,
+        212,
+        295,
+        333,
+        354,
+        369,
+        419,
+        512,
+        605,
+        687,
+        777,
+        888,
+        929,
+        1011,
+        2025,
+        3335,
+        4321,
+        5250,
+        55088,
+        57103
+      ],
+      "sum": 134706,
+      "count": 21,
+      "average": 6414.571428571428,
+      "proven": true
+    },
+    "tarot_numerology": {
+      "sum": 48,
+      "components": [
+        7,
+        3,
+        20,
+        18
+      ],
+      "reduction": 12,
+      "final_reduction": 3,
+      "matches_bip48": true,
+      "proven": true
+    },
+    "path_structure": {
+      "path": "m/48'/7'/7'/7",
+      "contains_48": true,
+      "contains_triple_7": true,
+      "valid_bip48": true,
+      "proven": true
+    }
+  },
+  "hash_verification": {
+    "chain_valid": true,
+    "links": [
+      {
+        "element": "master_seed",
+        "hash": "09d4f22c560b902b785ddb0655c51ee68184d2aa8a6c20b693da3c6391bf9965dd8a0e8be5cb5027b0195be5d70ffc7b518c76c03d5e7ea6ce8db832635b2a9a",
+        "algorithm": "SHA-512",
+        "length": 128,
+        "valid": true
+      },
+      {
+        "element": "primary_hash",
+        "hash": "883e529de31c586131a831a9953113a6d75edd87c97369a2fa3a791209952f5a",
+        "algorithm": "SHA-256",
+        "length": 64,
+        "valid": true
+      }
+    ]
+  },
+  "source_trace": [
+    {
+      "source_file": "/root/Halls of Amenti/organized_passport/docs/covenant_documents/Formula.txt",
+      "elements_found": 9,
+      "timestamp": "2025-12-28"
+    }
+  ]
+}

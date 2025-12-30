@@ -1,0 +1,407 @@
+[
+  {
+    "title": "Clai - Pydantic AI",
+    "url": "https://ai.pydantic.dev/cli/",
+    "is_source_local": false,
+    "is_source_both": false,
+    "description": "<strong>The CLI will start with the provided conversation history, allowing the agent to refer back to previous exchanges and maintain context throughout the session</strong>. ... This will start a web server (default: http://127.0.0.1:7932) with a chat interface.",
+    "profile": {
+      "name": "PydanticAI",
+      "url": "https://ai.pydantic.dev/cli/",
+      "long_name": "ai.pydantic.dev",
+      "img": "https://imgs.search.brave.com/DgP6LDhGh-U_S8B9RdsJFinR9pd6e1BW2zGJ3o_NbR0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODUxMDcyZjdh/OTllY2ExZTZiZjBk/MTE2OWNlZmQxYmQ3/NjNiMDM0YjRmZmU4/ZjE4OTBiMzEwNWNl/MzA0NmYzNC9haS5w/eWRhbnRpYy5kZXYv"
+    },
+    "language": "en",
+    "family_friendly": true,
+    "type": "search_result",
+    "subtype": "generic",
+    "is_live": false,
+    "meta_url": {
+      "scheme": "https",
+      "netloc": "ai.pydantic.dev",
+      "hostname": "ai.pydantic.dev",
+      "favicon": "https://imgs.search.brave.com/DgP6LDhGh-U_S8B9RdsJFinR9pd6e1BW2zGJ3o_NbR0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODUxMDcyZjdh/OTllY2ExZTZiZjBk/MTE2OWNlZmQxYmQ3/NjNiMDM0YjRmZmU4/ZjE4OTBiMzEwNWNl/MzA0NmYzNC9haS5w/eWRhbnRpYy5kZXYv",
+      "path": "\u203a cli"
+    },
+    "thumbnail": {
+      "src": "https://imgs.search.brave.com/32FRc4OmniKYtDNNUV1fUMF0v1aowTfrz5v-IACkdyY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9haS5w/eWRhbnRpYy5kZXYv/YXNzZXRzL2ltYWdl/cy9zb2NpYWwvY2xp/LnBuZw",
+      "original": "https://ai.pydantic.dev/assets/images/social/cli.png",
+      "logo": false
+    },
+    "cluster_type": "generic",
+    "cluster": [
+      {
+        "title": "Pydantic AI",
+        "url": "https://ai.pydantic.dev/",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "This format is defined in Markdown and suited for LLMs <strong>and</strong> <strong>AI</strong> coding assistants and agents. ... llms.txt: a file containing a brief description of the project, along with links to the different sections of the documentation. The structure of this file is described in <strong>details</strong> here.",
+        "family_friendly": true
+      },
+      {
+        "title": "Function Tools",
+        "url": "https://ai.pydantic.dev/tools/",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "They&#x27;re useful when you want to ... action and use the result, when it is impractical or impossible to put all the context an agent might need into the instructions, or when you want to make agents&#x27; behavior more deterministic or reliable by deferring some of the logic required to generate a response to another (not necessarily <strong>AI</strong>-powered) tool. If you want a model to be able to call a <strong>function</strong> as its final ...",
+        "family_friendly": true
+      },
+      {
+        "title": "Agents",
+        "url": "https://ai.pydantic.dev/agents/",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "In typing terms, agents are generic ... type, and if you choose to use static type checking it should work well with Pydantic <strong>AI</strong>. Here&#x27;s a toy example of an agent that simulates a roulette wheel: ... from pydantic_<strong>ai</strong> import Agent, RunContext roulette_agent = Agent( # (1)! &#x27;gateway/openai:gpt-5&#x27;, deps_type=int, output_type=bool, system_prompt=( &#x27;Use the `roulette_wheel` <strong>function</strong> to see if ...",
+        "family_friendly": true
+      },
+      {
+        "title": "Installation",
+        "url": "https://ai.pydantic.dev/install/",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "Pydantic <strong>AI</strong> is available on PyPI as pydantic-<strong>ai</strong> so installation is as simple as: \u00b7 This installs the pydantic_<strong>ai</strong> package, core dependencies, and libraries required to use all the models included in Pydantic <strong>AI</strong>. If you want to install only those dependencies required to use a specific model, ...",
+        "family_friendly": true
+      }
+    ],
+    "extra_snippets": [
+      "The CLI will start with the provided conversation history, allowing the agent to refer back to previous exchanges and maintain context throughout the session. ... This will start a web server (default: http://127.0.0.1:7932) with a chat interface. You can also serve an existing agent. For example, if you have an agent defined in my_agent.py: ... from pydantic_ai import Agent my_agent = Agent('gateway/openai:gpt-5', instructions='You are a helpful assistant.')",
+      "from pydantic_ai import Agent agent = Agent('gateway/openai:gpt-5', instructions='You always respond in Italian.') agent.to_cli_sync()",
+      "from pydantic_ai import Agent agent = Agent('openai:gpt-5', instructions='You always respond in Italian.') agent.to_cli_sync()",
+      "You can use it to chat with various LLMs and quickly get answers, right from the command line, or spin up a uvicorn server to chat with your Pydantic AI agents from your browser. ... You'll need to set an environment variable depending on the provider you intend to use. E.g. if you're using OpenAI, set the OPENAI_API_KEY environment variable: ... Then running clai will start an interactive session where you can chat with the AI model."
+    ]
+  },
+  {
+    "title": "Top 5 AI-Powered CLI Tools for Coding",
+    "url": "https://www.f22labs.com/blogs/top-5-ai-powered-cli-tools-for-coding/",
+    "is_source_local": false,
+    "is_source_both": false,
+    "description": "Adding AI features to the CLI builds on that strength by <strong>automating routine steps such as writing boilerplate code, generating tests, or fixing small bugs</strong>. Instead of switching between a browser and your editor, you can describe a task once ...",
+    "page_age": "2025-09-12T00:00:00",
+    "profile": {
+      "name": "F22 Labs",
+      "url": "https://www.f22labs.com/blogs/top-5-ai-powered-cli-tools-for-coding/",
+      "long_name": "f22labs.com",
+      "img": "https://imgs.search.brave.com/kHeH566al12PWnweAgICKRPpbbpfiVFbxo0T9WVbhAg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjYyNWU4ZjBl/YzU0MTIwZjgwZGQ0/MmQwYWQwYzVlOWFk/ZWZkZmVkNzAyNzk1/NTQ5ODcyYzg5MTQ4/NWIyYmMyYi93d3cu/ZjIybGFicy5jb20v"
+    },
+    "language": "en",
+    "family_friendly": true,
+    "type": "search_result",
+    "subtype": "generic",
+    "is_live": false,
+    "meta_url": {
+      "scheme": "https",
+      "netloc": "f22labs.com",
+      "hostname": "www.f22labs.com",
+      "favicon": "https://imgs.search.brave.com/kHeH566al12PWnweAgICKRPpbbpfiVFbxo0T9WVbhAg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjYyNWU4ZjBl/YzU0MTIwZjgwZGQ0/MmQwYWQwYzVlOWFk/ZWZkZmVkNzAyNzk1/NTQ5ODcyYzg5MTQ4/NWIyYmMyYi93d3cu/ZjIybGFicy5jb20v",
+      "path": "\u203a blogs  \u203a top-5-ai-powered-cli-tools-for-coding"
+    },
+    "thumbnail": {
+      "src": "https://imgs.search.brave.com/HeAsGo5b8ug8VErY5DO2KMoqwVVsK4wvTJg_zeiurJI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9naG9z/dC5mMjJsYWJzLmNs/b3VkL2NvbnRlbnQv/aW1hZ2VzLzIwMjUv/MDkvVG9wLTUtQUkt/UG93ZXJlZC1DTEkt/VG9vbHMtZm9yLUNv/ZGluZy5qcGc",
+      "original": "https://ghost.f22labs.cloud/content/images/2025/09/Top-5-AI-Powered-CLI-Tools-for-Coding.jpg",
+      "logo": false
+    },
+    "age": "September 12, 2025",
+    "extra_snippets": [
+      "In this article, you\u2019ll learn about 5 AI-powered CLI tools, Codebuff, Gemini CLI, Claude Code, Amazon Q, and Codex, and see how they stack up. By the end, you\u2019ll know which tool fits your coding style, how it can save you time, reduce mistakes, and make your work feel more fun. According to a recent McKinsey report, about \u00b7 78% of organizations now use AI tools in at least one business function, which includes code-generation and automation.",
+      "I hope you\u2019ve now got a much clearer idea of how AI-powered CLI tools like Codebuff, Gemini CLI, Claude Code, Amazon Q, and Codex can fit into your terminal workflow. Each one approaches coding help a little differently, from generating functions to managing AWS tasks, but all of them aim to cut down repetitive work and reduce context switching.",
+      "Command-line interfaces have always been a staple for developers because they\u2019re fast, scriptable, and keep you close to your code. Adding AI features to the CLI builds on that strength by automating routine steps such as writing boilerplate code, generating tests, or fixing small bugs. Instead of switching between a browser and your editor, you can describe a task once and run it directly from the terminal.",
+      "This approach cuts down on repetitive work and context-switching, freeing up time for the parts of coding that require real design and problem-solving. Whether you\u2019re working on a small personal project or a large codebase, AI-enabled CLI tools help streamline common tasks and keep your workflow focused, and in the next section, we\u2019ll look at five specific tools that show how this works in practice."
+    ]
+  },
+  {
+    "title": "Google announces Gemini CLI: your open-source AI agent",
+    "url": "https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/",
+    "is_source_local": false,
+    "is_source_both": false,
+    "description": "It\u2019s a versatile, local utility you can use for a wide range of tasks, from <strong>content generation and problem solving to deep research and task management</strong>. We\u2019ve also integrated Gemini CLI with Google\u2019s AI coding assistant, Gemini Code Assist, ...",
+    "page_age": "2025-07-01T15:52:09",
+    "profile": {
+      "name": "Google",
+      "url": "https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/",
+      "long_name": "blog.google",
+      "img": "https://imgs.search.brave.com/PcVwo_-FQqjJWSXluUT2BEVUtYRteT-Ff9jP9ZVIhvY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjA1MTY4ZWRi/Y2I3YmU3NTYxZWI2/MDMyNmMzMWMyOGVj/OWI4NjYwYzE3YzU0/YTA3MmViNjJhMmMy/YTdmZjE1MS9ibG9n/Lmdvb2dsZS8"
+    },
+    "language": "en",
+    "family_friendly": true,
+    "type": "search_result",
+    "subtype": "article",
+    "is_live": false,
+    "meta_url": {
+      "scheme": "https",
+      "netloc": "blog.google",
+      "hostname": "blog.google",
+      "favicon": "https://imgs.search.brave.com/PcVwo_-FQqjJWSXluUT2BEVUtYRteT-Ff9jP9ZVIhvY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjA1MTY4ZWRi/Y2I3YmU3NTYxZWI2/MDMyNmMzMWMyOGVj/OWI4NjYwYzE3YzU0/YTA3MmViNjJhMmMy/YTdmZjE1MS9ibG9n/Lmdvb2dsZS8",
+      "path": "\u203a technology  \u203a developers  \u203a introducing-gemini-cli-open-source-ai-agent"
+    },
+    "thumbnail": {
+      "src": "https://imgs.search.brave.com/1f4VV6uQ7UiBAdKPTP4CPQWdeQ48eNl8mJI2tXbeg_Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zdG9y/YWdlLmdvb2dsZWFw/aXMuY29tL2d3ZWIt/dW5pYmxvZy1wdWJs/aXNoLXByb2QvaW1h/Z2VzL0dlbWluaV9D/TElfSGVyb19GaW5h/bC53aWR0aC0xMzAw/LnBuZw",
+      "original": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_CLI_Hero_Final.width-1300.png",
+      "logo": false
+    },
+    "age": "July 1, 2025",
+    "extra_snippets": [
+      "Free and open source, Gemini CLI brings Gemini directly into developers\u2019 terminals \u2014 with unmatched access for individuals. ... Ryan J. Salva ... Gemini CLI is here to boost your developer experience. This open-source AI agent brings Gemini directly into your terminal for coding, problem-solving, and task management.",
+      "The terminal\u2019s efficiency, ubiquity and portability make it the go-to utility for getting work done. And as developers' reliance on the terminal endures, so does the demand for integrated AI assistance. That\u2019s why we\u2019re introducing Gemini CLI, an open-source AI agent that brings the power of Gemini directly into your terminal.",
+      "It\u2019s a versatile, local utility you can use for a wide range of tasks, from content generation and problem solving to deep research and task management. We\u2019ve also integrated Gemini CLI with Google\u2019s AI coding assistant, Gemini Code Assist, so that all developers \u2014 on free, Standard, and Enterprise Code Assist plans \u2014 get prompt-driven, AI-first coding in both VS Code and Gemini CLI.",
+      "To ensure you rarely, if ever, hit a limit during this preview, we offer the industry\u2019s largest allowance: 60 model requests per minute and 1,000 requests per day at no charge. If you\u2019re a professional developer who needs to run multiple agents simultaneously, or if you prefer to use specific models, you can use a Google AI Studio or Vertex AI key for usage-based billing or get a Gemini Code Assist Standard or Enterprise license. Gemini CLI offers the industry\u2019s largest usage allowance at 60 model requests per minute and 1,000 model requests per day at no charge"
+    ]
+  },
+  {
+    "title": "GitHub - offline-ai/cli: The AI agent script CLI for Programmable Prompt Engine.",
+    "url": "https://github.com/offline-ai/cli",
+    "is_source_local": false,
+    "is_source_both": false,
+    "description": "Displays installation properties of a plugin. USAGE $ ai plugins inspect PLUGIN... ARGUMENTS PLUGIN... [default: .] Plugin to inspect. FLAGS -h, --help Show CLI help. -v, --verbose GLOBAL FLAGS --json Format output as json. DESCRIPTION Displays installation properties of a plugin.",
+    "profile": {
+      "name": "GitHub",
+      "url": "https://github.com/offline-ai/cli",
+      "long_name": "github.com",
+      "img": "https://imgs.search.brave.com/xxsA4YxzaR0cl-DBsH9-lpv2gsif3KMYgM87p26bs_o/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWQyNWM1NjA5/ZjZmZjNlYzI2MDNk/N2VkNmJhYjE2MzZl/MDY5ZTMxMDUzZmY1/NmU3NWIzNWVmMjk0/NTBjMjJjZi9naXRo/dWIuY29tLw"
+    },
+    "language": "en",
+    "family_friendly": true,
+    "type": "search_result",
+    "subtype": "software",
+    "is_live": false,
+    "meta_url": {
+      "scheme": "https",
+      "netloc": "github.com",
+      "hostname": "github.com",
+      "favicon": "https://imgs.search.brave.com/xxsA4YxzaR0cl-DBsH9-lpv2gsif3KMYgM87p26bs_o/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWQyNWM1NjA5/ZjZmZjNlYzI2MDNk/N2VkNmJhYjE2MzZl/MDY5ZTMxMDUzZmY1/NmU3NWIzNWVmMjk0/NTBjMjJjZi9naXRo/dWIuY29tLw",
+      "path": "\u203a offline-ai  \u203a cli"
+    },
+    "thumbnail": {
+      "src": "https://imgs.search.brave.com/paIiyX2oTFFDmPrki8kGUzm1Gj08_wItYIxVdTQNygo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9vcGVu/Z3JhcGguZ2l0aHVi/YXNzZXRzLmNvbS9l/NGQxYWMxMDEwOGFh/MmQ3ZjY0ZDI1ZmEw/YWY0ZDdjYzE1Nzk1/OTkyYzFhOWYyZGU0/NTUyODM2MWY0OWU3/NTliL29mZmxpbmUt/YWkvY2xp",
+      "original": "https://opengraph.githubassets.com/e4d1ac10108aa2d7f64d25fa0af4d7cc15795992c1a9f2de45528361f49e759b/offline-ai/cli",
+      "logo": false
+    },
+    "extra_snippets": [
+      "Powerful, enabling event transmission seamlessly between client and server with numerous utility functions... Secure, supporting encrypted execution and usage limits for scripts(TODO)... Enable the local deployment and execution of large language models (LLMs) such as LLaMA, Qwen, Gemma, Phi, GLM, Mistral, and more. The AI Agent Script follows the Programmable Prompt Engine Specification. Visit the site for the detailed AI Agent script usage.",
+      "The AI agent script CLI for Programmable Prompt Engine. - offline-ai/cli",
+      "The !fn directive allows declaring JavaScript functions to extend script functionality. import configuration allows importing external scripts and modules. npm install -g @offline-ai/cli ai brain download QuantFactory/Phi-3-mini-4k-instruct-GGUF-v2 -q Q4_0 Downloading to ~/.local/share/ai/brain Downloading https://huggingface.co/QuantFactory/Phi-3-mini-4k-instruct-GGUF-v2/resolve/main/Phi-3-mini-4k-instruct.Q4_0.gguf...",
+      "Displays installation properties of a plugin. USAGE $ ai plugins inspect PLUGIN... ARGUMENTS PLUGIN... [default: .] Plugin to inspect. FLAGS -h, --help Show CLI help. -v, --verbose GLOBAL FLAGS --json Format output as json. DESCRIPTION Displays installation properties of a plugin."
+    ]
+  },
+  {
+    "title": "GitHub - google-gemini/gemini-cli: An open-source AI agent that brings the power of Gemini directly into your terminal.",
+    "url": "https://github.com/google-gemini/gemini-cli",
+    "is_source_local": false,
+    "is_source_both": false,
+    "description": "Gemini CLI is an open-source AI agent that brings the power of Gemini directly into your terminal. It provides lightweight access to Gemini, giving you the most direct path from your prompt to our model. Learn all about Gemini CLI in our documentation. \ud83c\udfaf Free tier: 60 requests/min and 1,000 requests/day with personal Google account.",
+    "profile": {
+      "name": "GitHub",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "long_name": "github.com",
+      "img": "https://imgs.search.brave.com/xxsA4YxzaR0cl-DBsH9-lpv2gsif3KMYgM87p26bs_o/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWQyNWM1NjA5/ZjZmZjNlYzI2MDNk/N2VkNmJhYjE2MzZl/MDY5ZTMxMDUzZmY1/NmU3NWIzNWVmMjk0/NTBjMjJjZi9naXRo/dWIuY29tLw"
+    },
+    "language": "en",
+    "family_friendly": true,
+    "type": "search_result",
+    "subtype": "software",
+    "is_live": false,
+    "meta_url": {
+      "scheme": "https",
+      "netloc": "github.com",
+      "hostname": "github.com",
+      "favicon": "https://imgs.search.brave.com/xxsA4YxzaR0cl-DBsH9-lpv2gsif3KMYgM87p26bs_o/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWQyNWM1NjA5/ZjZmZjNlYzI2MDNk/N2VkNmJhYjE2MzZl/MDY5ZTMxMDUzZmY1/NmU3NWIzNWVmMjk0/NTBjMjJjZi9naXRo/dWIuY29tLw",
+      "path": "\u203a google-gemini  \u203a gemini-cli"
+    },
+    "thumbnail": {
+      "src": "https://imgs.search.brave.com/wWu79Kk3zWA4IPn1aqWdLFZdu8q7kfH-ILW1Pr-xM3U/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXBv/c2l0b3J5LWltYWdl/cy5naXRodWJ1c2Vy/Y29udGVudC5jb20v/OTY4MTk3MjE2Lzg1/MjJhNzU3LTU2MzIt/NGZhNC04ZDAxLWZj/YzEyMTM5MGNiMQ",
+      "original": "https://repository-images.githubusercontent.com/968197216/8522a757-5632-4fa4-8d01-fcc121390cb1",
+      "logo": false
+    },
+    "extra_snippets": [
+      "On-demand Assistance: Mention @gemini-cli in issues and pull requests for help with debugging, explanations, or task delegation \u00b7 Custom Workflows: Build automated, scheduled and on-demand workflows tailored to your team's needs \u00b7 Choose the authentication method that best fits your needs: \u2728 Best for: Individual developers as well as anyone who has a Gemini Code Assist License. (see quota limits and terms of service for details)",
+      "Gemini CLI is an open-source AI agent that brings the power of Gemini directly into your terminal. It provides lightweight access to Gemini, giving you the most direct path from your prompt to our model. Learn all about Gemini CLI in our documentation. \ud83c\udfaf Free tier: 60 requests/min and 1,000 requests/day with personal Google account.",
+      "git clone https://github.com/google-gemini/gemini-cli cd gemini-cli gemini > Give me a summary of all of the changes that went in yesterday \u00b7 Quickstart Guide - Get up and running quickly. Authentication Setup - Detailed auth configuration.",
+      "See Releases for more details. New preview releases will be published each week at UTC 2359 on Tuesdays. These releases will not have been fully vetted and may contain regressions or other outstanding issues. Please help us test and install with preview tag. ... New stable releases will be published each week at UTC 2000 on Tuesdays, this will be the full promotion of last week's preview release + any bug fixes and validations."
+    ]
+  },
+  {
+    "title": "Building Your First AI CLI Tool Using OpenAI\u2019s API - DEV Community",
+    "url": "https://dev.to/mrflamez_/building-your-first-ai-cli-tool-using-openais-api-1d4a",
+    "is_source_local": false,
+    "is_source_both": false,
+    "description": "For example, an Electron-based application could offer text summarization directly on the user\u2019s desktop without needing to open a browser or terminal. In essence, the fundamental principles\u2014obtaining an API key, sending requests to OpenAI\u2019s endpoints, and handling responses\u2014apply across various environments. Whether it\u2019s a CLI tool, a web service, a mobile app, or a desktop client, you can integrate AI functionalities anywhere you need them.",
+    "page_age": "2024-12-16T06:47:28",
+    "profile": {
+      "name": "DEV Community",
+      "url": "https://dev.to/mrflamez_/building-your-first-ai-cli-tool-using-openais-api-1d4a",
+      "long_name": "dev.to",
+      "img": "https://imgs.search.brave.com/UUpF8I85K--vkQzrhameM7iRPRU5VCTXyWbS4sk6G2g/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTg5MTcxNDBh/N2U4ODc4MDg0NWQ4/MzU0YWJkNDY3ZWRm/MjUxY2U1YjY5MzJm/YWRlOTI4YjAyZDI1/ZjU0MmJjNi9kZXYu/dG8v"
+    },
+    "language": "en",
+    "family_friendly": true,
+    "type": "search_result",
+    "subtype": "article",
+    "is_live": false,
+    "meta_url": {
+      "scheme": "https",
+      "netloc": "dev.to",
+      "hostname": "dev.to",
+      "favicon": "https://imgs.search.brave.com/UUpF8I85K--vkQzrhameM7iRPRU5VCTXyWbS4sk6G2g/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTg5MTcxNDBh/N2U4ODc4MDg0NWQ4/MzU0YWJkNDY3ZWRm/MjUxY2U1YjY5MzJm/YWRlOTI4YjAyZDI1/ZjU0MmJjNi9kZXYu/dG8v",
+      "path": "\u203a mrflamez_  \u203a building-your-first-ai-cli-tool-using-openais-api-1d4a"
+    },
+    "thumbnail": {
+      "src": "https://imgs.search.brave.com/djvGPX7h5xHmPYXWtygRq5uta0HHx-rN-mdKGB7jLyo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tZWRp/YTIuZGV2LnRvL2R5/bmFtaWMvaW1hZ2Uv/d2lkdGg9MTA4MCxo/ZWlnaHQ9MTA4MCxm/aXQ9Y292ZXIsZ3Jh/dml0eT1hdXRvLGZv/cm1hdD1hdXRvL2h0/dHBzJTNBJTJGJTJG/ZGV2LXRvLXVwbG9h/ZHMuczMuYW1hem9u/YXdzLmNvbSUyRnVw/bG9hZHMlMkZhcnRp/Y2xlcyUyRmg4c3Jx/MmZuZGpuN2NyZG55/eWloLmpwZw",
+      "original": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fh8srq2fndjn7crdnyyih.jpg",
+      "logo": false
+    },
+    "age": "December 16, 2024",
+    "extra_snippets": [
+      "In this tutorial, you\u2019ll walk through creating your first AI-powered Command Line Interface (CLI)... Tagged with openai, chatgpt, ai, cli.",
+      "For example, an Electron-based application could offer text summarization directly on the user\u2019s desktop without needing to open a browser or terminal. In essence, the fundamental principles\u2014obtaining an API key, sending requests to OpenAI\u2019s endpoints, and handling responses\u2014apply across various environments. Whether it\u2019s a CLI tool, a web service, a mobile app, or a desktop client, you can integrate AI functionalities anywhere you need them.",
+      "In this tutorial, you\u2019ll walk through creating your first AI-powered Command Line Interface (CLI) tool using OpenAI\u2019s API. You\u2019ll build a tool named Text Summarizer CLI, which takes some text and returns a concise summary. Although this guide focuses on text summarization, the same approach can be applied to a wide range of AI-driven tasks\u2014such as translation, sentiment analysis, code generation, and more.",
+      "You should see a concise summary of the provided text printed to your terminal. You can extend this approach for other tasks by changing the system and user messages sent to the OpenAI API: Translation: Instruct the model to translate text to another language. ai-cli-tool translate \"Bonjour tout le monde\" --to en"
+    ]
+  },
+  {
+    "title": "Factory CLI | AI for CI/CD",
+    "url": "https://factory.ai/product/cli",
+    "is_source_local": false,
+    "is_source_both": false,
+    "description": "One-line commands replace days of manual work across repositories. ... <strong>Automate documentation, legacy maintenance, and routine fixes</strong>. Reduce infrastructure costs while improving code quality.",
+    "profile": {
+      "name": "Factory",
+      "url": "https://factory.ai/product/cli",
+      "long_name": "factory.ai",
+      "img": "https://imgs.search.brave.com/KiajWagQXOI9M9zIeghEiJlbOLueAl_clOav0ca9UxY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjA2MGQwMTA5/NmQ2NzgxNGVlZWI3/MDZhNTJmMWI0NmNj/Y2NhZWVhNzEyZmE2/ZjdhODczMjU0M2Y0/NDBmYTFmZi9mYWN0/b3J5LmFpLw"
+    },
+    "language": "en",
+    "family_friendly": true,
+    "type": "search_result",
+    "subtype": "generic",
+    "is_live": false,
+    "meta_url": {
+      "scheme": "https",
+      "netloc": "factory.ai",
+      "hostname": "factory.ai",
+      "favicon": "https://imgs.search.brave.com/KiajWagQXOI9M9zIeghEiJlbOLueAl_clOav0ca9UxY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjA2MGQwMTA5/NmQ2NzgxNGVlZWI3/MDZhNTJmMWI0NmNj/Y2NhZWVhNzEyZmE2/ZjdhODczMjU0M2Y0/NDBmYTFmZi9mYWN0/b3J5LmFpLw",
+      "path": "\u203a product  \u203a cli"
+    },
+    "thumbnail": {
+      "src": "https://imgs.search.brave.com/F1tJqSHvg1RZmMQrQ5K3nsULlB8m4Jqy8emYJngBk_E/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9mYWN0/b3J5LmFpL29nLnBu/Zw",
+      "original": "https://factory.ai/og.png",
+      "logo": false
+    },
+    "extra_snippets": [
+      "Launch hundreds of agents with a single command. Process entire codebases simultaneously for migrations, refactors, or compliance updates. ... Self-healing builds and automated code review built for pipelines. Agents diagnose failures, fix tests, and maintain code quality automatically. ... JSON event streams, detailed logging, and session persistence.",
+      "CLI to automate. ... Begin within the IDE, and expand into your full workflow, from design docs to review automation. ... \u201cAs a fintech company handling sensitive financial data, we were concerned about how to leverage AI while maintaining strict data privacy and security standards.",
+      "One-line commands replace days of manual work across repositories. ... Automate documentation, legacy maintenance, and routine fixes. Reduce infrastructure costs while improving code quality. ... Explicit flags for edits and execution. Secure by default with granular control perfect for production environments. ... Droids keep their knowledge across tools and platforms.",
+      "Script and parallelize Droids at massive scale for CI/CD, migrations, and maintenance. From automated code review to self-healing builds, integrate agents into every phase of development."
+    ]
+  },
+  {
+    "title": "The Command Line: How Can it be Used for AI Projects? \u2013 Dataquest",
+    "url": "https://www.dataquest.io/blog/what-is-the-command-line-and-how-can-it-be-used-for-ai-projects/",
+    "is_source_local": false,
+    "is_source_both": false,
+    "description": "In AI, where time is often of the essence, <strong>CLI&#x27;s ability to execute tasks quickly</strong> is invaluable. This speed is especially noticeable when you&#x27;re familiar with the necessary commands. AI and ML can be resource-intensive.",
+    "page_age": "2025-05-05T22:32:24",
+    "profile": {
+      "name": "Dataquest",
+      "url": "https://www.dataquest.io/blog/what-is-the-command-line-and-how-can-it-be-used-for-ai-projects/",
+      "long_name": "dataquest.io",
+      "img": "https://imgs.search.brave.com/U_PPT9vbZBzt8VU21YJyWZcfEQv0m-xVNiv573_1XYM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFhOTc1NzUy/ZmIwZDc1MWM2YTcw/ZmE1ZDIzYjMyNDg5/MTFlMjk3YjE0YmFh/MjE4MzRhMzk2NTlh/MTFmNzM5Zi93d3cu/ZGF0YXF1ZXN0Lmlv/Lw"
+    },
+    "language": "en",
+    "family_friendly": true,
+    "type": "search_result",
+    "subtype": "article",
+    "is_live": false,
+    "meta_url": {
+      "scheme": "https",
+      "netloc": "dataquest.io",
+      "hostname": "www.dataquest.io",
+      "favicon": "https://imgs.search.brave.com/U_PPT9vbZBzt8VU21YJyWZcfEQv0m-xVNiv573_1XYM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFhOTc1NzUy/ZmIwZDc1MWM2YTcw/ZmE1ZDIzYjMyNDg5/MTFlMjk3YjE0YmFh/MjE4MzRhMzk2NTlh/MTFmNzM5Zi93d3cu/ZGF0YXF1ZXN0Lmlv/Lw",
+      "path": "\u203a blog  \u203a what-is-the-command-line-and-how-can-it-be-used-for-ai-projects"
+    },
+    "thumbnail": {
+      "src": "https://imgs.search.brave.com/mcu58CKHB0IgDKTFchk0Mn1WaHgvF6ZUwaf96Eqm2b0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZGF0YXF1ZXN0Lmlv/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI0/LzAyL1doYXQtaXMt/dGhlLUNvbW1hbmQt/TGluZS1hbmQtSG93/LUNhbi1pdC1iZS1V/c2VkLWZvci1BSS1Q/cm9qZWN0cy5wbmc",
+      "original": "https://www.dataquest.io/wp-content/uploads/2024/02/What-is-the-Command-Line-and-How-Can-it-be-Used-for-AI-Projects.png",
+      "logo": false
+    },
+    "age": "May 5, 2025",
+    "extra_snippets": [
+      "Keeping up with these changes means a continuous journey of learning and upskilling in CLI. This involves: Staying updated through courses and certifications. Diving into hands-on projects that reflect real-world scenarios. Engaging with professional communities for collective learning experiences. Dataquest's Generative AI Fundamentals in Python skill path prepares professionals to lead in AI, covering Python programming, large language model interactions, chatbot prompt engineering, and crafting functional AI applications.",
+      "Why is this simple, text-based tool the go-to for the tech-savvy and the cinematic cyber-geniuses alike? By the time you finish this post, you'll not only understand why, but also how mastering the CLI can turn you into a wizard in the world of AI and machine learning.",
+      "However, the advent of Windows 10 brought PowerShell, an advanced CLI with scripting capabilities, and Windows Subsystem for Linux (WSL), bridging the gap by allowing Linux commands within Windows. Having explored the basics, let\u2019s take a closer look at the CLI's pivotal role in AI and ML.",
+      "In AI, where time is often of the essence, CLI's ability to execute tasks quickly is invaluable. This speed is especially noticeable when you're familiar with the necessary commands. AI and ML can be resource-intensive."
+    ]
+  },
+  {
+    "title": "6 Powerful AI Command Line Tools \u2014 AI-CLI Every AI Engineer Should Know (2025) | by Fru | Fru.dev | Medium",
+    "url": "https://medium.com/demohub-tutorials/6-promising-ai-command-line-tools-cli-you-should-know-d55f21ca6edf",
+    "is_source_local": false,
+    "is_source_both": false,
+    "description": "... These intelligent environments can <strong>suggest code completions, explain functions, refactor logic, and even generate entire classes</strong> \u2014 features that once felt like science fiction.",
+    "page_age": "2025-04-30T11:20:17",
+    "profile": {
+      "name": "Medium",
+      "url": "https://medium.com/demohub-tutorials/6-promising-ai-command-line-tools-cli-you-should-know-d55f21ca6edf",
+      "long_name": "medium.com",
+      "img": "https://imgs.search.brave.com/4R4hFITz_F_be0roUiWbTZKhsywr3fnLTMTkFL5HFow/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTZhYmQ1N2Q4/NDg4ZDcyODIyMDZi/MzFmOWNhNjE3Y2E4/Y2YzMThjNjljNDIx/ZjllZmNhYTcwODhl/YTcwNDEzYy9tZWRp/dW0uY29tLw"
+    },
+    "language": "en",
+    "family_friendly": true,
+    "type": "search_result",
+    "subtype": "article",
+    "is_live": false,
+    "meta_url": {
+      "scheme": "https",
+      "netloc": "medium.com",
+      "hostname": "medium.com",
+      "favicon": "https://imgs.search.brave.com/4R4hFITz_F_be0roUiWbTZKhsywr3fnLTMTkFL5HFow/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTZhYmQ1N2Q4/NDg4ZDcyODIyMDZi/MzFmOWNhNjE3Y2E4/Y2YzMThjNjljNDIx/ZjllZmNhYTcwODhl/YTcwNDEzYy9tZWRp/dW0uY29tLw",
+      "path": "\u203a demohub-tutorials  \u203a 6-promising-ai-command-line-tools-cli-you-should-know-d55f21ca6edf"
+    },
+    "thumbnail": {
+      "src": "https://imgs.search.brave.com/lF3K9luCleLmF-S1cIB4wpydKneDN2XQJYgg502Qe6U/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9taXJv/Lm1lZGl1bS5jb20v/MCpRR21FQkJMTXFE/a2hLUW1yLnBuZw",
+      "original": "https://miro.medium.com/0*QGmEBBLMqDkhKQmr.png",
+      "logo": false
+    },
+    "age": "April 30, 2025",
+    "extra_snippets": [
+      "With the rise of AI tools like GitHub Copilot, Cursor, and Claude Code, developers are seeing productivity boosts they never imagined. ... These intelligent environments can suggest code completions, explain functions, refactor logic, and even generate entire classes \u2014 features that once felt like science fiction.",
+      "Welcome! We\u2019re DEVeloping the Future of Tech, Data & AI. Distilling complex concepts into practical and actionable insights."
+    ]
+  },
+  {
+    "title": "r/commandline on Reddit: Is anyone here using AI CLI tools to assist with shell commands?",
+    "url": "https://www.reddit.com/r/commandline/comments/1dmfef7/is_anyone_here_using_ai_cli_tools_to_assist_with/",
+    "is_source_local": false,
+    "is_source_both": false,
+    "description": "And functional calling / building agents (with workflow) are also exciting features (although I have not play with it yet). In short, mods are a simple command line utility that just talks, and aichat is a more featured terminal apps. Continue this thread ... As a heavy CLI user, my entire workflow are around using terminal apps.",
+    "page_age": "2024-06-23T05:56:52",
+    "profile": {
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/commandline/comments/1dmfef7/is_anyone_here_using_ai_cli_tools_to_assist_with/",
+      "long_name": "reddit.com",
+      "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+    },
+    "language": "en",
+    "family_friendly": true,
+    "type": "search_result",
+    "subtype": "qa",
+    "is_live": false,
+    "meta_url": {
+      "scheme": "https",
+      "netloc": "reddit.com",
+      "hostname": "www.reddit.com",
+      "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+      "path": "  \u203a r/commandline  \u203a is anyone here using ai cli tools to assist with shell commands?"
+    },
+    "thumbnail": {
+      "src": "https://imgs.search.brave.com/n0b5jBV1q-5cO0DJ0-qtXW6PilTmvDPqHxWhuD9g6hc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zaGFy/ZS5yZWRkLml0L3By/ZXZpZXcvcG9zdC8x/ZG1mZWY3",
+      "original": "https://share.redd.it/preview/post/1dmfef7",
+      "logo": false
+    },
+    "age": "June 23, 2024",
+    "extra_snippets": [
+      "I would avoid using Claude 3.7 Sonnet, as I've run into some functional issues with it, from Aider. I run Ollama on one of my Linux servers with an NVIDIA GPU in it. I just need to download a good coding-focused model and change Aider to use that instead. ... This mentions using Ollama server? Didn't go too in-depth on reading but looks like it can use local: https://github.com/dspinellis/ai-cli-lib",
+      "I use KoboldCPP with a few 70b models I downloaded. You need tons of RAM though. ... My typing is enoigh hazard to the system without AI or autocorrect or. ..... ... AIChat: An all-in-one AI CLI tool featuring Chat-REPL, Shell Assistant, RAG, Function Calling, AI Agents, and more.",
+      "And functional calling / building agents (with workflow) are also exciting features (although I have not play with it yet). In short, mods are a simple command line utility that just talks, and aichat is a more featured terminal apps. Continue this thread ... As a heavy CLI user, my entire workflow are around using terminal apps.",
+      "I tried the terminal emulator Warp for several days, but I went back to using kitty because it feels and looks better. However, I did find the ability to query an AI model for shell tasks without leaving the terminal very cool. I know there are tons of tools out there in this over-hyped field, but I came across some that allow for local or on-demand calls via API (such as Groq or Ollama). Is anyone here using such tools? Do you find them helpful? Share ... GPU. Don't trust the cloud. ... Not on the cli and that's a general purpose llm."
+    ]
+  }
+]
