@@ -1,0 +1,29 @@
+# Secrets
+Keys/secrets.env
+*.env
+.env
+
+# Large directories
+.rustup/
+.cargo/
+.steam/
+.local/share/
+.node_modules/
+node_modules/
+
+# Cache
+.cache/
+*.cache
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cursor
+.cursor/projects/
+.cursor/history/
+.cursor/tmp/
+
+# Git
+.git/
