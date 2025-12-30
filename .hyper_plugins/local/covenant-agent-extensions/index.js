@@ -45,6 +45,7 @@ module.exports = (app, config, Hyper) => {
     aichat: new AIChatWidgetExtension(),  // AI chat widget
     files: new FileManagementExtension(),  // File management
     model: new ModelOverrideExtension(),  // Model override (Ollama/LM Studio/OpenAI)
+    sudors: new SudoRSExtension(),  // sudo-rs integration (memory-safe privilege escalation)
     agent: new AgentExtension()
   };
   
@@ -74,6 +75,9 @@ module.exports = (app, config, Hyper) => {
   
   // Register Sphinx API commands
   registerSphinxAPICommands(app, extensions);
+  
+  // Register sudo-rs commands
+  registerSudoRSCommands(app, extensions);
   
   // Auto-launch agent on terminal session start
   app.on('session-add', () => {
@@ -117,6 +121,7 @@ function initializePassiveDefaults(app, extensions) {
   console.log('   - AI Chat Widget Extension: Ready (Multi-model chat)');
   console.log('   - File Management Extension: Ready (File operations)');
   console.log('   - Model Override Extension: Ready (Local models, API overrides)');
+  console.log('   - sudo-rs Extension: Ready (Memory-safe privilege escalation)');
   console.log('   - Agent Extension: Ready');
 }
 
@@ -540,6 +545,9 @@ const ModelOverrideExtension = require('./model-override');
 // Import Sphinx API Extension
 const SphinxAPIExtension = require('./sphinx-api-integration');
 
+// Import sudo-rs Extension
+const SudoRSExtension = require('./sudo-rs-integration');
+
 /**
  * Covenant Agent Extension (Passive Default)
  */
@@ -941,6 +949,80 @@ function registerSphinxAPICommands(app, extensions) {
 }
 
 /**
+ * Register sudo-rs commands
+ */
+function registerSudoRSCommands(app, extensions) {
+  // Check sudo-rs availability
+  app.commands.registerCommand('covenant:sudors:check', async () => {
+    try {
+      const result = await extensions.sudors.checkAvailability();
+      console.log('🔐 sudo-rs Status:');
+      console.log(`   Available: ${result.available ? 'Yes' : 'No'}`);
+      console.log(`   Command: ${result.command || 'None'}`);
+      console.log(`   Using sudo-rs: ${result.isSudoRs ? 'Yes' : 'No'}`);
+    } catch (error) {
+      console.error('❌', error.message);
+    }
+  });
+  
+  // Execute with privilege
+  app.commands.registerCommand('covenant:sudors:exec', async (command) => {
+    try {
+      if (!command) {
+        console.log('Usage: covenant:sudors:exec [command]');
+        return;
+      }
+      const result = await extensions.sudors.executeWithPrivilege(command);
+      if (result.success) {
+        console.log('✅ Command executed successfully');
+        if (result.output) {
+          console.log(result.output);
+        }
+      } else {
+        console.log('❌ Command failed');
+        if (result.error) {
+          console.log('Error:', result.error);
+        }
+      }
+    } catch (error) {
+      console.error('❌', error.message);
+    }
+  });
+  
+  // Validate sudoers
+  app.commands.registerCommand('covenant:sudors:validate', async () => {
+    try {
+      const result = await extensions.sudors.validateSudoers();
+      if (result.success && result.valid) {
+        console.log('✅ Sudoers configuration is valid');
+      } else {
+        console.log('❌ Sudoers configuration has errors');
+        if (result.error) {
+          console.log('Error:', result.error);
+        }
+      }
+    } catch (error) {
+      console.error('❌', error.message);
+    }
+  });
+  
+  // Get version
+  app.commands.registerCommand('covenant:sudors:version', async () => {
+    try {
+      const result = await extensions.sudors.getVersion();
+      if (result.success) {
+        console.log('📋 Version Information:');
+        console.log(result.version);
+      } else {
+        console.log('❌', result.error);
+      }
+    } catch (error) {
+      console.error('❌', error.message);
+    }
+  });
+}
+
+/**
  * Register WaveTerm feature commands
  */
 function registerWaveTermCommands(app, extensions) {
@@ -1048,6 +1130,7 @@ function registerWaveTermCommands(app, extensions) {
 // Export extensions for direct use
 module.exports.extensions = {
   SphinxExtension,
+  SphinxAPIExtension,
   GitHubExtension,
   JulesExtension,
   RosettaStoneExtension,
@@ -1059,5 +1142,7 @@ module.exports.extensions = {
   CommandBlocksExtension,
   AIChatWidgetExtension,
   FileManagementExtension,
+  ModelOverrideExtension,
+  SudoRSExtension,
   AgentExtension
 };
