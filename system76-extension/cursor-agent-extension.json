@@ -1,0 +1,50 @@
+{
+  "name": "cursor-agent-system76-extension",
+  "version": "1.0.0",
+  "description": "Super Sovereign Cursor-Agent CLI as System76 Extension",
+  "type": "system-extension",
+  "platform": "pop-os",
+  "requirements": {
+    "os": "Pop!_OS 24.04+",
+    "system76": true,
+    "nodejs": ">=18.0.0",
+    "sudo-rs": ">=1.0.0"
+  },
+  "services": [
+    {
+      "name": "cursor-agent.service",
+      "path": "/etc/systemd/system/cursor-agent.service",
+      "enabled": true
+    }
+  ],
+  "binaries": [
+    {
+      "name": "cbrew",
+      "path": "/usr/local/bin/cbrew",
+      "source": "/root/cursor-agent/src/cli.js"
+    }
+  ],
+  "mounts": [
+    {
+      "source": "/root/cursor-agent/merged-stack/bin",
+      "target": "/usr/local/bin",
+      "type": "bind"
+    },
+    {
+      "source": "/root/cursor-agent/merged-stack/lib",
+      "target": "/usr/local/lib",
+      "type": "bind"
+    }
+  ],
+  "integration": {
+    "cosmic": {
+      "enabled": true,
+      "desktop_entry": "/usr/share/applications/cursor-agent.desktop"
+    },
+    "system76": {
+      "power_management": true,
+      "scheduler": true,
+      "firmware": false
+    }
+  }
+}
