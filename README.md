@@ -238,7 +238,9 @@ MIT License - See LICENSE file for details
 ## 🔗 Links
 
 - **Repository**: https://github.com/tig08bitties/Agent.git
+- **Data Repository**: https://github.com/thaeos/Data (research archive)
 - **Documentation**: See `Halls of Amenti/` directory
+- **Data Integration**: See `DATA_REPOSITORY_INTEGRATION.md`
 - **Issues**: https://github.com/tig08bitties/Agent/issues
 
 ## 🙏 Acknowledgments

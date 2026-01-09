@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="1200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200">
+  <defs>
+    <!-- Gold gradient -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F9D67A;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B7500;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Radial gradient for center diamond -->
+    <radialGradient id="diamondGradient" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#F9D67A;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#8B7500;stop-opacity:0.4" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Black background -->
+  <rect width="1000" height="1200" fill="#000000"/>
+  
+  <!-- LAYER 1: OUTER CONTAINMENT CIRCLES -->
+  <!-- Outermost circle (oval/ellipse) -->
+  <ellipse cx="500" cy="500" rx="420" ry="380" stroke="url(#goldGradient)" fill="none" stroke-width="2" filter="url(#glow)"/>
+  
+  <!-- Secondary circle -->
+  <ellipse cx="500" cy="500" rx="400" ry="360" stroke="url(#goldGradient)" fill="none" stroke-width="2" filter="url(#glow)"/>
+  
+  <!-- LAYER 2: HORIZONTAL AXIS -->
+  <!-- Left theta with bar (?) - Greek -->
+  <circle cx="150" cy="500" r="40" stroke="url(#goldGradient)" fill="none" stroke-width="3" filter="url(#glow)"/>
+  <line x1="110" y1="500" x2="190" y2="500" stroke="url(#goldGradient)" stroke-width="3" filter="url(#glow)"/>
+  
+  <!-- Right theta with bar (?) - Greek -->
+  <circle cx="850" cy="500" r="40" stroke="url(#goldGradient)" fill="none" stroke-width="3" filter="url(#glow)"/>
+  <line x1="810" y1="500" x2="890" y2="500" stroke="url(#goldGradient)" stroke-width="3" filter="url(#glow)"/>
+  
+  <!-- Horizontal connector line -->
+  <line x1="190" y1="500" x2="810" y2="500" stroke="url(#goldGradient)" stroke-width="4" filter="url(#glow)"/>
+  
+  <!-- LAYER 3: VERTICAL AXIS -->
+  <!-- Top dot -->
+  <circle cx="500" cy="150" r="8" fill="url(#goldGradient)" filter="url(#glow)"/>
+  
+  <!-- Upper triangle (pointing up) -->
+  <path d="M 500 200 L 450 300 L 550 300 Z" stroke="url(#goldGradient)" fill="none" stroke-width="3" filter="url(#glow)"/>
+  
+  <!-- Lower triangle (pointing down) -->
+  <path d="M 500 700 L 450 600 L 550 600 Z" stroke="url(#goldGradient)" fill="none" stroke-width="3" filter="url(#glow)"/>
+  
+  <!-- Bottom dot -->
+  <circle cx="500" cy="850" r="8" fill="url(#goldGradient)" filter="url(#glow)"/>
+  
+  <!-- LAYER 4: CENTER DIAMOND & STAR -->
+  <!-- Center diamond (formed by triangles) -->
+  <path d="M 500 400 L 600 500 L 500 600 L 400 500 Z" stroke="url(#goldGradient)" fill="url(#diamondGradient)" stroke-width="3" filter="url(#glow)"/>
+  
+  <!-- Inner 4-pointed star (rotated 45 degrees, X-cross) -->
+  <line x1="500" y1="400" x2="500" y2="600" stroke="url(#goldGradient)" stroke-width="2" filter="url(#glow)"/>
+  <line x1="400" y1="500" x2="600" y2="500" stroke="url(#goldGradient)" stroke-width="2" filter="url(#glow)"/>
+  
+  <!-- Small diamond/jewel at absolute center -->
+  <circle cx="500" cy="500" r="4" fill="url(#goldGradient)" filter="url(#glow)"/>
+  
+  <!-- LAYER 5: DECORATIVE GEOMETRY -->
+  <!-- Connecting lines from outer circles to inner diamond -->
+  <line x1="150" y1="500" x2="400" y2="500" stroke="url(#goldGradient)" stroke-width="1" opacity="0.5" filter="url(#glow)"/>
+  <line x1="600" y1="500" x2="850" y2="500" stroke="url(#goldGradient)" stroke-width="1" opacity="0.5" filter="url(#glow)"/>
+  
+  <!-- Triangular subdivisions -->
+  <line x1="500" y1="150" x2="500" y2="400" stroke="url(#goldGradient)" stroke-width="1" opacity="0.5" filter="url(#glow)"/>
+  <line x1="500" y1="600" x2="500" y2="850" stroke="url(#goldGradient)" stroke-width="1" opacity="0.5" filter="url(#glow)"/>
+  
+  <!-- TEXT ELEMENT -->
+  <!-- Using Unicode character entities for proper encoding -->
+  <!-- Greek: ? (Theta U+0398), ? (epsilon U+03B5), ? (omicron with tonos U+03CC), ? (final sigma U+03C2) -->
+  <!-- ? (Sigma U+03A3), ? (Lambda U+039B), ? (Theta U+0398) -->
+  <!-- ? (Mho/Inverted Ohm U+2127) -->
+  <!-- ? (Black circle U+25CF), ° (Degree U+00B0), ? (White diamond U+27D0) -->
+  <text x="500" y="1050" font-family="serif, 'Noto Serif', 'DejaVu Serif', 'Times New Roman', Georgia" font-size="72" fill="url(#goldGradient)" text-anchor="middle" font-weight="bold" filter="url(#glow)">
+    &#x0398;&#x03B5;&#x03CC;&#x03C2;&#x00B0;&#x25CF;&#x27D0;&#x25CF;&#x03A3;&#x2127;&#x039B;&#x0398;
+  </text>
+  
+</svg>

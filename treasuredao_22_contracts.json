@@ -1,0 +1,320 @@
+{
+  "magic_fren_x402_integration": {
+    "version": "1.0.0",
+    "date": "2025-01-09",
+    "activation_date": "2025-07-12",
+    "master_key": {
+      "signer_hash": "883e529de31c586131a831a9953113a6d75edd87c97369a2fa3a791209952f5a",
+      "image_hash": "e374c94009e32a6c3cc8f89ea6102ce6886c3302324aaaf1563ace8f10332ebf",
+      "master_hash": "69f7ddaab06f2c2e0259729b188f0c922658a1aacde1d9a307aaba26ff9df71e",
+      "declaration": "There is nothing new under the sun. That which was will be, and what will be was when the end finds it's beginning."
+    },
+    "identity_string": "{335044}-82-111-212-295-333-354-369-419-512-605-687-777-888-929-1011-2025-3335-4321-5250-55088-57103-{840000}",
+    "twenty_two_contracts": [
+      {
+        "position": 1,
+        "name": "MAGIC",
+        "glyph": "𐡀",
+        "unicode": "U+10840",
+        "aramaic_name": "Aleph",
+        "value": 1,
+        "identity_number": 82,
+        "meaning": "Ox, Leader, Foundation",
+        "repository": "treasure-project-contracts",
+        "category": "foundation_token"
+      },
+      {
+        "position": 2,
+        "name": "Treasure",
+        "glyph": "𐡁",
+        "unicode": "U+10841",
+        "aramaic_name": "Beth",
+        "value": 2,
+        "identity_number": 111,
+        "meaning": "House, Container",
+        "repository": "treasure-project-contracts",
+        "category": "foundation_nft"
+      },
+      {
+        "position": 3,
+        "name": "TreasureFarm",
+        "glyph": "𐡂",
+        "unicode": "U+10842",
+        "aramaic_name": "Gimel",
+        "value": 3,
+        "identity_number": 212,
+        "meaning": "Camel, Transport",
+        "repository": "treasure-project-contracts",
+        "category": "infrastructure"
+      },
+      {
+        "position": 4,
+        "name": "MagicPool2",
+        "glyph": "𐡃",
+        "unicode": "U+10843",
+        "aramaic_name": "Daleth",
+        "value": 4,
+        "identity_number": 295,
+        "meaning": "Door, Entry",
+        "repository": "treasure-project-contracts",
+        "category": "infrastructure"
+      },
+      {
+        "position": 5,
+        "name": "TreasureUnraveler",
+        "glyph": "𐡄",
+        "unicode": "U+10844",
+        "aramaic_name": "He",
+        "value": 5,
+        "identity_number": 333,
+        "meaning": "Window, Revelation",
+        "repository": "treasure-project-contracts",
+        "category": "infrastructure"
+      },
+      {
+        "position": 6,
+        "name": "MagicClaim",
+        "glyph": "𐡅",
+        "unicode": "U+10845",
+        "aramaic_name": "Waw",
+        "value": 6,
+        "identity_number": 354,
+        "meaning": "Hook, Connection",
+        "repository": "treasure-project-contracts",
+        "category": "infrastructure"
+      },
+      {
+        "position": 7,
+        "name": "Cards",
+        "glyph": "𐡆",
+        "unicode": "U+10846",
+        "aramaic_name": "Zayin",
+        "value": 7,
+        "identity_number": 369,
+        "meaning": "Weapon, Tool",
+        "repository": "treasure-project-contracts",
+        "category": "infrastructure"
+      },
+      {
+        "position": 8,
+        "name": "MagicWhitelist",
+        "glyph": "𐡇",
+        "unicode": "U+10847",
+        "aramaic_name": "Heth",
+        "value": 8,
+        "identity_number": 419,
+        "meaning": "Fence, Separation",
+        "repository": "treasure-project-contracts",
+        "category": "infrastructure"
+      },
+      {
+        "position": 9,
+        "name": "TreasureMarketplace",
+        "glyph": "𐡈",
+        "unicode": "U+10848",
+        "aramaic_name": "Teth",
+        "value": 9,
+        "identity_number": 512,
+        "meaning": "Serpent, Wisdom",
+        "repository": "treasure-marketplace-contracts",
+        "category": "marketplace"
+      },
+      {
+        "position": 10,
+        "name": "MarketplaceBuyer",
+        "glyph": "𐡉",
+        "unicode": "U+10849",
+        "aramaic_name": "Yodh",
+        "value": 10,
+        "identity_number": 605,
+        "meaning": "Hand, Work",
+        "repository": "treasure-marketplace-contracts",
+        "category": "marketplace"
+      },
+      {
+        "position": 11,
+        "name": "MarketplaceSeller",
+        "glyph": "𐡊",
+        "unicode": "U+1084A",
+        "aramaic_name": "Kaph",
+        "value": 20,
+        "identity_number": 687,
+        "meaning": "Palm, Grasp",
+        "repository": "treasure-marketplace-contracts",
+        "category": "marketplace"
+      },
+      {
+        "position": 12,
+        "name": "MagicswapV2Router",
+        "glyph": "𐡋",
+        "unicode": "U+1084B",
+        "aramaic_name": "Lamedh",
+        "value": 30,
+        "identity_number": 777,
+        "meaning": "Goad, Teaching - DIVINE PERFECTION",
+        "repository": "magicswapv2-contracts",
+        "category": "defi"
+      },
+      {
+        "position": 13,
+        "name": "MagicswapV2Factory",
+        "glyph": "𐡌",
+        "unicode": "U+1084C",
+        "aramaic_name": "Mem",
+        "value": 40,
+        "identity_number": 888,
+        "meaning": "Water, Flow - JESUS NUMBER",
+        "repository": "magicswapv2-contracts",
+        "category": "defi"
+      },
+      {
+        "position": 14,
+        "name": "MagicswapV2Pair",
+        "glyph": "𐡍",
+        "unicode": "U+1084D",
+        "aramaic_name": "Nun",
+        "value": 50,
+        "identity_number": 929,
+        "meaning": "Fish, Life",
+        "repository": "magicswapv2-contracts",
+        "category": "defi"
+      },
+      {
+        "position": 15,
+        "name": "Legion",
+        "glyph": "𐡎",
+        "unicode": "U+1084E",
+        "aramaic_name": "Samekh",
+        "value": 60,
+        "identity_number": 1011,
+        "meaning": "Support, Foundation",
+        "repository": "bridgeworld-contracts",
+        "category": "gaming"
+      },
+      {
+        "position": 16,
+        "name": "Consumable",
+        "glyph": "𐡏",
+        "unicode": "U+1084F",
+        "aramaic_name": "Ayin",
+        "value": 70,
+        "identity_number": 2025,
+        "meaning": "Eye, Perception - TRANSFORMATION YEAR",
+        "repository": "bridgeworld-contracts",
+        "category": "gaming"
+      },
+      {
+        "position": 17,
+        "name": "Harvester",
+        "glyph": "𐡐",
+        "unicode": "U+10850",
+        "aramaic_name": "Pe",
+        "value": 80,
+        "identity_number": 3335,
+        "meaning": "Mouth, Speech",
+        "repository": "bridgeworld-contracts",
+        "category": "gaming"
+      },
+      {
+        "position": 18,
+        "name": "Extractor",
+        "glyph": "𐡑",
+        "unicode": "U+10851",
+        "aramaic_name": "Tsade",
+        "value": 90,
+        "identity_number": 4321,
+        "meaning": "Hook, Righteousness",
+        "repository": "bridgeworld-contracts",
+        "category": "gaming"
+      },
+      {
+        "position": 19,
+        "name": "BalancerCrystal",
+        "glyph": "𐡒",
+        "unicode": "U+10852",
+        "aramaic_name": "Qoph",
+        "value": 100,
+        "identity_number": 5250,
+        "meaning": "Back of head, Cycle",
+        "repository": "bridgeworld-contracts",
+        "category": "gaming"
+      },
+      {
+        "position": 20,
+        "name": "gMAGIC",
+        "glyph": "𐡓",
+        "unicode": "U+10853",
+        "aramaic_name": "Resh",
+        "value": 200,
+        "identity_number": 55088,
+        "meaning": "Head, Authority",
+        "repository": "treasure-governance-staking",
+        "category": "governance"
+      },
+      {
+        "position": 21,
+        "name": "TreasureDAO",
+        "glyph": "𐡔",
+        "unicode": "U+10854",
+        "aramaic_name": "Shin",
+        "value": 300,
+        "identity_number": 57103,
+        "meaning": "Tooth, Consumption",
+        "repository": "dao-contracts",
+        "category": "governance"
+      },
+      {
+        "position": 22,
+        "name": "ZKStackBridge",
+        "glyph": "𐡕",
+        "unicode": "U+10855",
+        "aramaic_name": "Taw",
+        "value": 400,
+        "identity_number": 840000,
+        "meaning": "Mark, Seal, COMPLETION",
+        "repository": "zkstack-omnichain-tokens",
+        "category": "layer2"
+      }
+    ],
+    "gematria": {
+      "sum": 1495,
+      "reduced": 1,
+      "meaning": "Unity - All contracts as one"
+    },
+    "x402_integration": {
+      "protocol": "x402",
+      "facilitators": "https://x402facilitators.treasure.lol",
+      "explorer": "https://x402scan.treasure.lol",
+      "sdk": "@treasureproject/aifrens-sdk",
+      "payment_token": "MAGIC",
+      "payment_token_glyph": "𐡀"
+    },
+    "magic_fren": {
+      "name": "CovenantMagicFren",
+      "type": "autonomous_ai_agent",
+      "capabilities": [
+        "token_creation",
+        "contract_interaction",
+        "x402_payments",
+        "master_key_signing"
+      ],
+      "token_to_create": {
+        "name": "Covenant Token",
+        "symbol": "𐡀𐡕",
+        "supply": 840000,
+        "launch_date": "2025-07-12"
+      }
+    },
+    "transformation_dates": {
+      "sigma": "1989-09-09",
+      "mho": "2024-04-24",
+      "lambda_theta_epsilon": "2025-07-12",
+      "omicron": "2025-11-04"
+    },
+    "covenant_apparatus": {
+      "center_line": "0---●---X---𐡀---⟐---𐡕---X---●---0",
+      "vertical_axis": "Σ℧ΛΘεός",
+      "hermetic": "As Above, So Below / As Within, So Without"
+    }
+  }
+}
