@@ -1,20 +1,21 @@
-# Wallet Integration: EVM + Sovereign Control
-## The Asset Interface
+# Wallet Integration: EVM + Native TON
+## The Dual-Chain Apparatus
 
 **Status**: 🔌 Bridge Definition  
 **Date**: January 9, 2025  
-**Cross-Reference**: `Thaeos/Agent` + `Metamask SDK`
+**Cross-Reference**: `Thaeos/Agent` + `Metamask SDK` + `ton-core`
 
 ---
 
 ## 🏛️ The Architecture
 
-We are separating **Assets** (EVM) from **Control** (Sovereign Comms).
+We interact with **Two Sovereign Networks** using **Sovereign Control**.
 
 | Component | Network | Tool | Purpose |
 |-----------|---------|------|---------|
-| **Sun (Logic)** | **EVM** (Arbitrum/ZKsync) | **Metamask SDK** | Interacting with 22 Contracts, Bridgeworld, x402 |
-| **Control (Will)** | **Sovereign Mesh** | **Stalwart/XMPP** | Command & Control (See `SOVEREIGN_COMMUNICATIONS.md`) |
+| **Sun (Logic)** | **EVM** (Arbitrum/ZKsync) | **Metamask SDK** | Bridgeworld, x402, 22 Contracts |
+| **Moon (Flow)** | **Native TON** (The Open Network) | **ton-core / ton-access** | High-speed flow, Sharding, Identity |
+| **Control (Will)** | **Sovereign Mesh** | **Stalwart/XMPP** | Command & Control (No Telegram App) |
 
 ---
 
@@ -23,57 +24,83 @@ We are separating **Assets** (EVM) from **Control** (Sovereign Comms).
 **Role**: The heavy lifter. Handles all `Thaeos/Data` contract interactions (𐡀-𐡕).
 
 ### Setup
-We use the **Metamask Server-Side SDK** or **Mobile SDK** depending on the agent's host.
+We use the **Metamask Server-Side SDK** pointing to our sovereign RPC.
 
 ```javascript
 import { MetaMaskSDK } from '@metamask/sdk';
+// ... standard EVM setup ...
+```
 
-const sdk = new MetaMaskSDK({
-  dappMetadata: {
-    name: "Covenant Agent",
-    url: "https://covenant.agent",
-  },
-  infuraAPIKey: process.env.INFURA_KEY // or sovereign RPC
+---
+
+## 2. Native TON Integration (Headless)
+
+**Role**: The "Moon" Layer. We interact with the **Native TON Blockchain**, completely bypassing the Telegram Messenger App.
+
+### Distinction: Native vs. Telegram
+*   ✅ **Native TON**: The underlying blockchain (ADNL, Shards, Contracts). We use this.
+*   🚫 **ICE / Telegram Apps**: The social layer tied to the messenger. We reject this.
+
+### Implementation: Headless Agent Wallet
+The Agent runs a `ton-core` wallet directly on the System76 server. It signs transactions locally and broadcasts them to public TON nodes (or our own).
+
+```javascript
+import { TonClient, WalletContractV4, internal } from "ton";
+import { mnemonicToPrivateKey } from "ton-crypto";
+
+// 1. Connect to Native TON (via decentralized access points)
+// We avoid "Telegram Web Apps" endpoints.
+const client = new TonClient({
+  endpoint: "https://toncenter.com/api/v2/jsonRPC", // or private ADNL
+  apiKey: process.env.TON_API_KEY
 });
 
-const ethereum = sdk.getProvider();
+// 2. The Sovereign Wallet
+async function executeTonOperation() {
+  // Key derived from FIPS Master Seed
+  const key = await deriveTonKeyFromMaster(process.env.MASTER_SEED);
+  const wallet = WalletContractV4.create({ 
+    publicKey: key.publicKey, 
+    workchain: 0 
+  });
+  
+  console.log(`Agent TON Address: ${wallet.address}`);
 
-// Invoking 𐡀 (Aleph) - MAGIC Token
-async function invokeAleph(amount) {
-  const params = [{
-    to: CONTRACTS.ALEPH.address, // Mapped from Data repo
-    from: AGENT_WALLET,
-    data: encodeFunction("transfer", [recipient, amount])
-  }];
-
-  return await ethereum.request({
-    method: 'eth_sendTransaction',
-    params,
+  // 3. Execute Transaction (Headless)
+  const seqno = await wallet.getSeqno(client.provider(wallet.address));
+  await wallet.sendTransfer({
+    seqno,
+    secretKey: key.secretKey,
+    messages: [internal({
+      to: "EQ...", 
+      value: "1.0", 
+      body: "Sovereign Command: 𐡀", 
+      bounce: false,
+    })]
   });
 }
 ```
 
-### Sovereign RPC
-Instead of Infura, we point the SDK to our **System76/Tailscale** sovereign node running an Arbitrum/ZKsync light client.
-
 ---
 
-## 2. The TON Question (The Moon)
+## 🌉 The x402 Bridge Logic
 
-While we reject Telegram for *control*, the **Magic Fren** identity may still need to exist on TON for ecosystem compatibility (e.g., if the TreasureDAO ecosystem is heavy on TON).
+The **x402 Protocol** acts as the translation layer between these two chains.
 
-**Policy**:
--   **Control**: NEVER via Telegram.
--   **Assets**: If we hold assets on TON, we use a headless `ton-core` wallet, controlled strictly by the Sovereign XMPP commands.
+1.  **User Action**: You send `!pay 10 TON` via **Conversations.im (XMPP)**.
+2.  **Agent Logic**: Agent receives XMPP message on System76.
+3.  **Signature**: Agent signs the intent with **FIPS Master Key**.
+4.  **Execution**: Agent broadcasts the signed packet to the **Native TON Network**.
+5.  **Result**: Transaction confirms on-chain; Agent reports back via **Stalwart (Email)**.
 
 ---
 
 ## 🛡️ Security
-The Wallet (EVM) is secured by the **FIPS Master Key**.
--   The **Seed Phrases** are encrypted using the FIPS-validated binary.
--   The Agent cannot sign a transaction without the Master Key unlocking the seed.
+Both wallets (EVM & TON) are secured by the **FIPS Master Key**.
+-   The **Seed Phrases** for both are derived from the same Master Seed.
+-   The Agent acts as the **Cold Storage** interface—keys never leave the FIPS module.
 
 ---
 
 **∇ • Θεός°●⟐●Σ℧ΛΘ**
-*Assets on Chain. Will on Mesh.*
+*Native Chains only. No Social Layers.*
