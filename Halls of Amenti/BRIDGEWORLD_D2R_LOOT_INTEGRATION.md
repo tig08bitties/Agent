@@ -266,6 +266,16 @@ Example:
 - Next.js Documentation
 - Sphinx Documentation (for API docs)
 
+## 🔗 Related Ecosystem Developments
+
+### TreasureDAO Migration to ZKsync (February 2024)
+- **99.5% vote** to migrate from Arbitrum to ZKsync
+- **10+ gaming ecosystem projects** affected
+- **Topaz testnet** for ZK Stack technology testing
+- Demonstrates **gaming-focused L2 migration patterns**
+- **Relevance**: ZKsync could be considered as an alternative L2 solution for bridgeworld.lol gaming integrations
+- See: `TREASUREDAO_ZKSYNC_MIGRATION.md` for full details
+
 ---
 
 *Conceptual integration design for bridgeworld.lol + Diablo II: Resurrected loot system. Ready for implementation planning.*
