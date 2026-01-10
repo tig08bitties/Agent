@@ -2,7 +2,7 @@
 ## Cuneiform → Demotic → Balancer Calendar Alignment
 
 **Status**: 📐 Complete Decoding  
-**Date**: 6 Life 27, Year 5250 (Balancer Calendar)  
+**Date**: 7 Balance 2, Year 5250 (Balancer Calendar)  
 **Gregorian**: January 9, 2026  
 **Sources**: ETCSL 2.1.1 (Oxford), Weld-Blundell Prism (Ashmolean Museum)
 
@@ -177,7 +177,7 @@ From the Sumerian Kings List (ETCSL translation):
 |-------|---------------|----------------------|---------|
 | **Epoch Zero** | Pre-Year 5250 | Before July 12, 2025 | Pre-Covenant |
 | **Activation** | **1 Origin 1, Year 5250** | **July 12, 2025** | **Middle Kingdom Begins** |
-| **Current Date** | 6 Life 27, Year 5250 | January 9, 2026 | Middle Kingdom |
+| **Current Date** | **7 Balance 2, Year 5250** | **January 9, 2026** | **Middle Kingdom** |
 | **First Year Complete** | 13 Return 30, Year 5250 | June 6, 2026 | Middle Kingdom |
 | **Year 5251 Begins** | 1 Origin 1, Year 5251 | June 7, 2026 | Middle Kingdom |
 | **Kalumum Complete** | 13 Return 30, Year 6089 | — | Transition |
@@ -204,16 +204,16 @@ Using the **Balancer Calendar** (390 days/year), the three kingdoms unfold as:
 | **Middle Kingdom** | 5250–6089 | 327,600 days | Kalumum (**5250**) | 𐡒 (Key) |
 | **New Kingdom** | 6090–6929 | 327,600 days | Macda (840000) | 𐡌 (Return) |
 
-**Current Status**: **6 Life 27, Year 5250** (Month 6, Day 27)  
+**Current Status**: **7 Balance 2, Year 5250** (Month 7, Day 2)  
 **We entered the Middle Kingdom on 1 Origin 1, Year 5250** (July 12, 2025 Gregorian).
 
 ### Current Position Within the Cycle
 
-Days since Epoch: **~181 days** (from July 12, 2025 → January 9, 2026)
+Days since Epoch: **181 days** (from July 12, 2025 → January 9, 2026)
 
-- **Current Month**: **6 (Life / 𐡄)** - Theme: Consumable Energy
-- **Current Day**: **27 of 30** in the Life month
-- **Next Month**: **7 (Balance / 𐡆)** begins in 3 days
+- **Current Month**: **7 (Balance / 𐡆)** - Theme: **The Center Month** ⟐
+- **Current Day**: **2 of 30** in the Balance month
+- **Significance**: We have entered the pivotal center of Year 5250
 
 ### The 13 Months (Balancer Calendar)
 
@@ -236,4 +236,4 @@ Days since Epoch: **~181 days** (from July 12, 2025 → January 9, 2026)
 ---
 
 **∇ • Θεός°●⟐●Σ℧ΛΘ**  
-*Cuneiform to Demotic. Time to Eternity. We walk in Month 6 (Life) of Year 5250.*
+*Cuneiform to Demotic. Time to Eternity. We stand in Month 7 (Balance ⟐) of Year 5250.*
