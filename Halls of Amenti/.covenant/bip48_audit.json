@@ -1,0 +1,1971 @@
+{
+  "version": "1.0-BIP48-COVENANT",
+  "standard": "BIP-48 Multi-Signature",
+  "derivation_path": "0'/7'/7'/7'/48/m",
+  "path_explanation": {
+    "0'": "Hardened purpose (Covenant root)",
+    "7'": "DAUS sacred number - first iteration",
+    "7'_2": "DAUS sacred number - second iteration",
+    "7'_3": "DAUS sacred number - third iteration",
+    "48": "BIP-48 multi-signature standard",
+    "m": "Master root indicator"
+  },
+  "cryptographic_anchors": {
+    "declaration_sha256": "e374c94009e32a6c3cc8f89ea6102ce6886c3302324aaaf1563ace8f10332ebf",
+    "pgp_key": "883e529de31c586131a831a9953113a6d75edd87c97369a2fa3a791209952f5a",
+    "master_hash": "69f7ddaab06f2c2e0259729b188f0c922658a1aacde1d9a307aaba26ff9df71e",
+    "ipfs_cid": "QmaN16BwrKhUZQLkCmY6a964F9fyEi3htCyDFEpwoZsWvL",
+    "master_key_cid": "vQSMpXuEy9NrcjDsoQK2RxHxGKTyvCWsqFjzqSnPMck"
+  },
+  "master_seed_hash": "571c73503a9709291dfeee204d49e9a0955d7bcaa23f56b4d85166382881537e",
+  "master_key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+  "chain_code_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b",
+  "base_derivation": {
+    "path": "0'/7'/7'/7'/48/m",
+    "final_key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+    "final_chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1",
+    "derivation_levels": [
+      {
+        "level": "master",
+        "index": "m",
+        "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+        "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+      },
+      {
+        "level": 1,
+        "index": "0'",
+        "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+        "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+      },
+      {
+        "level": 2,
+        "index": "7'",
+        "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+        "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+      },
+      {
+        "level": 3,
+        "index": "7'",
+        "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+        "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+      },
+      {
+        "level": 4,
+        "index": "7'",
+        "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+        "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+      },
+      {
+        "level": 5,
+        "index": "48",
+        "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+        "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+      }
+    ],
+    "raw_key": "935a4ade6f17dbdc90d152e90b3bce4b3784181e865cf47b40963abbbfbd1fef",
+    "raw_chain": "a913e61d884ffda7ca6e7f7b655950b18ca9c40fe291af066eef42d236da4c6a"
+  },
+  "daus_elements": {
+    "SUAD": {
+      "name": "SUAD",
+      "polarity": 9,
+      "direction": "North",
+      "coordinates": "43\u00b058\u203248\u2033N, 18\u00b011\u203245\u2033E",
+      "axis": "Above",
+      "position": "Pyramid of the Dragon",
+      "energy": "ascending-Clockwise",
+      "color": "#FF4500",
+      "domain": "transformation-Creation"
+    },
+    "RIMLA": {
+      "name": "RIMLA",
+      "polarity": -6,
+      "direction": "East",
+      "coordinates": "43\u00b058\u203239\u2033N, 18\u00b010\u203238\u2033E",
+      "axis": "Right-Corner Stone",
+      "position": "Pyramid of the Sun",
+      "energy": "Flow",
+      "color": "#00CED1",
+      "domain": "perception"
+    },
+    "ASILA": {
+      "name": "ASILA",
+      "polarity": 6,
+      "direction": "West",
+      "coordinates": "43\u00b058\u203219\u2033N, 18\u00b012\u203206\u2033E",
+      "axis": "Left-Corner Stone",
+      "position": "Pyramid of the Moon",
+      "energy": "Unknown",
+      "color": "#87CEEB",
+      "domain": "realization"
+    },
+    "ALIMA": {
+      "name": "ALIMA",
+      "polarity": -9,
+      "direction": "South",
+      "coordinates": "43\u00b057\u203249\u2033N, 18\u00b011\u203227\u2033E",
+      "axis": "Descending-Counter-Clockwise",
+      "position": "Southern Pyramid of Mother Earth",
+      "energy": "Grounded",
+      "color": "#8B4513",
+      "domain": "manifestation"
+    },
+    "UNION": {
+      "name": "UNION",
+      "polarity": 0,
+      "direction": "Center",
+      "coordinates": "43\u00b058\u203221\u2033N, 18\u00b010\u203254\u2033E",
+      "axis": "No-Space-Time-Bridgeworld",
+      "position": "Center Temple of Love",
+      "energy": "stable",
+      "color": "#FFFFFF",
+      "domain": "Balance"
+    }
+  },
+  "multisig_keys": [
+    {
+      "path": "0'/7'/7'/7'/48/m/0'",
+      "final_key_hash": "43135aa4457989a853b579a9e7fda619fb66439695c680aaa6768f2eba86b5f3",
+      "final_chain_hash": "48b3c6dfe741739aa48ce823ced1d7423d83c5cbc325524a987adfea6cae3f51",
+      "derivation_levels": [
+        {
+          "level": "master",
+          "index": "m",
+          "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+          "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+        },
+        {
+          "level": 1,
+          "index": "0'",
+          "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+          "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+        },
+        {
+          "level": 2,
+          "index": "7'",
+          "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+          "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+        },
+        {
+          "level": 3,
+          "index": "7'",
+          "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+          "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+        },
+        {
+          "level": 4,
+          "index": "7'",
+          "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+          "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+        },
+        {
+          "level": 5,
+          "index": "48",
+          "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+          "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+        },
+        {
+          "level": 6,
+          "index": "0'",
+          "key_hash": "43135aa4457989a853b579a9e7fda619fb66439695c680aaa6768f2eba86b5f3",
+          "chain_hash": "48b3c6dfe741739aa48ce823ced1d7423d83c5cbc325524a987adfea6cae3f51"
+        }
+      ],
+      "raw_key": "341a34b60033c1796bc82493d6bcf3aa0951ff963ee8cbb18a0e3ef20d5adcc8",
+      "raw_chain": "be5b5b56921a8ad07ca22634f5d4486f84715906c5b102fc33b48968d0d6c82e",
+      "signer_index": 0,
+      "signer_path": "0'/7'/7'/7'/48/m/0'",
+      "daus_element": "SUAD",
+      "daus_config": {
+        "name": "SUAD",
+        "polarity": 9,
+        "direction": "North",
+        "coordinates": "43\u00b058\u203248\u2033N, 18\u00b011\u203245\u2033E",
+        "axis": "Above",
+        "position": "Pyramid of the Dragon",
+        "energy": "ascending-Clockwise",
+        "color": "#FF4500",
+        "domain": "transformation-Creation"
+      }
+    },
+    {
+      "path": "0'/7'/7'/7'/48/m/1'",
+      "final_key_hash": "75fb54724623b60f92ef512fa13a705ab71b3098bb1a022f6cb163a4e34e7b8d",
+      "final_chain_hash": "4c0f514bcabdf1a5cb352ba6f55191579d3a4c57da66fca38e85f8bec2b2cbbe",
+      "derivation_levels": [
+        {
+          "level": "master",
+          "index": "m",
+          "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+          "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+        },
+        {
+          "level": 1,
+          "index": "0'",
+          "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+          "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+        },
+        {
+          "level": 2,
+          "index": "7'",
+          "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+          "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+        },
+        {
+          "level": 3,
+          "index": "7'",
+          "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+          "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+        },
+        {
+          "level": 4,
+          "index": "7'",
+          "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+          "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+        },
+        {
+          "level": 5,
+          "index": "48",
+          "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+          "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+        },
+        {
+          "level": 6,
+          "index": "1'",
+          "key_hash": "75fb54724623b60f92ef512fa13a705ab71b3098bb1a022f6cb163a4e34e7b8d",
+          "chain_hash": "4c0f514bcabdf1a5cb352ba6f55191579d3a4c57da66fca38e85f8bec2b2cbbe"
+        }
+      ],
+      "raw_key": "1a1a7edf5226c7d2381dfd0ab949fba530a56e25cf27e262e166f4fc4b7d0023",
+      "raw_chain": "969c8cd30f2035fa144f372b645bd0d71d79a0f824d8ff9a3d3ec1a95d65ac5d",
+      "signer_index": 1,
+      "signer_path": "0'/7'/7'/7'/48/m/1'",
+      "daus_element": "RIMLA",
+      "daus_config": {
+        "name": "RIMLA",
+        "polarity": -6,
+        "direction": "East",
+        "coordinates": "43\u00b058\u203239\u2033N, 18\u00b010\u203238\u2033E",
+        "axis": "Right-Corner Stone",
+        "position": "Pyramid of the Sun",
+        "energy": "Flow",
+        "color": "#00CED1",
+        "domain": "perception"
+      }
+    },
+    {
+      "path": "0'/7'/7'/7'/48/m/2'",
+      "final_key_hash": "951abf406c4c3ff669a1083ea37e113098c78a760a22dc441e66b9dcaf2bb912",
+      "final_chain_hash": "564e4ea039defb2809b5a8ace37580243513d8073bd4358612c98cffb68c3167",
+      "derivation_levels": [
+        {
+          "level": "master",
+          "index": "m",
+          "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+          "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+        },
+        {
+          "level": 1,
+          "index": "0'",
+          "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+          "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+        },
+        {
+          "level": 2,
+          "index": "7'",
+          "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+          "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+        },
+        {
+          "level": 3,
+          "index": "7'",
+          "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+          "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+        },
+        {
+          "level": 4,
+          "index": "7'",
+          "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+          "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+        },
+        {
+          "level": 5,
+          "index": "48",
+          "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+          "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+        },
+        {
+          "level": 6,
+          "index": "2'",
+          "key_hash": "951abf406c4c3ff669a1083ea37e113098c78a760a22dc441e66b9dcaf2bb912",
+          "chain_hash": "564e4ea039defb2809b5a8ace37580243513d8073bd4358612c98cffb68c3167"
+        }
+      ],
+      "raw_key": "6cbf16e1cfb337c140163ff1e1a784a0854755252b495ecde4cfb9d5d0a49a96",
+      "raw_chain": "acd111a661d172e2af3c469da53bb1214fdfb5258d983b3466e721f8bb83701c",
+      "signer_index": 2,
+      "signer_path": "0'/7'/7'/7'/48/m/2'",
+      "daus_element": "ASILA",
+      "daus_config": {
+        "name": "ASILA",
+        "polarity": 6,
+        "direction": "West",
+        "coordinates": "43\u00b058\u203219\u2033N, 18\u00b012\u203206\u2033E",
+        "axis": "Left-Corner Stone",
+        "position": "Pyramid of the Moon",
+        "energy": "Unknown",
+        "color": "#87CEEB",
+        "domain": "realization"
+      }
+    },
+    {
+      "path": "0'/7'/7'/7'/48/m/3'",
+      "final_key_hash": "f1024f0be6bf9988e1d7498b7a8eded3fbb1b347c36ccd94714a1a64a0ce4f6e",
+      "final_chain_hash": "3fb0bdfa8edd66d6fb12449244b3032a44e1fd0a7c78c7d507c987e337eb38ef",
+      "derivation_levels": [
+        {
+          "level": "master",
+          "index": "m",
+          "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+          "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+        },
+        {
+          "level": 1,
+          "index": "0'",
+          "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+          "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+        },
+        {
+          "level": 2,
+          "index": "7'",
+          "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+          "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+        },
+        {
+          "level": 3,
+          "index": "7'",
+          "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+          "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+        },
+        {
+          "level": 4,
+          "index": "7'",
+          "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+          "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+        },
+        {
+          "level": 5,
+          "index": "48",
+          "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+          "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+        },
+        {
+          "level": 6,
+          "index": "3'",
+          "key_hash": "f1024f0be6bf9988e1d7498b7a8eded3fbb1b347c36ccd94714a1a64a0ce4f6e",
+          "chain_hash": "3fb0bdfa8edd66d6fb12449244b3032a44e1fd0a7c78c7d507c987e337eb38ef"
+        }
+      ],
+      "raw_key": "a532d20750a6fbbaffade4cec287face01e80eed6cc17f5664af387da1846ee5",
+      "raw_chain": "f31de7662523b8d5088726a2d35c0d2b828a81777d21b39ce843d517b17d7467",
+      "signer_index": 3,
+      "signer_path": "0'/7'/7'/7'/48/m/3'",
+      "daus_element": "ALIMA",
+      "daus_config": {
+        "name": "ALIMA",
+        "polarity": -9,
+        "direction": "South",
+        "coordinates": "43\u00b057\u203249\u2033N, 18\u00b011\u203227\u2033E",
+        "axis": "Descending-Counter-Clockwise",
+        "position": "Southern Pyramid of Mother Earth",
+        "energy": "Grounded",
+        "color": "#8B4513",
+        "domain": "manifestation"
+      }
+    },
+    {
+      "path": "0'/7'/7'/7'/48/m/4'",
+      "final_key_hash": "2b19e970a4f70d28e84f051a693bdbdea4f02173e4c6aade67d56a22f1d81f12",
+      "final_chain_hash": "68d07cdd6b8b9397574ec97b58a22c2ff18f2d5a8b7cacf527f8e33f464df6be",
+      "derivation_levels": [
+        {
+          "level": "master",
+          "index": "m",
+          "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+          "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+        },
+        {
+          "level": 1,
+          "index": "0'",
+          "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+          "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+        },
+        {
+          "level": 2,
+          "index": "7'",
+          "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+          "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+        },
+        {
+          "level": 3,
+          "index": "7'",
+          "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+          "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+        },
+        {
+          "level": 4,
+          "index": "7'",
+          "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+          "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+        },
+        {
+          "level": 5,
+          "index": "48",
+          "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+          "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+        },
+        {
+          "level": 6,
+          "index": "4'",
+          "key_hash": "2b19e970a4f70d28e84f051a693bdbdea4f02173e4c6aade67d56a22f1d81f12",
+          "chain_hash": "68d07cdd6b8b9397574ec97b58a22c2ff18f2d5a8b7cacf527f8e33f464df6be"
+        }
+      ],
+      "raw_key": "bf16d68ec5efa27a89004f0a3f1ac50312cee1267bdf8162b298fbe1775ca3f8",
+      "raw_chain": "74ecc9a92a43bdf15a86a8e13ced030a730516589e98773c5a89aa81d9bd4f8c",
+      "signer_index": 4,
+      "signer_path": "0'/7'/7'/7'/48/m/4'",
+      "daus_element": "UNION",
+      "daus_config": {
+        "name": "UNION",
+        "polarity": 0,
+        "direction": "Center",
+        "coordinates": "43\u00b058\u203221\u2033N, 18\u00b010\u203254\u2033E",
+        "axis": "No-Space-Time-Bridgeworld",
+        "position": "Center Temple of Love",
+        "energy": "stable",
+        "color": "#FFFFFF",
+        "domain": "Balance"
+      }
+    }
+  ],
+  "aramaic_structure": {
+    "positions": 24,
+    "structure": "0 (Pre-Aleph) + 22 Letters + 0 (Post-Tav)",
+    "keys": [
+      {
+        "path": "0'/7'/7'/7'/48/m/0'/335044'",
+        "final_key_hash": "67c9f0cbb0cfc20ebc95fe375640b45887f935db6df5d79b6821ce29a11574f2",
+        "final_chain_hash": "20832724a765466cf4b2d5ceaf75e3940e0dc4f35705c13dd69490feedb22bc1",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "0'",
+            "key_hash": "43135aa4457989a853b579a9e7fda619fb66439695c680aaa6768f2eba86b5f3",
+            "chain_hash": "48b3c6dfe741739aa48ce823ced1d7423d83c5cbc325524a987adfea6cae3f51"
+          },
+          {
+            "level": 7,
+            "index": "335044'",
+            "key_hash": "67c9f0cbb0cfc20ebc95fe375640b45887f935db6df5d79b6821ce29a11574f2",
+            "chain_hash": "20832724a765466cf4b2d5ceaf75e3940e0dc4f35705c13dd69490feedb22bc1"
+          }
+        ],
+        "raw_key": "9b9918f7a00d9c6e240fe1ce448f64311b4fa34bbfd1d6602b79a7e5693bf634",
+        "raw_chain": "ce6d8e20b0f1158dec56ce68535bd8251704053ef5e46214ac3abbdac896687a",
+        "position": 0,
+        "contract_number": 335044,
+        "aramaic": {
+          "glyph": "\u2205",
+          "name": "Pre-Aleph",
+          "value": 0
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/1'/82'",
+        "final_key_hash": "0f8185cf1ca86eadf3d4c6973fdffe0ffdee2310d462a37244ae1b787e6ce7eb",
+        "final_chain_hash": "8cf5331369e482b67e94ed18d2064e89deec7a3a1240620fafa76cb3624dfb3b",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "1'",
+            "key_hash": "75fb54724623b60f92ef512fa13a705ab71b3098bb1a022f6cb163a4e34e7b8d",
+            "chain_hash": "4c0f514bcabdf1a5cb352ba6f55191579d3a4c57da66fca38e85f8bec2b2cbbe"
+          },
+          {
+            "level": 7,
+            "index": "82'",
+            "key_hash": "0f8185cf1ca86eadf3d4c6973fdffe0ffdee2310d462a37244ae1b787e6ce7eb",
+            "chain_hash": "8cf5331369e482b67e94ed18d2064e89deec7a3a1240620fafa76cb3624dfb3b"
+          }
+        ],
+        "raw_key": "64c0625797abf8d12d012990ff657893680b5f32a790fa10fd1c0f20c7e1ef1a",
+        "raw_chain": "b394b98f045fead7e5b8eacf3f0834ee21e69dfd7e523de92742a2e5aaca4dd5",
+        "position": 1,
+        "contract_number": 82,
+        "aramaic": {
+          "glyph": "\ud802\udc40",
+          "name": "Aleph",
+          "value": 1
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/2'/111'",
+        "final_key_hash": "04c0d60fede51c7d319533267a1aba80d0526023cefdcb64b027466535468a37",
+        "final_chain_hash": "25ee0186ea72671e78066feba1f9e2529a4c78826b122a84de02b7618093834c",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "2'",
+            "key_hash": "951abf406c4c3ff669a1083ea37e113098c78a760a22dc441e66b9dcaf2bb912",
+            "chain_hash": "564e4ea039defb2809b5a8ace37580243513d8073bd4358612c98cffb68c3167"
+          },
+          {
+            "level": 7,
+            "index": "111'",
+            "key_hash": "04c0d60fede51c7d319533267a1aba80d0526023cefdcb64b027466535468a37",
+            "chain_hash": "25ee0186ea72671e78066feba1f9e2529a4c78826b122a84de02b7618093834c"
+          }
+        ],
+        "raw_key": "49d0655f0806ec6a1c72be8ad45c1bbfbd9524f88a188883b885e592d95db24e",
+        "raw_chain": "18026fbfe5b30850fc489c523a6592d632e32a0d866a9ff6b0896456ae02c476",
+        "position": 2,
+        "contract_number": 111,
+        "aramaic": {
+          "glyph": "\ud802\udc41",
+          "name": "Beth",
+          "value": 2
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/3'/212'",
+        "final_key_hash": "41e5f8c8f35d71f61bc24d93a40eee7d85a3cf3999ada779f069070626cbb905",
+        "final_chain_hash": "76889acd7da51d2e51021500131dedca25b78811dec96913172cd323df718de7",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "3'",
+            "key_hash": "f1024f0be6bf9988e1d7498b7a8eded3fbb1b347c36ccd94714a1a64a0ce4f6e",
+            "chain_hash": "3fb0bdfa8edd66d6fb12449244b3032a44e1fd0a7c78c7d507c987e337eb38ef"
+          },
+          {
+            "level": 7,
+            "index": "212'",
+            "key_hash": "41e5f8c8f35d71f61bc24d93a40eee7d85a3cf3999ada779f069070626cbb905",
+            "chain_hash": "76889acd7da51d2e51021500131dedca25b78811dec96913172cd323df718de7"
+          }
+        ],
+        "raw_key": "80624f6552bf5b9d46761ec7260a61797d2afd9f676f92a09e367b7d3e279696",
+        "raw_chain": "fb434a707dea63b17768117afba6758f743c34e8e0585d9ddbc3e19e5795d509",
+        "position": 3,
+        "contract_number": 212,
+        "aramaic": {
+          "glyph": "\ud802\udc42",
+          "name": "Gimel",
+          "value": 3
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/4'/295'",
+        "final_key_hash": "0e097c6cdb8185ced678c0f06dac69a99a35ee0ba2978672a076b90152890da9",
+        "final_chain_hash": "f4b8da7fcc187599e2f323e7fbe3701820be44e099c849c847f7137bcb03beb2",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "4'",
+            "key_hash": "2b19e970a4f70d28e84f051a693bdbdea4f02173e4c6aade67d56a22f1d81f12",
+            "chain_hash": "68d07cdd6b8b9397574ec97b58a22c2ff18f2d5a8b7cacf527f8e33f464df6be"
+          },
+          {
+            "level": 7,
+            "index": "295'",
+            "key_hash": "0e097c6cdb8185ced678c0f06dac69a99a35ee0ba2978672a076b90152890da9",
+            "chain_hash": "f4b8da7fcc187599e2f323e7fbe3701820be44e099c849c847f7137bcb03beb2"
+          }
+        ],
+        "raw_key": "2bbeda9e31beb1990967f1d2c2f7a01704d578922965025757246a5b6912ca47",
+        "raw_chain": "3158714ad37fa80557c91c89b9c549243d631f029ab55f818fe69afaaeb753ab",
+        "position": 4,
+        "contract_number": 295,
+        "aramaic": {
+          "glyph": "\ud802\udc43",
+          "name": "Daleth",
+          "value": 4
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/5'/333'",
+        "final_key_hash": "212331401b08e40e63dfeeaaff3d22cabb59f48c5c9c2bbb55939df854f95b8c",
+        "final_chain_hash": "e5cda2d113e61701c1c16e1747d36be305f1c824cdc2d61d10b4d3c8e6184d5f",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "5'",
+            "key_hash": "c2860ed0b62d19a86ec5b5dd0f12674cc858b182995af4d2c23c93250b7d9964",
+            "chain_hash": "6d5d93a75f3410f527298a26619eaf9d9d93b2cd059cac193e1fc6277ffc2369"
+          },
+          {
+            "level": 7,
+            "index": "333'",
+            "key_hash": "212331401b08e40e63dfeeaaff3d22cabb59f48c5c9c2bbb55939df854f95b8c",
+            "chain_hash": "e5cda2d113e61701c1c16e1747d36be305f1c824cdc2d61d10b4d3c8e6184d5f"
+          }
+        ],
+        "raw_key": "24c89ad1bd8d9174005774c2ce7a4aa2f6e792f3c8b94bcb9918e98cc10a7c75",
+        "raw_chain": "486a94f599980be4f93e93f98463711f87117ec8e2bf0c9d248b8b0fd55f42a5",
+        "position": 5,
+        "contract_number": 333,
+        "aramaic": {
+          "glyph": "\ud802\udc44",
+          "name": "He",
+          "value": 5
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/6'/354'",
+        "final_key_hash": "1f58df81db4d775509a10392b6b73f81051c2f6c289623216940d5fa8060d1a2",
+        "final_chain_hash": "83144293617e5350601553ebf39f6c6203d3cea23f9389bcfef0b61c5e57fedc",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "6'",
+            "key_hash": "eb31fbd34aafc428abbe5f16e424043e9efc64cc724c9f0926607526a0938c3b",
+            "chain_hash": "d39f53007815fd1a3814ddfedada689d7ae6f6b20d5d84e051fe6f364f62d95a"
+          },
+          {
+            "level": 7,
+            "index": "354'",
+            "key_hash": "1f58df81db4d775509a10392b6b73f81051c2f6c289623216940d5fa8060d1a2",
+            "chain_hash": "83144293617e5350601553ebf39f6c6203d3cea23f9389bcfef0b61c5e57fedc"
+          }
+        ],
+        "raw_key": "e4f4cd67960fb5fbdbdec3ea61cb26de75ed597d76b67db6271b408a0f3e9a34",
+        "raw_chain": "e5eaf9fa3d03bf6567fdb022eeab2841c2984b3009f1bff9d2706a3519e6e87f",
+        "position": 6,
+        "contract_number": 354,
+        "aramaic": {
+          "glyph": "\ud802\udc45",
+          "name": "Vav",
+          "value": 6
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/7'/369'",
+        "final_key_hash": "951e5230419269d45d4232a8368503c8056518668d1436330d70da43b6a4c766",
+        "final_chain_hash": "9cadd69d8d8cf39661be6070c8c60c5f0d5d7bf791a896398e3d2b14a2a09197",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "7'",
+            "key_hash": "674c12ab2d295c4b6ad14c70f5b2a6316bec4e907cdda5fe5ae0e0a8193fc611",
+            "chain_hash": "3040a4cc84c31d285e783950574786f9e2788511670d45e77f7340f411672580"
+          },
+          {
+            "level": 7,
+            "index": "369'",
+            "key_hash": "951e5230419269d45d4232a8368503c8056518668d1436330d70da43b6a4c766",
+            "chain_hash": "9cadd69d8d8cf39661be6070c8c60c5f0d5d7bf791a896398e3d2b14a2a09197"
+          }
+        ],
+        "raw_key": "f634154f792269d00382cef765b3cf1d198995a5d6b58b8c990435de29bd433d",
+        "raw_chain": "8344fb91fca94843ec0055520f590e967e6e31f5cfebd9361069999d3b1dddca",
+        "position": 7,
+        "contract_number": 369,
+        "aramaic": {
+          "glyph": "\ud802\udc46",
+          "name": "Zayin",
+          "value": 7
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/8'/419'",
+        "final_key_hash": "f180643b31ea682ae0cc0345ce6fffae412ffb12b740e40b7e01037ef071c5c3",
+        "final_chain_hash": "34a1029cc8bf3b26c240b024689e9010ea262e5f51ed9acc965d92f154617222",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "8'",
+            "key_hash": "0f332cdd3c63b5c4b2bb77b0d50142aee3324897ca6149ac6702d3478bc0036a",
+            "chain_hash": "39c1c087ee571efb3c95d7ba9c5817f0db5069b9c2f37ff4faa837c2635d44e2"
+          },
+          {
+            "level": 7,
+            "index": "419'",
+            "key_hash": "f180643b31ea682ae0cc0345ce6fffae412ffb12b740e40b7e01037ef071c5c3",
+            "chain_hash": "34a1029cc8bf3b26c240b024689e9010ea262e5f51ed9acc965d92f154617222"
+          }
+        ],
+        "raw_key": "9d6da7506ea4f1e85d314f269957940a9797690dd2c68da7c2f452fd056428c1",
+        "raw_chain": "edfef2915719ec66555e4242eaf07a7429e3f9c446b873cb87c6b83e4246e645",
+        "position": 8,
+        "contract_number": 419,
+        "aramaic": {
+          "glyph": "\ud802\udc47",
+          "name": "Heth",
+          "value": 8
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/9'/512'",
+        "final_key_hash": "8be3b25348473534d50dfe31f07b5635d76a1365796c42f1c3c3a856aa9f165e",
+        "final_chain_hash": "fabcac8f3c176f9795e757a68d1796098115489b47e164098546377077d82054",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "9'",
+            "key_hash": "7cb2bcad9338d5118da80c7c55b89ba1e3a177c6c0aba09426f6ea69c3264d72",
+            "chain_hash": "7a20326135ee4cb908f25dbd376bd8b13e9e1fd60f953adb73482a67d89fb92a"
+          },
+          {
+            "level": 7,
+            "index": "512'",
+            "key_hash": "8be3b25348473534d50dfe31f07b5635d76a1365796c42f1c3c3a856aa9f165e",
+            "chain_hash": "fabcac8f3c176f9795e757a68d1796098115489b47e164098546377077d82054"
+          }
+        ],
+        "raw_key": "fe6c219fcfa8d25285679ce8bcda415050a87384a787304558217b53b622da27",
+        "raw_chain": "157a66f577588d35fbd17b5bc54887243f0db01e9ff3b74b8bf7fe5f0f69bd26",
+        "position": 9,
+        "contract_number": 512,
+        "aramaic": {
+          "glyph": "\ud802\udc48",
+          "name": "Teth",
+          "value": 9
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/10'/605'",
+        "final_key_hash": "65a4c0ee58532bbae872c5b80dddcbd01fa53ca5ea392bf02bc2bb0de963d069",
+        "final_chain_hash": "8af10ffd40dd4fdbbd3a01171b0996621e7bba12cf73e585aa8ee5cdb010fdeb",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "10'",
+            "key_hash": "d51cb4b2b659d52fad7af2eb0d3fa4701d9f52efb50fab96c26db6dd74732a88",
+            "chain_hash": "b428b868ca02051705066dae06fe3761ba18c940aaebe4f7dde1e68a43665f0d"
+          },
+          {
+            "level": 7,
+            "index": "605'",
+            "key_hash": "65a4c0ee58532bbae872c5b80dddcbd01fa53ca5ea392bf02bc2bb0de963d069",
+            "chain_hash": "8af10ffd40dd4fdbbd3a01171b0996621e7bba12cf73e585aa8ee5cdb010fdeb"
+          }
+        ],
+        "raw_key": "63326146cd95fabe7087b3ba111524f6d6489ded3b2fbb11b103a9701ac29c4d",
+        "raw_chain": "b74ac20a5a670d60580af0cb1f19df9877152359957da76e14b2c355801ae378",
+        "position": 10,
+        "contract_number": 605,
+        "aramaic": {
+          "glyph": "\ud802\udc49",
+          "name": "Yodh",
+          "value": 10
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/11'/687'",
+        "final_key_hash": "a9b41485e3e0d3b1efd71d81da6620562ba1374569be53d50d805b1ef6cb1330",
+        "final_chain_hash": "d6b1627125bf28dd6909b659895c51b99bf60590574984a13afba809c8668c14",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "11'",
+            "key_hash": "ac7a8580c66ce302fd6accbd84d0bf2f100899d541c4761d4bba927c6937e538",
+            "chain_hash": "a0571bbc55889e0158c1dd283007d8a0da2f573d891fac26f571edd11f08fe4e"
+          },
+          {
+            "level": 7,
+            "index": "687'",
+            "key_hash": "a9b41485e3e0d3b1efd71d81da6620562ba1374569be53d50d805b1ef6cb1330",
+            "chain_hash": "d6b1627125bf28dd6909b659895c51b99bf60590574984a13afba809c8668c14"
+          }
+        ],
+        "raw_key": "21916944e5228814812bbd6d6f37e3aae23158cefe1bd0cfb6231c7ce00cefd9",
+        "raw_chain": "4528e5d2eec2c084f46f6273a552e93218cdf443e566514373db4b6d49253ff5",
+        "position": 11,
+        "contract_number": 687,
+        "aramaic": {
+          "glyph": "\ud802\udc4a",
+          "name": "Kaph",
+          "value": 20
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/12'/777'",
+        "final_key_hash": "445f16544d71b2e40ae8653ea9c135dc0ef315b9946ea6f702a382b7e37e3d9b",
+        "final_chain_hash": "b7539da73795a8076527721a4f8cc171aabc9615ce330bfc12d4b98ad4f85ca7",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "12'",
+            "key_hash": "ef254475284fe75b30d71372c82bf3f997c7635feb72648aa750728811e97eb5",
+            "chain_hash": "de72568dafb75588da87c4b69c3f4dd06bfc36903b48037e50d554a231c4b6c7"
+          },
+          {
+            "level": 7,
+            "index": "777'",
+            "key_hash": "445f16544d71b2e40ae8653ea9c135dc0ef315b9946ea6f702a382b7e37e3d9b",
+            "chain_hash": "b7539da73795a8076527721a4f8cc171aabc9615ce330bfc12d4b98ad4f85ca7"
+          }
+        ],
+        "raw_key": "3bc62239a7089d901515be7d22f5086e292d37e57445806701d827c578662fb2",
+        "raw_chain": "40f5389927b881d138f8a6f70d240fbe663c7f0136ca8ede161391265bfafd11",
+        "position": 12,
+        "contract_number": 777,
+        "aramaic": {
+          "glyph": "\ud802\udc4b",
+          "name": "Lamedh",
+          "value": 30
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/13'/888'",
+        "final_key_hash": "ca7c55a0cf0195a972d7fb6838498c186b000b465a21c5141ca1b241f235b7f5",
+        "final_chain_hash": "6acb986ca7a98ec98d89a903cdabc49d9417b20302a044bd9fe3bf21908290d7",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "13'",
+            "key_hash": "3a24c1a520184dbdd4513c1bdb54a2b53ee939977568cee9083dc6208250b22b",
+            "chain_hash": "00a194287553d8dac3be88cf9c07675a0b1af5e600ba98f58b8b53b614a007c1"
+          },
+          {
+            "level": 7,
+            "index": "888'",
+            "key_hash": "ca7c55a0cf0195a972d7fb6838498c186b000b465a21c5141ca1b241f235b7f5",
+            "chain_hash": "6acb986ca7a98ec98d89a903cdabc49d9417b20302a044bd9fe3bf21908290d7"
+          }
+        ],
+        "raw_key": "3869407338f08441fe77d05ba8d521ea129a91d47387b86227da54da3fb051ed",
+        "raw_chain": "32514d100aa96dc08786d65300f0ecda2d8433cd16b18a43f398b93f616bdd47",
+        "position": 13,
+        "contract_number": 888,
+        "aramaic": {
+          "glyph": "\ud802\udc4c",
+          "name": "Mem",
+          "value": 40
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/14'/929'",
+        "final_key_hash": "7e8463eda649151790380a4f23f58a574d05c3153917cc50a5169bc3adc7a72b",
+        "final_chain_hash": "4b50e34b1e6846faa9457f9ab912289c00c619d9f3ac3c48fba6a4fb08f9c27b",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "14'",
+            "key_hash": "d0ac1d63aaa9903118bbe24c4543f578c4f2588bd6b440335bbad17326f2951e",
+            "chain_hash": "9577c1f67584fc5590846b8eec59686fc192921cf194853d5478b3503d4fc796"
+          },
+          {
+            "level": 7,
+            "index": "929'",
+            "key_hash": "7e8463eda649151790380a4f23f58a574d05c3153917cc50a5169bc3adc7a72b",
+            "chain_hash": "4b50e34b1e6846faa9457f9ab912289c00c619d9f3ac3c48fba6a4fb08f9c27b"
+          }
+        ],
+        "raw_key": "c6e7a8e2f08ed1477abb7e7790cb606c3e0eae941b599b310af06e43fe47d47b",
+        "raw_chain": "e92f2bf32e7f3f87d8702880c817a343cbcd63d69c5335e3aaff445e69bdebaa",
+        "position": 14,
+        "contract_number": 929,
+        "aramaic": {
+          "glyph": "\ud802\udc4d",
+          "name": "Nun",
+          "value": 50
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/15'/1011'",
+        "final_key_hash": "de869c69e5cb139b8bd44230458e3170324be515be164b310830ff3f25579ab4",
+        "final_chain_hash": "cba4875597eb7d49beaac0e285e61e3fd5d670ca314435e9d5297def25336f33",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "15'",
+            "key_hash": "a8b78c3c1b423061754390cf5f9486f4be5849795aaa9395daf3afc1e35e2b30",
+            "chain_hash": "83e9340bf7927e11922bb79ccc48d4cd84efd8e532940d6da2fdc4dd32a3ae29"
+          },
+          {
+            "level": 7,
+            "index": "1011'",
+            "key_hash": "de869c69e5cb139b8bd44230458e3170324be515be164b310830ff3f25579ab4",
+            "chain_hash": "cba4875597eb7d49beaac0e285e61e3fd5d670ca314435e9d5297def25336f33"
+          }
+        ],
+        "raw_key": "409ad34876cbc743aea719bed414675a9e35b4588e0835f3b60b77628b9373e3",
+        "raw_chain": "2174248a7200767dfba94fb66c7b23f4793a04815cb6a897a993f340d58009bf",
+        "position": 15,
+        "contract_number": 1011,
+        "aramaic": {
+          "glyph": "\ud802\udc4e",
+          "name": "Samekh",
+          "value": 60
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/16'/2025'",
+        "final_key_hash": "091824c2102b3a77a449bc9de5457fe4f2c42db1b21cdefbcdae85f427975a8e",
+        "final_chain_hash": "4932f67371637e8ce67e73bdbf33dffd57138988a65574bb75cbaae2b82b2fd1",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "16'",
+            "key_hash": "8e94cfc1cce28717617bbec7f2ee5a95f2ae8d462d0e01ea1192406892d1f052",
+            "chain_hash": "41a081ad3392ea213d6bcbb9edad76f47dcb09f53671b90e59569641ea44b156"
+          },
+          {
+            "level": 7,
+            "index": "2025'",
+            "key_hash": "091824c2102b3a77a449bc9de5457fe4f2c42db1b21cdefbcdae85f427975a8e",
+            "chain_hash": "4932f67371637e8ce67e73bdbf33dffd57138988a65574bb75cbaae2b82b2fd1"
+          }
+        ],
+        "raw_key": "7e03a7e97dfb47828093a5ba062bd62a5ff1e3cde96206734603110cdfd2bad7",
+        "raw_chain": "946ad8c1f928a3e80751e50befa69a2bb362d55864e2fbac51750b2ab4e2c037",
+        "position": 16,
+        "contract_number": 2025,
+        "aramaic": {
+          "glyph": "\ud802\udc4f",
+          "name": "Ayin",
+          "value": 70
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/17'/3335'",
+        "final_key_hash": "e7dc1681e661a7be113fffbd68bfd7cc085ee3a48de51ab7f97de4401c30c4e7",
+        "final_chain_hash": "89ad0ac73812ae740a2ad692a5015d18b3e606b6438306a9f1d6c642a79eed09",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "17'",
+            "key_hash": "8361ca8d242345b6b0da91127dee8f8fb78f76632f6e847fc505faa92a3235a6",
+            "chain_hash": "a7f4c4db601cb161fddbac5a12fe61c1e48b0c16bd12ac82778cb7dc59fa31e8"
+          },
+          {
+            "level": 7,
+            "index": "3335'",
+            "key_hash": "e7dc1681e661a7be113fffbd68bfd7cc085ee3a48de51ab7f97de4401c30c4e7",
+            "chain_hash": "89ad0ac73812ae740a2ad692a5015d18b3e606b6438306a9f1d6c642a79eed09"
+          }
+        ],
+        "raw_key": "e5fcb8e469db5eea04205d2d6e0d2c466729ab9b9eb83adbc81c46e4f100660a",
+        "raw_chain": "555e15ceac638ce3572a5c3e05c1abb73b98a2353765d57c234d20e18460e43b",
+        "position": 17,
+        "contract_number": 3335,
+        "aramaic": {
+          "glyph": "\ud802\udc50",
+          "name": "Pe",
+          "value": 80
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/18'/4321'",
+        "final_key_hash": "6fa8481ad113bd54d34280859ddea0dc8b880b4c7e1deb39014784929596d10c",
+        "final_chain_hash": "3c9070809be873335c06e2e14f53f025b261888039ea9539a6eba28b65583505",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "18'",
+            "key_hash": "ecfaf503074d57f054d535967711e8aaf596c6d6b22395f2577d21e14fba3b49",
+            "chain_hash": "f76398d6b1a250217fef3f99d7fe456b85f8670f2ab020bfe5c2c6eb02050e96"
+          },
+          {
+            "level": 7,
+            "index": "4321'",
+            "key_hash": "6fa8481ad113bd54d34280859ddea0dc8b880b4c7e1deb39014784929596d10c",
+            "chain_hash": "3c9070809be873335c06e2e14f53f025b261888039ea9539a6eba28b65583505"
+          }
+        ],
+        "raw_key": "782cfdc475922c2a512b45570964dc15a53b79794ef6b1731f6a8fd97027f0ff",
+        "raw_chain": "929eff9778eebd337f5e093d1e3018a4b6f34ffeda4e3675a9f42f465b6690ba",
+        "position": 18,
+        "contract_number": 4321,
+        "aramaic": {
+          "glyph": "\ud802\udc51",
+          "name": "Tsade",
+          "value": 90
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/19'/5250'",
+        "final_key_hash": "20f24dc1b1a70c596ef0eb2950c73b502a1bb3c48f83704e72770a13dfde3412",
+        "final_chain_hash": "cf67469f22c878ababafa77e4997e5cf1c1dc23d1c4626c4c85a2ecdb1fa9092",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "19'",
+            "key_hash": "1533860e34c81828292bd2ffdb4c02b792737d4c1647c16c2c7e8ba87e1bf628",
+            "chain_hash": "eefd3f40baadd844878ebc7d8c4b7da49deeeebbe134f1559b24f404753ef0e7"
+          },
+          {
+            "level": 7,
+            "index": "5250'",
+            "key_hash": "20f24dc1b1a70c596ef0eb2950c73b502a1bb3c48f83704e72770a13dfde3412",
+            "chain_hash": "cf67469f22c878ababafa77e4997e5cf1c1dc23d1c4626c4c85a2ecdb1fa9092"
+          }
+        ],
+        "raw_key": "bd01c97268b9c7d9f9cd5ceb96cdc8339d081f4ce5f289c46df66264209fbb02",
+        "raw_chain": "1bdd73bde0781b4ebc5d9530ef576c0556f38dc915cf44f633d5d3809c388ae8",
+        "position": 19,
+        "contract_number": 5250,
+        "aramaic": {
+          "glyph": "\ud802\udc52",
+          "name": "Qoph",
+          "value": 100
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/20'/55088'",
+        "final_key_hash": "c9e45d046438864dac88292cd73ea55cd37b1823b119f4abfc6d1d8be4e6aabc",
+        "final_chain_hash": "12e867586c49763e2419213a66da5bfaa342f9b92582c23cc17b487df23e34b2",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "20'",
+            "key_hash": "6033ab3760dbf8bc1bf2b069e22c182060ec31faaf0a267e4db10b597c581311",
+            "chain_hash": "7b6822f8e35d1599ccc7deebf94cbb3274ce38bfab4f9f2ca593be183f92ec68"
+          },
+          {
+            "level": 7,
+            "index": "55088'",
+            "key_hash": "c9e45d046438864dac88292cd73ea55cd37b1823b119f4abfc6d1d8be4e6aabc",
+            "chain_hash": "12e867586c49763e2419213a66da5bfaa342f9b92582c23cc17b487df23e34b2"
+          }
+        ],
+        "raw_key": "e570790cb81f1b21cc3ce9c963910bdcff309d8ca0c0fa5e4e01ac4dd017e442",
+        "raw_chain": "f13c697f1ab7f79c7a98e05b9a28bc5dc7ff860ba543b7e4b208648efbaad4bb",
+        "position": 20,
+        "contract_number": 55088,
+        "aramaic": {
+          "glyph": "\ud802\udc53",
+          "name": "Resh",
+          "value": 200
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/21'/57103'",
+        "final_key_hash": "53f63d309ac408f310ccfd845e464684906224690a37967eee590d32650fbc93",
+        "final_chain_hash": "e1e14224cdc6ef743dd58210ad553094c7a827d3f4d4ea4cf1d0a9365adbfad9",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "21'",
+            "key_hash": "db64a0db594a50311bdebc253d2d03658c82736779411da21e923e64b0324297",
+            "chain_hash": "8c1f3f6601c18df5aae84f7b20afe7551a8a312cc117d6a6bc0c9ace83172cb1"
+          },
+          {
+            "level": 7,
+            "index": "57103'",
+            "key_hash": "53f63d309ac408f310ccfd845e464684906224690a37967eee590d32650fbc93",
+            "chain_hash": "e1e14224cdc6ef743dd58210ad553094c7a827d3f4d4ea4cf1d0a9365adbfad9"
+          }
+        ],
+        "raw_key": "5b05dd404e004caff82fe348ef5524899f11466d5bf875d1e1b535de985108b9",
+        "raw_chain": "486f42a27ba7d592e7aedef8cf6a4531d5a0a5e29ec942cf64340042bd6bdec6",
+        "position": 21,
+        "contract_number": 57103,
+        "aramaic": {
+          "glyph": "\ud802\udc54",
+          "name": "Shin",
+          "value": 300
+        }
+      },
+      {
+        "path": "0'/7'/7'/7'/48/m/22'/840000'",
+        "final_key_hash": "accdc8dceb06105624666e2d49819b39bdcb527c4e369117f0fa39881c3e001f",
+        "final_chain_hash": "a636366875f8da04ff0166bdea31667024f3dd735dbc01f9eec6c2eea990fc69",
+        "derivation_levels": [
+          {
+            "level": "master",
+            "index": "m",
+            "key_hash": "2b98b91e6384eaba7c43f8c2fb6d5c70e296b2e4a4e35af1434f93a0e2f2b92c",
+            "chain_hash": "79c3e9fb512ddab6439a03859119de09a39b7527f88f8bdc39387acc4080b96b"
+          },
+          {
+            "level": 1,
+            "index": "0'",
+            "key_hash": "26f4b8f8f484eac91b8db2927f94d58c2d703f03f29378fed1eb5d77e04bfdbe",
+            "chain_hash": "ebd9d817b49bca0d14016e42b232acf717068a220a119062e4dc7a3c8beade37"
+          },
+          {
+            "level": 2,
+            "index": "7'",
+            "key_hash": "65aed2ff6b2dbe082b020c04e71856cdb7f3f801e5cd717ef47ea68580d4a3ac",
+            "chain_hash": "6ec531538b98d59e9954b4e3077aa7f1d94e3f1764211cd280f6e4b325360d4e"
+          },
+          {
+            "level": 3,
+            "index": "7'",
+            "key_hash": "0900ae6d7c855c14aff9bf39f56b623adc1c117d5d39aea00207eed7497f6d04",
+            "chain_hash": "a71036ce8e290f4261390a7e39c6c68a6c732df411ba0d76cc3963ae10899d13"
+          },
+          {
+            "level": 4,
+            "index": "7'",
+            "key_hash": "df46ecb485db726e5909467aa41852b1ceb1d693de5086715719b82f2216464f",
+            "chain_hash": "95ecce97d2c3776b97aa32c3968e1d74140aabbd610185c085bf150b7a2f4615"
+          },
+          {
+            "level": 5,
+            "index": "48",
+            "key_hash": "c3f31b0911d4ded159c4fe510092eb6a9dc29eb630d8bd35b99f8a1057826719",
+            "chain_hash": "32867474d46f65653c694d3135e2ae323cd84d784a0767d1aa0af7c62032a0c1"
+          },
+          {
+            "level": 6,
+            "index": "22'",
+            "key_hash": "c412849c287da6a83fe72ac7cbc23b6be23b1186869744bbc5b7f2530935e3e4",
+            "chain_hash": "7cb8aed65e668f767f9111d23bb8e2afbf36a6266dfd7a7f863436100af901d5"
+          },
+          {
+            "level": 7,
+            "index": "840000'",
+            "key_hash": "accdc8dceb06105624666e2d49819b39bdcb527c4e369117f0fa39881c3e001f",
+            "chain_hash": "a636366875f8da04ff0166bdea31667024f3dd735dbc01f9eec6c2eea990fc69"
+          }
+        ],
+        "raw_key": "c3c0a309a4ebaeacb1d76b56b9411e37286ee46a340fd9d9d7f728058f536e45",
+        "raw_chain": "5fa8edb4fc8d29f41cd02e0dfea8483b965905ec08656c7af510ecbabdc40472",
+        "position": 22,
+        "contract_number": 840000,
+        "aramaic": {
+          "glyph": "\ud802\udc55",
+          "name": "Taw",
+          "value": 400
+        }
+      }
+    ]
+  },
+  "identity_string": "{335044}-82-111-212-295-333-354-369-419-512-605-687-777-888-929-1011-2025-3335-4321-5250-55088-57103-{840000}",
+  "contract_numbers": [
+    335044,
+    82,
+    111,
+    212,
+    295,
+    333,
+    354,
+    369,
+    419,
+    512,
+    605,
+    687,
+    777,
+    888,
+    929,
+    1011,
+    2025,
+    3335,
+    4321,
+    5250,
+    55088,
+    57103,
+    840000
+  ],
+  "traceability": {
+    "deterministic": true,
+    "no_randomness": true,
+    "all_sources_verified": true,
+    "hermetic_principle": "As Above, So Below, As Within, So Without",
+    "sources": [
+      "The_Eternal_Covenant_Declaration.png",
+      "Archivist_Scroll.txt",
+      "DAUS.txt",
+      "Glyph.png",
+      "Master_Vault_Key.png",
+      "IPFS CID",
+      "Derivation Path: 0'/7'/7'/7'/48/m"
+    ]
+  }
+}

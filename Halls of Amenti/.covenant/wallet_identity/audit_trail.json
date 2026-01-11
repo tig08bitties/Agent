@@ -1,0 +1,65 @@
+{
+  "version": "1.0-COVENANT-WALLET-IDENTITY",
+  "timestamp": "2026-01-11T01:39:08.446041Z",
+  "derivation_path": "0'/7'/7'/7'/48/m",
+  "mnemonic": {
+    "total_words": 24,
+    "checksum_valid": true,
+    "entropy_bits": 256,
+    "split_strategy": {
+      "first_12": "Uniswap Wallet (Hot)",
+      "all_24": "Ledger Flex (Cold)"
+    }
+  },
+  "wallets": {
+    "uniswap": {
+      "ethereum_address": "0xf9a5fd502a722dfebf097e82ad339522806384cf",
+      "path": "m/44'/60'/0'/0/0",
+      "mnemonic_words": 12,
+      "purpose": "Hot wallet for DeFi operations"
+    },
+    "ledger_flex": {
+      "ethereum_address": "0x2784257853a3d480c1d9fdda26cb0d60102b8076",
+      "path": "0'/7'/7'/7'/48/m",
+      "mnemonic_words": 24,
+      "purpose": "Cold storage with full security"
+    }
+  },
+  "openpgp_keys": {
+    "digital": {
+      "fingerprint": "5DD91AF2803487C436A7660AE031B4917F6BD036",
+      "email": "ethermail.io",
+      "algorithm": "ECDSA P-256",
+      "purpose": "Web3 Digital Identity"
+    },
+    "personal": {
+      "fingerprint": "0A8A862DCEA0494AB6CC4E86E21A1FC80F4F2D53",
+      "email": "theos.brave@gmail.com",
+      "algorithm": "RSA-4096",
+      "purpose": "Primary Personal Identity"
+    }
+  },
+  "cryptographic_anchors": {
+    "declaration_sha256": "e374c94009e32a6c3cc8f89ea6102ce6886c3302324aaaf1563ace8f10332ebf",
+    "pgp_key_hex": "883e529de31c586131a831a9953113a6d75edd87c97369a2fa3a791209952f5a",
+    "master_hash": "69f7ddaab06f2c2e0259729b188f0c922658a1aacde1d9a307aaba26ff9df71e",
+    "ipfs_cid": "QmaN16BwrKhUZQLkCmY6a964F9fyEi3htCyDFEpwoZsWvL"
+  },
+  "security_notes": [
+    "All keys derived deterministically - NO randomness used",
+    "First 12 words provide 128-bit security (sufficient for hot wallet)",
+    "Full 24 words provide 256-bit security (maximum protection)",
+    "Store seed phrase offline in secure location",
+    "Never share private keys or seed phrases",
+    "PGP keys should be password-protected for additional security"
+  ],
+  "traceability": {
+    "sources": [
+      "The_Eternal_Covenant_Declaration.png",
+      "Archivist_Scroll.txt",
+      "DAUS.txt",
+      "Glyph.png"
+    ],
+    "hermetic_principle": "As Above, So Below, As Within, So Without"
+  }
+}

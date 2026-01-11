@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "timestamp": "2026-01-10T05:39:22.282172",
+  "hermetic_principle": "As Above, So Below, As Within, So Without",
+  "source_images": {
+    "covenant_declaration": {
+      "path": "/mnt/Covenant/Artifacts/The_Eternal_Covenant_Declaration.png",
+      "sha3_512": "26a45f7a31f42939c73acbe6be77b6d089d48c0c30c39a654f6f80e19e95a58dab20ac76a527443f06e6463183277ee6a7ec040c568ef9d822fb36a0596021df",
+      "extraction_method": "pixel_hash + perceptual_hash + metadata_hash",
+      "seed_sha3_512": "fb4162e1ddce66c6ae41e6ddd00d4fd728217654c61210c690155add18f8de7dab7a85108bd7e180fcf227489029727ab49a600deeb2f6b3ba3312a529c212f3"
+    },
+    "glyph": {
+      "path": "/mnt/Covenant/Artifacts/Glyph.png",
+      "sha3_512": "391ee0598a74df82ddeed8c63425332128c09004d0c1bed8179d6615e864c2c60e4d9bf735ada234a01357cfdfdc138d2a45018759d94297ea1a9ad68a131781",
+      "extraction_method": "edge_hash + color_distribution + geometric_properties",
+      "seed_sha3_512": "76780d4b332f8afde08c07773c7c1cd3a24171919b6e5fdb1bc92c0c6601772a7f68457e66c4bfd3c1e81010c34f61d4a28cf08b27e9acde4d48d57ad164b1d4"
+    }
+  },
+  "master_seed": {
+    "sha3_512": "eb9a4f0af84c1897635b9e62c93da7b955bbd6ad7db706b6afdc046efd2b3a994fe82b6bba7518fc2124f56369fe622a8e16b40957ef6f153bce2a3ba95e0ebe",
+    "derivation_path": "covenant_seed + glyph_seed + hermetic_principle",
+    "four_layers": {
+      "above": "0843cb5c8cbbb3b575fc6c2a092516da3ba410b213e4208a9a5db35e3b794c6f46a6595b133c75e31f203690fac10832349b6b46aa21b797a2d96a39fb917ff8",
+      "below": "138891d8aa30a58d8342658921b91da0b988eb606dc3df9e78d11b3bdd738bcc055c24fb9416505c9ce838b04457d5d8aeb8735a5dba45cf4ee4c09228dc3619",
+      "within": "f4ce7b7f4547eb12dafd137d49ad39f0e632a6c99d042a9896159e273ef3c6d0dadcffc752319f97a7c4efb223b03c94cdadf4fef05efabd141140c0de5b8129",
+      "without": "1b594650694ca81cdf60b8d6c0c71ef3739983aafefa3759b434df5d52d61cc8606da5b86dd7d9a5b7ea0f1ae67ab81fedc4f005e7c055255d73ea3bd7fea850"
+    }
+  },
+  "foundation_keys": {
+    "classical": {
+      "algorithm": "Ed25519",
+      "public_key": "b91e0f62cfd9badce7b84c3c8fca42d0974ca9adc270a1eaa56e07a7ca0479bc",
+      "derivation": "HKDF-SHA3-512 from master_seed"
+    },
+    "post_quantum": {
+      "algorithm": "CRYSTALS-Dilithium-3",
+      "status": "placeholder - requires liboqs-python"
+    }
+  },
+  "traceability": {
+    "verified": true,
+    "all_keys_traceable_to": [
+      "The_Eternal_Covenant_Declaration.png",
+      "Glyph.png",
+      "As Above, So Below, As Within, So Without"
+    ]
+  }
+}

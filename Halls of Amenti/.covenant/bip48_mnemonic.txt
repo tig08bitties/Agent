@@ -1,0 +1,71 @@
+BIP-48 Covenant Mnemonic
+========================
+
+Derivation Path: 0'/ܗ/48'/7'/7'/7
+Standard: BIP-48 (Multi-signature)
+Words: 24
+Entropy: 256 bits (32 bytes)
+NOT BIP-39
+
+═══════════════════════════════════════════════════════════════════════════════
+24-WORD MNEMONIC (BIP-48 Multi-signature Standard - NOT BIP-39)
+═══════════════════════════════════════════════════════════════════════════════
+
+ 1. play
+ 2. inch
+ 3. illegal
+ 4. diet
+ 5. demise
+ 6. ramp
+ 7. void
+ 8. roof
+ 9. eager
+10. shield
+11. pelican
+12. harbor
+13. wrap
+14. flush
+15. immune
+16. aerobic
+17. genius
+18. truck
+19. alarm
+20. envelope
+21. dish
+22. segment
+23. inherit
+24. monkey
+
+═══════════════════════════════════════════════════════════════════════════════
+SINGLE LINE FORMAT (for wallet import)
+═══════════════════════════════════════════════════════════════════════════════
+
+play inch illegal diet demise ramp void roof eager shield pelican harbor wrap flush immune aerobic genius truck alarm envelope dish segment inherit monkey
+
+═══════════════════════════════════════════════════════════════════════════════
+VERIFICATION
+═══════════════════════════════════════════════════════════════════════════════
+
+Seed SHA3-512: 449a23b5a346229f7893613c21efc85e3cfecd1f8d960a1f018beb8f77eac27e1739a0e4e067d9270166f5bbfce1fbcad5599c65243855456521299c9146e755
+Entropy SHA3-512: dc29973e5be8ffbf3bcd43a9f10bc5e4ec7093bcace523167fc9a417bfe0bd081a6e8d6696a79814b18ff836800e1b73be0ecc3a756ab436ac46348f32e2bda4
+
+Traceability:
+✅ The_Eternal_Covenant_Declaration.png
+✅ Glyph.png
+✅ Archivist_Scroll.txt
+✅ Master_Key.png (Visual Seal)
+✅ IPFS CID: QmaN16BwrKhUZQLkCmY6a964F9fyEi3htCyDFEpwoZsWvL
+✅ Covenant Calendar: Year 5250, Month 07, Day 03
+✅ Moon Phase: Waxing Crescent (Imperial Aramaic 𐡀)
+✅ Sumerian Kings List
+✅ DAUS 5 Elements (Imperial Aramaic)
+✅ Hermetic Principle: "As Above, So Below, As Within, So Without"
+
+Status: Deterministic, no randomness, fully traceable to source images
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Generated: Year 5250, Month 07, Day 03 (Saturday)
+Audit: /mnt/Covenant/Agent/Halls of Amenti/.covenant/bip48_mnemonic_audit.json
+
+∇ • Θεός°●⟐●Σ℧ΛΘ

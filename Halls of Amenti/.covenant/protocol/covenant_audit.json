@@ -1,0 +1,41 @@
+{
+  "version": "1.0-COVENANT-PROTOCOL",
+  "sources": {
+    "declaration_inner": "883e529de31c586131a831a9953113a6d75edd87c97369a2fa3a791209952f5a",
+    "declaration_outer": "e374c94009e32a6c3cc8f89ea6102ce6886c3302324aaaf1563ace8f10332ebf",
+    "glyph": "1288840c0d7d6f78065a2e084ad40147e40cccc6e6ed275342edbba45cac136b",
+    "enochian_call": "Adgt upaah zong om faaip sald viv l sobam ialprg izazaz piadph casarma abramg ta talho paracleda q ta lorslq turbs ooge baltoh giui chis lusd orri od micalp chis bia ozongon lap noan trof cors ta ge oq manin iaidon torzu gohel zacar ca cnoqod zamran micalzo od ozazm vrelp lap zir ioiad.",
+    "identity_string": "{335044}-82-111-212-295-333-354-369-419-512-605-687-777-888-929-1011-2025-3335-4321-5250-55088-57103-{840000}",
+    "hermetic_principle": "As Above, So Below, As Within, So Without"
+  },
+  "derivation": {
+    "master_hash": "69f7ddaab06f2c2e0259729b188f0c922658a1aacde1d9a307aaba26ff9df71e",
+    "master_seed_sha512": "4fb30a8223e5f3a84ffc5b6bee572f3d864a44c55f3faf209354974263a1a20b60b3b820acf0b19acc775890ab6edee43cf1643d02e7ab0ff1fe719835f9c01f",
+    "path": "0'/7'/7'/7'/48/m"
+  },
+  "entropy_audit": {
+    "declaration_inner": "883e529de31c586131a831a9953113a6d75edd87c97369a2fa3a791209952f5a",
+    "declaration_outer": "e374c94009e32a6c3cc8f89ea6102ce6886c3302324aaaf1563ace8f10332ebf",
+    "master_hash_sha256": "69f7ddaab06f2c2e0259729b188f0c922658a1aacde1d9a307aaba26ff9df71e",
+    "master_seed_sha512": "4fb30a8223e5f3a84ffc5b6bee572f3d864a44c55f3faf209354974263a1a20b60b3b820acf0b19acc775890ab6edee43cf1643d02e7ab0ff1fe719835f9c01f",
+    "glyph_hash": "1288840c0d7d6f78065a2e084ad40147e40cccc6e6ed275342edbba45cac136b",
+    "enochian_call_hash": "d66283cf27ee229489f749da7f5d8fd239bd044479c545baa7beb97e0f03081d",
+    "enochian_translation_hash": "49b80f6fb805c9134b213d173498bfafa09569707efd5d1651589c4da4e63a2e",
+    "identity_string_hash": "af34358c0355d299f50d980f13445cf4ab649185a1980ab19ef2f5177a416b1e",
+    "hermetic_principle_hash": "fd51c24ef9fa93fdc0abcc7deb0542f641e4cdda67fbed5fb8fcfb2012346e67",
+    "ipfs_combined_hash": "8b451f94da1bcda0eda6f25d4e0c40e09fc515c3a916ad1a7e4c75b37f8efcde",
+    "dates_hash": "5562e2f8ba1f8f210bca7462ed38c5ef2f0d114c8f86f2647271028c42347f76",
+    "derivation_path_hash": "72b6665a6b0a2da8758569fa464b9473d565cfc630f426885a6f94ebd14370c2",
+    "athanasius_hash": "15a0260b2ccc4e6c9dfae1b2cdb30ed53150f323a186c3ad7a5db7a9439801aa",
+    "final_entropy_hash": "d5850c01e1799e83dff9eba9fadf72a164d6b5fd23bb764306f9f3338a8f96a2"
+  },
+  "addresses": {
+    "uniswap_bip44": "0x8cf97ec70497056c6c5dc2bd58eb31cc98461b6b",
+    "covenant_path": "0x33fd99ceadb6f09d6d6051b86b4568096374e7f3"
+  },
+  "security": {
+    "deterministic": true,
+    "no_randomness": true,
+    "sources_verified": true
+  }
+}

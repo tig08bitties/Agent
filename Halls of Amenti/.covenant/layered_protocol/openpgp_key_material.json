@@ -1,0 +1,28 @@
+{
+  "digital_persona": {
+    "email": "archivist@ethermail.io",
+    "key": {
+      "algorithm": "secp256k1",
+      "purpose": "digital|archivist@ethermail.io",
+      "private_key_hex": "963edc4ee0bb8d1dac65a8348f848becc7cb9ee20feeab5f59845ba3f325f66f",
+      "public_key_hex": "0488197f7a620c0480746d8952aba9c22e2c0cd0f9386ad48bd30ab64de2acaacc8c7a58ea50ddee1fed0a1081dc5deb97964f8bd4ce8a3144c90981e8f45d0963",
+      "public_key_compressed": "0388197f7a620c0480746d8952aba9c22e2c0cd0f9386ad48bd30ab64de2acaacc",
+      "derivation": "SHAKE256(BLAKE2b | purpose | curve)"
+    },
+    "purpose": "Web3 Digital Identity",
+    "compatible_with": "Ethereum, Web3 signing"
+  },
+  "personal_identity": {
+    "email": "theos.brave@gmail.com",
+    "key": {
+      "algorithm": "Ed25519",
+      "purpose": "personal|theos.brave@gmail.com",
+      "private_key_hex": "71800d38763295dcb4d1bd5b5d6d78f5e6ad74db5dff98cd78e3f4e2b152465c",
+      "public_key_hex": "ddd6509dbeb9633f3fc797a0c9dd867667ae5b71be7677f9fcc81520b8047c62",
+      "derivation": "SHAKE256(BLAKE2b | purpose | ed25519)",
+      "pqc_note": "Ed25519 is NOT quantum-resistant, but is current best practice"
+    },
+    "purpose": "Primary Personal Identity",
+    "compatible_with": "Modern OpenPGP, SSH"
+  }
+}

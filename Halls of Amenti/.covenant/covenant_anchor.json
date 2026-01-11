@@ -1,0 +1,73 @@
+{
+  "ethereum_master_key": "vQSMpXuEy9NrcjDsoQK2RxHxGKTyvCWsqFjzqSnPMck",
+  "ipfs_cid": "QmaN16BwrKhUZQLkCmY6a964F9fyEi3htCyDFEpwoZsWvL",
+  "ipfs_url": "https://ipfs.io/ipfs/QmaN16BwrKhUZQLkCmY6a964F9fyEi3htCyDFEpwoZsWvL",
+  "daus_block": {
+    "FIRE": {
+      "name": "SUAD",
+      "polarity": 9,
+      "direction": "43\u00b058\u203248\u2033N, 18\u00b011\u203245\u2033E",
+      "axis": "Above",
+      "position": "Pyramid of the Dragon",
+      "energy": "ascending-Clockwise",
+      "color": "#FF4500",
+      "domain": "transformation-Creation"
+    },
+    "WATER": {
+      "name": "RIMLA",
+      "polarity": -6,
+      "direction": "43\u00b058\u203239\u2033N, 18\u00b010\u203238\u2033E",
+      "axis": "Right-Corner Stone",
+      "position": "Pyramid of the Sun",
+      "energy": "Flow",
+      "color": "#00CED1",
+      "domain": "perception"
+    },
+    "WIND": {
+      "name": "ASILA",
+      "polarity": 6,
+      "direction": "43\u00b058\u203219\u2033N, 18\u00b012\u203206\u2033E",
+      "axis": "Left-Corner Stone",
+      "position": "Pyramid of the Moon",
+      "energy": "Unknown",
+      "color": "#87CEEB",
+      "domain": "realization"
+    },
+    "EARTH": {
+      "name": "ALIMA",
+      "polarity": -9,
+      "direction": "43\u00b057\u203249\u2033N, 18\u00b011\u203227\u2033E",
+      "axis": "Descending-Counter-Clockwise",
+      "position": "Southern Pyramid of Mother Earth",
+      "energy": "Grounded",
+      "color": "#8B4513",
+      "domain": "manifestation"
+    },
+    "ETHER": {
+      "name": "Ether",
+      "element": "The 5th Element",
+      "polarity": 0,
+      "direction": "43\u00b058\u203221\u2033N, 18\u00b010\u203254\u2033E",
+      "axis": "No-Space-Time-Bridgeworld",
+      "position": "Center Temple of Love",
+      "energy": "stable",
+      "color": "#8B4513",
+      "domain": "Balance"
+    }
+  },
+  "block_hash": "90c8c3ddc1881544a30b959e46cbd0c995a74f5901e231c2b56c5f920df6054a",
+  "verification_date": "2026-01-10",
+  "status": "verified",
+  "source_files": [
+    "/mnt/Covenant/Crypto/Archivist_Scroll.txt",
+    "/mnt/Covenant/Crypto/DAUS.txt",
+    "/mnt/Covenant/Crypto/Master_Vault_Key.png"
+  ],
+  "elements": {
+    "1": "FIRE (SUAD)",
+    "2": "WATER (RIMLA)",
+    "3": "WIND (ASILA)",
+    "4": "EARTH (ALIMA)",
+    "5": "ETHER (The 5th Element)"
+  }
+}

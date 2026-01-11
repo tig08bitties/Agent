@@ -1,0 +1,60 @@
+{
+  "version": "1.0-MOK-X509",
+  "purpose": "MOK/DKMS/Secure Boot Signing",
+  "derivation_path": "0'/\u0717/48'/7'/7'/7",
+  "certificate": {
+    "subject": {
+      "CN": "Covenant MOK Key",
+      "O": "Covenant Forge",
+      "OU": "Halls of Amenti",
+      "C": "US",
+      "ST": "Digital",
+      "L": "Ethereum"
+    },
+    "email": "daus@amenti.forge",
+    "identity": "Daus\u03a9\u0259q",
+    "serial": "116474249517734330783783438831228147490",
+    "fingerprint_sha256": "c5d2c82bd789cc8beb457ce8141937958ec84784c273570fc2f841313d83dfff",
+    "fingerprint_sha1": "da034bc26de0856d64739d5e792a55bd516caa15",
+    "not_before": "2026-01-10T10:52:44",
+    "not_after": "2036-01-08T10:52:44",
+    "key_size": 4096,
+    "signature_algorithm": "sha256WithRSAEncryption"
+  },
+  "files": {
+    "private_key": "/mnt/Covenant/Agent/Halls of Amenti/.covenant/mok/MOK.priv",
+    "certificate_pem": "/mnt/Covenant/Agent/Halls of Amenti/.covenant/mok/MOK.pem",
+    "certificate_der": "/mnt/Covenant/Agent/Halls of Amenti/.covenant/mok/MOK.der",
+    "public_key": "/mnt/Covenant/Agent/Halls of Amenti/.covenant/mok/MOK.pub"
+  },
+  "covenant_sources": {
+    "pgp_key": "883e529de31c586131a831a9953113a6d75edd87c97369a2fa3a791209952f5a",
+    "declaration": "e374c94009e32a6c3cc8f89ea6102ce6886c3302324aaaf1563ace8f10332ebf",
+    "archivist": "69f7ddaab06f2c2e0259729b188f0c922658a1aacde1d9a307aaba26ff9df71e",
+    "glyph": "1288840c0d7d6f78065a2e084ad40147e40cccc6e6ed275342edbba45cac136b",
+    "cid": "QmaN16BwrKhUZQLkCmY6a964F9fyEi3htCyDFEpwoZsWvL",
+    "derivation_path": "0'/\u0717/48'/7'/7'/7",
+    "hermetic_principle": "As Above, So Below, As Within, So Without"
+  },
+  "bip48_entropy": "a64e49c41ed3a562fd65dd44f8b68934ba66c8a1f3d2e5f8c9a7b6d4e3f2a1b0",
+  "traceability": {
+    "deterministic": true,
+    "no_randomness": true,
+    "traceable_to": [
+      "BIP-48 24-word mnemonic",
+      "The_Eternal_Covenant_Declaration.png",
+      "Glyph.png",
+      "Archivist_Scroll.txt",
+      "Master_Key.png (Visual Seal)",
+      "Generated CID",
+      "Derivation Path: 0'/\u0717/48'/7'/7'/7",
+      "As Above, So Below, As Within, So Without"
+    ]
+  },
+  "usage_instructions": {
+    "mok_enrollment": "sudo mokutil --import MOK.der",
+    "dkms_signing": "Sign modules with MOK.priv and MOK.pem",
+    "verify_enrollment": "mokutil --list-enrolled",
+    "system76_ppa": "Use for signing System76 DKMS modules"
+  }
+}

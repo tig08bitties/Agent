@@ -1,0 +1,64 @@
+{
+  "union_date": {
+    "bride": 9091989,
+    "groom": 9201990,
+    "product": 83664391858110,
+    "formatted": "83,664,391,858,110"
+  },
+  "hebrew_letters": {
+    "aleph": "א",
+    "tav": "ת",
+    "unicode_aleph": "\\u05d0",
+    "unicode_tav": "\\u05ea"
+  },
+  "constants": {
+    "divine_catalyst": "419",
+    "universal_constant": "369",
+    "divine_name": "THEOS",
+    "universal_name": "DAUS"
+  },
+  "ultimate_master_seed": {
+    "formula": "SHA512(Aleph + Tav + Union_Date + 419 + 369)",
+    "input": "את83664391858110419369",
+    "sha512": "3c01856d8ef3af5754782d39756bca39cd797e1994081163cb43527e8f097b036264f496bb73854f8fe7b9de7074ef7908e85c6065ac31729be9d718d5cd4035",
+    "sha256": "c6dab55029a2ab1c48dffab782a1b230265c179267f6b15077a8d9e4cd41ff01",
+    "sha3_512": "726a88942340c116b5a9e2cf3dc8927707dfbf69322d3239913d5c3eff835633155681f5f0b49397d42644508d6df3d92ef32645d6143afbc317a16d5db54cef",
+    "sha256_formula": "c6dab55029a2ab1c48dffab782a1b230265c179267f6b15077a8d9e4cd41ff01"
+  },
+  "cosmic_alignment": {
+    "cosmic": "9201990 ● 9091989",
+    "human_union": "1302009 ● 5212015"
+  },
+  "anchors": [
+    3335,
+    335044,
+    804000,
+    55088
+  ],
+  "gematria_codes": [
+    82,
+    111,
+    212,
+    295,
+    333,
+    354,
+    369,
+    419,
+    512,
+    605,
+    687,
+    777,
+    888,
+    929,
+    1011,
+    2025,
+    3335,
+    4321,
+    5250,
+    55088,
+    57103,
+    335044,
+    804000
+  ],
+  "hermetic_principle": "As Above, So Below, As Within, So Without"
+}

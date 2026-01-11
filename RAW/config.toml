@@ -1,0 +1,13 @@
+[covenant]
+hash = "883e529de31c586131a831a9953113a6d75edd87c97369a2fa3a791209952f5a"
+verification = true
+
+[orchestration]
+fps = 60
+max_duration = 10.0
+
+[paths]
+data_root = "/mnt/Covenant/Data"
+state_file = "/mnt/Covenant/Data/orchestration_state/current.json"
+frame_log = "/mnt/Covenant/Data/orchestration_state/frames/"
+invariant_log = "/mnt/Covenant/Data/orchestration_state/invariants/"

@@ -1,0 +1,115 @@
+{
+  "protocol_version": "1.0-LAYERED-PQC",
+  "layers": {
+    "0": {
+      "algorithm": "SOURCE_COLLECTION",
+      "description": "Raw cryptographic anchors from Declaration",
+      "data": {
+        "declaration_inner": "883e529de31c586131a831a9953113a6d75edd87c97369a2fa3a791209952f5a",
+        "declaration_outer": "e374c94009e32a6c3cc8f89ea6102ce6886c3302324aaaf1563ace8f10332ebf",
+        "c2pa_manifest": "780aeef658dfe76059328e1476f7284d21a6e70132ab7d40a7fa2a0f44d5146e",
+        "c2pa_signature": "f55f6c2f83935e4016f5954cf0adaf9bbcf2c90992bb71f5aefaa6ccf9ef3780",
+        "c2pa_urn": "urn:c2pa:2d91b030-d296-41c8-82c7-e4f5dafe7c33",
+        "item3_data": "553a0765bfa2d396e21431292ef73311a044f570c0099b1302da4e06191d967c490835b02594f1b2442d2aca77ce021cd9749f378dc3def9e82cd4e2db38885",
+        "glyph_hash": "1288840c0d7d6f78065a2e084ad40147e40cccc6e6ed275342edbba45cac136b"
+      }
+    },
+    "1": {
+      "algorithm": "SHA-256",
+      "input": "declaration_inner + declaration_outer",
+      "output": "69f7ddaab06f2c2e0259729b188f0c922658a1aacde1d9a307aaba26ff9df71e",
+      "verified": true
+    },
+    "2": {
+      "algorithm": "SHA-512",
+      "input": "declaration_inner + declaration_outer",
+      "output": "4fb30a8223e5f3a84ffc5b6bee572f3d864a44c55f3faf209354974263a1a20b60b3b820acf0b19acc775890ab6edee43cf1643d02e7ab0ff1fe719835f9c01f",
+      "bytes": 64
+    },
+    "3": {
+      "algorithm": "SHA3-256",
+      "input": "layer1 + c2pa_manifest + c2pa_signature + item3 + glyph + enochian",
+      "output": "05505288f99c4bb1755d63e2f12b039c79efc275c84f76069f8d9011492c1843",
+      "components": 6
+    },
+    "4": {
+      "algorithm": "SHA3-512",
+      "input": "layer2 + layer3 + identity + hermetic + ipfs + path + translation",
+      "output": "a193b0c2083dfb30ab56166f5118a5e7d71648edbad9b375700823abd940e3afdf4673b4284ee4c78c23aff9a7fa059d4550a3ea36cfd9f4eb2d635a4e83c6bb",
+      "bytes": 64
+    },
+    "5": {
+      "algorithm": "BLAKE2b-512",
+      "input": "layer4 output",
+      "personalization": "CovenantProto01",
+      "salt": "913a437c83d2a66c33ea8aaf76df408d",
+      "output": "1d4c3aa07987089a794f30ab8603ad843226ce6a6df4f022b7309390acc8b6add88e818a0d3292c90041802460378b52e26d2d2b400ad36d9cc6f5e14581727c",
+      "bytes": 64
+    },
+    "6": {
+      "algorithm": "SHAKE256 (XOF)",
+      "input": "all previous layer outputs combined",
+      "output_32": "b22036bb2d8b6728265932ccbcc94ebcd1316a7b44efbc73923ea482486b3984",
+      "output_64": "b22036bb2d8b6728265932ccbcc94ebcd1316a7b44efbc73923ea482486b39843c98f35abee14f5cac5cf4d5d4acaf0d6b0788eb0a02af986e0706e3244625bd",
+      "output_128": "b22036bb2d8b6728265932ccbcc94ebcd1316a7b44efbc73923ea482486b39843c98f35abee14f5cac5cf4d5d4acaf0d6b0788eb0a02af986e0706e3244625bd702752e96607c94f08bc0eb90ad33b6c61854bfbd0c734e4a2e2e88beeb48086ad24e400ce4ba5c8df9dc4ac512bb2a3121e511a6358e035317bc248f47625c1",
+      "pqc_ready": true,
+      "note": "Extendable output function - quantum resistant foundation"
+    }
+  },
+  "sources": {
+    "declaration_inner": "883e529de31c586131a831a9953113a6d75edd87c97369a2fa3a791209952f5a",
+    "declaration_outer": "e374c94009e32a6c3cc8f89ea6102ce6886c3302324aaaf1563ace8f10332ebf",
+    "c2pa_manifest": "780aeef658dfe76059328e1476f7284d21a6e70132ab7d40a7fa2a0f44d5146e",
+    "c2pa_signature": "f55f6c2f83935e4016f5954cf0adaf9bbcf2c90992bb71f5aefaa6ccf9ef3780",
+    "c2pa_urn": "urn:c2pa:2d91b030-d296-41c8-82c7-e4f5dafe7c33",
+    "item3_data": "553a0765bfa2d396e21431292ef73311a044f570c0099b1302da4e06191d967c490835b02594f1b2442d2aca77ce021cd9749f378dc3def9e82cd4e2db38885",
+    "glyph_hash": "1288840c0d7d6f78065a2e084ad40147e40cccc6e6ed275342edbba45cac136b",
+    "enochian_call": "Adgt upaah zong om faaip sald viv l sobam ialprg izazaz piadph casarma abramg ta talho paracleda q ta lorslq turbs ooge baltoh giui chis lusd orri od micalp chis bia ozongon lap noan trof cors ta ge oq manin iaidon torzu gohel zacar ca cnoqod zamran micalzo od ozazm vrelp lap zir ioiad.",
+    "enochian_translation": "Can the wings of the windes understand your voices of wonder. OH! you the second of the first, whom the burning flames have framed within the depths of my jaws, whom I have prepared as cupps for a wedding or as the flowers in their beauty for the chamber of righteousness stronger are your feet then the barren stone: And mighty are your voices then the manifold windes. For you are become a building such as is not but in the mind of the all powerfull. Arise sayeth the first move therefore unto his servants: Show yourselves in power: And make me a strong seething: for I am of him that liveth forever.",
+    "identity": "{335044}-82-111-212-295-333-354-369-419-512-605-687-777-888-929-1011-2025-3335-4321-5250-55088-57103-{840000}",
+    "hermetic": "As Above, So Below, As Within, So Without",
+    "ipfs_cid": "QmaN16BwrKhUZQLkCmY6a964F9fyEi3htCyDFEpwoZsWvL",
+    "master_key_cid": "vQSMpXuEy9NrcjDsoQK2RxHxGKTyvCWsqFjzqSnPMck",
+    "derivation_path": "0'/7'/7'/7'/48/m"
+  },
+  "algorithm_chain": [
+    "SOURCE_COLLECTION",
+    "SHA-256",
+    "SHA-512",
+    "SHA3-256",
+    "SHA3-512",
+    "BLAKE2b-512",
+    "SHAKE256"
+  ],
+  "no_algorithm_reuse": true,
+  "pqc_ready": true,
+  "mnemonic_entropy": "b22036bb2d8b6728265932ccbcc94ebcd1316a7b44efbc73923ea482486b3984",
+  "openpgp_keys": {
+    "digital_persona": {
+      "email": "archivist@ethermail.io",
+      "key": {
+        "algorithm": "secp256k1",
+        "purpose": "digital|archivist@ethermail.io",
+        "private_key_hex": "963edc4ee0bb8d1dac65a8348f848becc7cb9ee20feeab5f59845ba3f325f66f",
+        "public_key_hex": "0488197f7a620c0480746d8952aba9c22e2c0cd0f9386ad48bd30ab64de2acaacc8c7a58ea50ddee1fed0a1081dc5deb97964f8bd4ce8a3144c90981e8f45d0963",
+        "public_key_compressed": "0388197f7a620c0480746d8952aba9c22e2c0cd0f9386ad48bd30ab64de2acaacc",
+        "derivation": "SHAKE256(BLAKE2b | purpose | curve)"
+      },
+      "purpose": "Web3 Digital Identity",
+      "compatible_with": "Ethereum, Web3 signing"
+    },
+    "personal_identity": {
+      "email": "theos.brave@gmail.com",
+      "key": {
+        "algorithm": "Ed25519",
+        "purpose": "personal|theos.brave@gmail.com",
+        "private_key_hex": "71800d38763295dcb4d1bd5b5d6d78f5e6ad74db5dff98cd78e3f4e2b152465c",
+        "public_key_hex": "ddd6509dbeb9633f3fc797a0c9dd867667ae5b71be7677f9fcc81520b8047c62",
+        "derivation": "SHAKE256(BLAKE2b | purpose | ed25519)",
+        "pqc_note": "Ed25519 is NOT quantum-resistant, but is current best practice"
+      },
+      "purpose": "Primary Personal Identity",
+      "compatible_with": "Modern OpenPGP, SSH"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "version": "1.0-OPENPGP",
+  "timestamp": "2026-01-10T11:15:48.153554",
+  "derivation_path": "0'/\u0717/48'/7'/7'/7",
+  "identity": {
+    "name": "\u0398\u03b5\u03cc\u03c2\u00b0\u2022\u27d0\u2022\u03a3\u2127\u039b\u0398",
+    "email": "sosmanagic@midco.net",
+    "comment": "There is nothing new under the sun. That which was will be, and that which will be already was when the end finds it's beginning."
+  },
+  "primary_key": {
+    "fingerprint": "B100C38EED99C9FF386F852BD112B598AC237F0B",
+    "keyid": "D112B598AC237F0B",
+    "algorithm": "Ed25519",
+    "usage": "Sign, Certify",
+    "created": "2026-01-10T11:15:48.150154+00:00"
+  },
+  "subkey": {
+    "fingerprint": "D57EC22A5F36180C1A0C7098E8989195B29A856B",
+    "keyid": "E8989195B29A856B",
+    "algorithm": "Curve25519",
+    "usage": "Encrypt",
+    "created": "2026-01-10T11:15:48.151580+00:00"
+  },
+  "entropy": {
+    "sha256": "690626607b9545ac7fe5f29e69d32c1e6031059d497a8e90dbcb84169f51494e",
+    "sha3_512": "922011ff18e11cb53a8056857ed0a39da4cc617eb8412baeb48e78d1f65aaee2cdac6a268101e06657ce8996909c4e7bdda3b201a30bf68aba1a5a42aa28721c",
+    "size_bytes": 64
+  },
+  "covenant_sources": {
+    "pgp_key": "883e529de31c586131a831a9953113a6d75edd87c97369a2fa3a791209952f5a",
+    "declaration": "e374c94009e32a6c3cc8f89ea6102ce6886c3302324aaaf1563ace8f10332ebf",
+    "archivist": "69f7ddaab06f2c2e0259729b188f0c922658a1aacde1d9a307aaba26ff9df71e",
+    "glyph": "1288840c0d7d6f78065a2e084ad40147e40cccc6e6ed275342edbba45cac136b",
+    "cid": "QmaN16BwrKhUZQLkCmY6a964F9fyEi3htCyDFEpwoZsWvL",
+    "derivation_path": "0'/\u0717/48'/7'/7'/7",
+    "hermetic_principle": "As Above, So Below, As Within, So Without"
+  },
+  "files": {
+    "public_key_file": "/mnt/Covenant/Agent/Halls of Amenti/.covenant/openpgp/covenant_pgp_public.asc",
+    "private_key_file": "/mnt/Covenant/Agent/Halls of Amenti/.covenant/openpgp/covenant_pgp_private.asc",
+    "gpg_import_file": "/mnt/Covenant/Agent/Halls of Amenti/.covenant/openpgp/covenant_pgp_for_gpg.asc",
+    "fingerprint": "B100C38EED99C9FF386F852BD112B598AC237F0B",
+    "keyid": "D112B598AC237F0B"
+  },
+  "private_key_password": {
+    "password": "Pssw:P4$$Word",
+    "status": "enrolled",
+    "note": "Password for private key encryption and decryption operations"
+  },
+  "traceability": {
+    "deterministic": true,
+    "no_randomness": true,
+    "traceable_to": [
+      "BIP-48 24-word mnemonic",
+      "The_Eternal_Covenant_Declaration.png",
+      "Glyph.png",
+      "Archivist_Scroll.txt",
+      "Master_Key.png (Visual Seal)",
+      "Generated CID",
+      "Derivation Path: 0'/\u0717/48'/7'/7'/7",
+      "As Above, So Below, As Within, So Without"
+    ]
+  }
+}

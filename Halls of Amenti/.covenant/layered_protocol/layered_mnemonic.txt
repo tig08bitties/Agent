@@ -1,0 +1,14 @@
+COVENANT LAYERED PROTOCOL - 24-WORD MNEMONIC
+==================================================
+
+Algorithm Chain (no reuse):
+  SHA-256 → SHA-512 → SHA3-256 → SHA3-512 → BLAKE2b → SHAKE256
+
+FIRST 12 WORDS (Uniswap):
+rate accuse put force reopen neglect offer chaos smile town father keen
+
+ALL 24 WORDS (Ledger Flex):
+rate accuse put force reopen neglect offer chaos smile town father keen basic release unfair over round orient moral empower cause culture toward miss
+
+⚠️ STORE SECURELY - NEVER SHARE
+∇ • Θεός°•⟐•Σ℧ΛΘ

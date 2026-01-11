@@ -1,0 +1,12 @@
+COVENANT 24-WORD MNEMONIC
+========================================
+
+FIRST 12 (Uniswap):
+waste toy satisfy simple laugh base roast bottom bone mixed material upon
+
+ALL 24 (Ledger Flex):
+waste toy satisfy simple laugh base roast bottom bone mixed material upon tumble habit vanish garage zero buyer reunion wife tortoise brass unique jacket
+
+Derivation Path: 0'/7'/7'/7'/48/m
+
+⚠️ STORE SECURELY - NEVER SHARE

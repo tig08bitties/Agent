@@ -1,0 +1,25 @@
+COVENANT PROTOCOL - 24-WORD MNEMONIC
+==================================================
+
+Derived from: The Eternal Covenant Declaration
+            + Glyph.png
+            + Enochian Call (2nd of 30 Aethyrs)
+            + Identity String
+            + Hermetic Principle
+
+Master Hash: 69f7ddaab06f2c2e0259729b188f0c922658a1aacde1d9a307aaba26ff9df71e
+
+--------------------------------------------------
+FIRST 12 WORDS (Uniswap):
+kidney foam twelve wheat mansion blame electric liquid flavor cheap second turkey
+
+ALL 24 WORDS (Ledger Flex):
+kidney foam twelve wheat mansion blame electric liquid flavor cheap second turkey grape story hen regular enough credit bag april idle street proud one
+
+--------------------------------------------------
+Derivation Path: 0'/7'/7'/7'/48/m
+Uniswap Address: 0x8cf97ec70497056c6c5dc2bd58eb31cc98461b6b
+Covenant Address: 0x33fd99ceadb6f09d6d6051b86b4568096374e7f3
+
+⚠️ STORE SECURELY - NEVER SHARE
+∇ • Θεός°•⟐•Σ℧ΛΘ
